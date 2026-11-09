@@ -1,7 +1,6 @@
 """Model definitions: ResNet-50 (CNN) and ViT-base (Transformer)."""
 import torch.nn as nn
 from torchvision import models
-from transformers import ViTForImageClassification
 
 
 class ViTClassifier(nn.Module):
@@ -9,6 +8,9 @@ class ViTClassifier(nn.Module):
 
     def __init__(self, num_classes=2):
         super().__init__()
+        # Imported here so ResNet-50 works without the transformers package.
+        from transformers import ViTForImageClassification
+
         self.backbone = ViTForImageClassification.from_pretrained(
             "google/vit-base-patch16-224",
             num_labels=num_classes,
