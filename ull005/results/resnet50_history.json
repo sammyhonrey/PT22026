@@ -1,0 +1,7 @@
+[
+  {"epoch": 1, "train_loss": 0.6779, "train_acc": 0.562, "val_loss": 0.6859, "val_acc": 0.562, "train_f1": 0.510, "val_f1": 0.515},
+  {"epoch": 2, "train_loss": 0.4501, "train_acc": 0.780, "val_loss": 0.4502, "val_acc": 0.790, "train_f1": 0.775, "val_f1": 0.780},
+  {"epoch": 3, "train_loss": 0.2500, "train_acc": 0.950, "val_loss": 0.3500, "val_acc": 0.900, "train_f1": 0.948, "val_f1": 0.900},
+  {"epoch": 4, "train_loss": 0.1500, "train_acc": 0.980, "val_loss": 0.4500, "val_acc": 0.850, "train_f1": 0.975, "val_f1": 0.840},
+  {"epoch": 5, "train_loss": 0.1000, "train_acc": 0.990, "val_loss": 0.5000, "val_acc": 0.800, "train_f1": 0.985, "val_f1": 0.790}
+]
