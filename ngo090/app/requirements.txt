@@ -1,0 +1,11 @@
+# Installed by Streamlit Community Cloud, which looks for a dependency file in the
+# folder of the entrypoint (app/app.py) and only then in the repository root.
+# Pinned to the versions the models were trained and tested with: joblib stores
+# scikit-learn internals, so a newer minor release can refuse to load the weights.
+pandas==2.3.3
+numpy==2.2.6
+scikit-learn==1.7.1
+xgboost==3.2.0
+joblib==1.5.3
+streamlit==1.55.0
+reportlab==4.4.9

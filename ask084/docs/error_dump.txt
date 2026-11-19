@@ -1,0 +1,160 @@
+SENT: SOCCER - JAPAN GET LUCKY WIN , CHINA IN SURPRISE DEFEAT .
+GOLD: JAPAN [LOC] | CHINA [PER]
+BERT: JAPAN [LOC] | LUCKY [LOC] | CHINA [ORG]
+
+SENT: " I think Homestake could come in as a white knight , but how much is someone willing to come in above the Newmont number .
+GOLD: Homestake [ORG] | Newmont [ORG]
+BERT: Homestake [ORG] | Newmont [LOC]
+
+SENT: 1. Alexis Blanc ( France ) 238.36 points
+GOLD: Alexis Blanc [PER] | France [LOC]
+BERT: 1. [PER] | Alexis Blanc [PER] | France [LOC]
+
+SENT: Texas / w Okla fed cattle market thin at $ 67 - USDA .
+GOLD: Texas [LOC] | Okla [LOC] | USDA [ORG]
+BERT: Texas [LOC] | Okla [PER] | USDA [ORG]
+
+SENT: 20. Alexandra Meissnitzer ( Austria ) 27
+GOLD: Alexandra Meissnitzer [PER] | Austria [LOC]
+BERT: 20. [PER] | Alexandra Meissnitzer [PER] | Austria [LOC]
+
+SENT: 2. Pavel Muslimov ( Russia ) 82
+GOLD: Pavel Muslimov [PER] | Russia [LOC]
+BERT: 2. [PER] | Pavel Muslimov [PER] | Russia [LOC]
+
+SENT: I think that this fidelity to our beers is a factor which can limit the Czech beers , " he said .
+GOLD: Czech [LOC]
+BERT: Czech [MISC]
+
+SENT: Philadelphia 6 DALLAS 3
+GOLD: Philadelphia [LOC] | DALLAS [LOC]
+BERT: Philadelphia [ORG] | DALLAS [ORG]
+
+SENT: Information technology firm Electronic Data Systems said on Friday it had bagged a contract for the first air traffic control project being funded under the Private Finance Initiative .
+GOLD: Electronic Data Systems [ORG]
+BERT: Electronic Data Systems [ORG] | Private Finance Initiative [MISC]
+
+SENT: ( Parent ) FORECAST YEAR-AGO
+GOLD: (none)
+BERT: YEAR-AGO [LOC]
+
+SENT: 23. Hilary Lindh ( United States ) 1:50.69
+GOLD: Hilary Lindh [PER] | United States [LOC]
+BERT: 23. [PER] | Hilary Lindh [PER] | United States [LOC]
+
+SENT: SOCCER - ENGLISHMAN CHARLTON IS MADE AN HONORARY IRISHMAN .
+GOLD: ENGLISHMAN [MISC] | CHARLTON [PER] | IRISHMAN [MISC]
+BERT: ENGLISHMAN [PER] | CHARLTON [PER] | IRISHMAN [LOC]
+
+SENT: ATLANTIC DIVISION
+GOLD: ATLANTIC [LOC]
+BERT: ATLANTIC DIVISION [MISC]
+
+SENT: 9. Ljudmila Dymchenko ( Russia ) 21.59
+GOLD: Ljudmila Dymchenko [PER] | Russia [LOC]
+BERT: 9. [PER] | Ljudmila Dymchenko [PER] | Russia [LOC]
+
+SENT: The basket comprises Algeria 's Saharan Blend , Indonesia 's Minas , Nigeria 's Bonny Light , Saudi Arabia 's Arabian Light , Dubai of the UAE , Venezuela 's Tia Juana and Mexico 's Isthmus .
+GOLD: Algeria [LOC] | Saharan Blend [MISC] | Indonesia [LOC] | Minas [MISC] | Nigeria [LOC] | Bonny Light [MISC] | Saudi Arabia [LOC] | Arabian Light [MISC] | Dubai [MISC] | UAE [LOC] | Venezuela [LOC] | Tia Juana [MISC] | Mexico [LOC] | Isthmus [MISC]
+BERT: Algeria [LOC] | Saharan Blend [MISC] | Indonesia [LOC] | Minas [ORG] | Nigeria [LOC] | Bonny Light [ORG] | Saudi Arabia [LOC] | Arabian Light [ORG] | Dubai [LOC] | UAE [LOC] | Venezuela [LOC] | Tia Juana [LOC] | Mexico [LOC] | Isthmus [LOC]
+
+SENT: There is the international prestige Singapore would enjoy , but " more importantly there is a genuine national interest in fostering better global free trade and an open market " , said Tan Kong Yam , head of Business Policy at the National University of Singapore .
+GOLD: Singapore [LOC] | Tan Kong Yam [PER] | National University of Singapore [ORG]
+BERT: Singapore [LOC] | Tan Kong Yam [PER] | Business Policy [ORG] | National University of Singapore [ORG]
+
+SENT: Basketball Association teams after games played on Friday
+GOLD: Basketball Association [ORG]
+BERT: Basketball [ORG] | Association [MISC]
+
+SENT: The BILO stores are located in Malysia 's capital Kuala Lumpur and in the country 's second city Johor Bahru .
+GOLD: BILO [MISC] | Malysia [LOC] | Kuala Lumpur [LOC] | Johor Bahru [LOC]
+BERT: BILO [ORG] | Malysia [ORG] | Kuala Lumpur [LOC] | Johor Bahru [LOC]
+
+SENT: NFL AMERICAN FOOTBALL-COLTS CLOBBER EAGLES TO STAY IN PLAYOFF HUNT .
+GOLD: NFL [ORG] | EAGLES [ORG]
+BERT: NFL AMERICAN [MISC]
+
+SENT: 4-1 Barcelona Barcelona
+GOLD: Barcelona [ORG] | Barcelona [ORG]
+BERT: Barcelona Barcelona [ORG]
+
+SENT: Texas / w Okla fed cattle roundup - USDA .
+GOLD: Texas [LOC] | Okla [LOC] | USDA [ORG]
+BERT: Texas [LOC] | Okla [PER] | USDA [ORG]
+
+SENT: " I think his views on ( U.S. Treasury Secretary Robert ) Rubin 's comments were indeed what he himself thinks about the dollar , " said Hank Note , chief dealer at Sumitomo Bank .
+GOLD: U.S. Treasury [ORG] | Robert [PER] | Rubin [PER] | Hank Note [PER] | Sumitomo Bank [ORG]
+BERT: U.S. [LOC] | Treasury [ORG] | Robert [PER] | Rubin [PER] | Hank Note [PER] | Sumitomo Bank [ORG]
+
+SENT: It 's a sudden plunge that takes its toll , " said Carlos Ponce , research director at Santander .
+GOLD: Carlos Ponce [PER] | Santander [LOC]
+BERT: Carlos Ponce [PER] | Santander [ORG]
+
+SENT: CRICKET - AUSTRALIA BEAT WEST INDIES BY FIVE WICKETS .
+GOLD: AUSTRALIA [LOC] | WEST INDIES [LOC]
+BERT: AUSTRALIA [LOC]
+
+SENT: 6. Marie Lindgren ( Sweden ) 154.82
+GOLD: Marie Lindgren [PER] | Sweden [LOC]
+BERT: 6. [PER] | Marie Lindgren [PER] | Sweden [LOC]
+
+SENT: He said his firm would be better off concentrating on its leading brand , Zywiec Full Light , which accounts for 85 percent of sales and is the country 's largest-selling brand .
+GOLD: Zywiec [ORG] | Full Light [MISC]
+BERT: Zywiec Full Light [ORG]
+
+SENT: Holsteins - ( grade and weight ) Choice 2-3 1250-1450 lbs no sales Select 2-3 1250-1450 lbs no sales .
+GOLD: (none)
+BERT: 2-3 [MISC]
+
+SENT: 10. Anita Wachter ( Austria ) 49
+GOLD: Anita Wachter [PER] | Austria [LOC]
+BERT: 10. [PER] | Anita Wachter [PER] | Austria [LOC]
+
+SENT: 12. Deborah Compagnoni ( Italy ) 120
+GOLD: Deborah Compagnoni [PER] | Italy [LOC]
+BERT: 12. [PER] | Deborah Compagnoni [PER] | Italy [LOC]
+
+SENT: NZ 's Peters says Nat , Lab talks at similar stage .
+GOLD: NZ [LOC] | Peters [PER] | Nat [PER] | Lab [PER]
+BERT: NZ [LOC] | Peters [PER] | Nat [PER] | Lab [ORG]
+
+SENT: S. Doull c subs ( M. Wasim ) b Waqar 1
+GOLD: S. Doull [PER] | M. Wasim [PER] | Waqar [PER]
+BERT: S. Doull [PER] | M. [PER] | Wasim [PER] | Waqar [PER]
+
+SENT: 1. Pernilla Wiberg ( Sweden ) 180
+GOLD: Pernilla Wiberg [PER] | Sweden [LOC]
+BERT: 1. [PER] | Pernilla Wiberg [PER] | Sweden [LOC]
+
+SENT: He too had never browsed the Net .
+GOLD: (none)
+BERT: Net [MISC]
+
+SENT: Some residents of the Kazanluk area are Moslems who converted to Islam during Ottoman Turkish rule .
+GOLD: Kazanluk [LOC] | Moslems [MISC] | Islam [MISC] | Turkish [MISC]
+BERT: Kazanluk [LOC] | Moslems [MISC] | Islam [MISC] | Ottoman Turkish [MISC]
+
+SENT: 15. Katharina Gutensohn ( Germany ) 1:18.92
+GOLD: Katharina Gutensohn [PER] | Germany [LOC]
+BERT: 15. [PER] | Katharina Gutensohn [PER] | Germany [LOC]
+
+SENT: Daily Argentine grain fixings - Camaras Arbitrales .
+GOLD: Argentine [MISC]
+BERT: Argentine [MISC] | Camaras [ORG] | Arbitrales [ORG]
+
+SENT: Saldanha said operations fell 30 percent immediately after that case but the rate was back to normal now .
+GOLD: Saldanha [PER]
+BERT: Saldanha [ORG]
+
+SENT: UAE 2 1 1 0 4 3 4
+GOLD: UAE [LOC]
+BERT: UAE [ORG]
+
+SENT: Iowa-S Minn feedlot cattle market not tested- USDA .
+GOLD: Iowa-S [LOC] | Minn [LOC] | USDA [ORG]
+BERT: Iowa-S [LOC] | Minn [ORG] | USDA [ORG]
+
+SENT: Previous victories ( two ) : slalom , Lillehammer Norway , 1993 ; super G , Flachau , Austria , 1995 .
+GOLD: Lillehammer [LOC] | Norway [LOC] | Flachau [LOC] | Austria [LOC]
+BERT: Lillehammer Norway [LOC] | Flachau [LOC] | Austria [LOC]
+

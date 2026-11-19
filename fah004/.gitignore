@@ -1,0 +1,15 @@
+# Ignore images and datasets
+dataset/
+*.csv
+*.zip
+
+# Ignore Virtual Environment
+venv311/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints
+
+# Ignore OS files
+.DS_Store
+Thumbs.db

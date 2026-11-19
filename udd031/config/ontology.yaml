@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------------------
+# Label ontology: the bridge between two pre-trained heads that speak different
+# emotion vocabularies.
+#
+#   supervised acoustic head : superb/wav2vec2-base-superb-er
+#                              native labels = ang, hap, neu, sad  (IEMOCAP, 4-way)
+#   supervised text head     : bhadresh-savani/distilbert-base-uncased-emotion
+#                              native labels = sadness, joy, love, anger, fear, surprise
+#
+# Rows MUST sum to <= 1.0. A row summing to less than 1 leaves the residual as
+# *ignorance* mass, which is never renormalised away inside a branch; only the
+# fused vector is normalised, and only once. See report Section 3.3 for the
+# rationale behind every non-trivial weight.
+# ---------------------------------------------------------------------------
+version: 1
+
+canonical: [happy, sad, angry, fear, disgust, neutral]
+
+acoustic:
+  ang: {angry: 1.0}
+  hap: {happy: 1.0}
+  neu: {neutral: 1.0}
+  sad: {sad: 1.0}
+  # Rationale: this head was fine-tuned on IEMOCAP, which is annotated with four
+  # classes only. `fear` and `disgust` are out of its vocabulary: there is no
+  # logit to reinterpret, so the mass is left as ignorance rather than guessed.
+  # Consequence documented in the report (Section 3.4 and 5.4).
+
+text:
+  joy: {happy: 1.0}
+  love: {happy: 0.65, neutral: 0.35}
+  anger: {angry: 1.0}
+  sadness: {sad: 1.0}
+  fear: {fear: 1.0}
+  surprise: {fear: 0.35, happy: 0.30, neutral: 0.35}
+  # Rationale for `love`: high-valence, low-arousal attachment. Mapping it wholly
+  # onto `happy` (a high-arousal class) overstates activation, so a third of the
+  # mass is given to `neutral`.
+  # Rationale for `surprise`: valence-ambiguous by construction (Cowen & Keltner,
+  # 2017); it co-occurs with joy, fear and neutral recall alike, hence the split.
+
+# Classes the target space contains but which no branch was supervised on.
+unsupported:
+  acoustic: [fear, disgust]
+  text: [disgust]

@@ -1,0 +1,37 @@
+{
+  "selected_model": "Logistic Regression",
+  "selection_metric": "validation macro F1",
+  "final_training_reviews": 835,
+  "test_reviews": 148,
+  "test_accuracy": 0.8040540540540541,
+  "test_accuracy_95ci": [
+    0.7364864864864865,
+    0.8648648648648649
+  ],
+  "test_macro_f1": 0.8036147334706016,
+  "seed": 42,
+  "scikit_learn_version": "1.7.2",
+  "classifier": "LogisticRegression",
+  "classifier_params": {
+    "C": "1.0",
+    "class_weight": "None",
+    "dual": "False",
+    "fit_intercept": "True",
+    "intercept_scaling": "1",
+    "l1_ratio": "None",
+    "max_iter": "1000",
+    "multi_class": "deprecated",
+    "n_jobs": "None",
+    "penalty": "l2",
+    "random_state": "42",
+    "solver": "lbfgs",
+    "tol": "0.0001",
+    "verbose": "0",
+    "warm_start": "False"
+  },
+  "vectorizer_ngram_range": [
+    1,
+    2
+  ],
+  "created": "2026-11-13T09:28:21"
+}

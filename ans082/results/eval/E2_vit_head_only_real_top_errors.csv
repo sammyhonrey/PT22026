@@ -1,0 +1,13 @@
+path,true,pred,confidence
+/content/drive/MyDrive/SmartSort_AI/real_photos/cardboard/cardboard_005.jpg,cardboard,plastic,0.9977
+/content/drive/MyDrive/SmartSort_AI/real_photos/cardboard/cardboard_004.jpg,cardboard,plastic,0.9918
+/content/drive/MyDrive/SmartSort_AI/real_photos/plastic/plastic_009.jpg,plastic,metal,0.9608
+/content/drive/MyDrive/SmartSort_AI/real_photos/battery/battery_001.jpg,battery,plastic,0.957
+/content/drive/MyDrive/SmartSort_AI/real_photos/metal/metal_008.jpg,metal,glass,0.9428
+/content/drive/MyDrive/SmartSort_AI/real_photos/battery/battery_018.jpg,battery,glass,0.942
+/content/drive/MyDrive/SmartSort_AI/real_photos/battery/battery_020.jpg,battery,glass,0.9335
+/content/drive/MyDrive/SmartSort_AI/real_photos/battery/battery_021.jpg,battery,glass,0.9161
+/content/drive/MyDrive/SmartSort_AI/real_photos/plastic/plastic_002.jpg,plastic,glass,0.9159
+/content/drive/MyDrive/SmartSort_AI/real_photos/trash/trash_026.jpg,trash,cardboard,0.9113
+/content/drive/MyDrive/SmartSort_AI/real_photos/paper/paper_004.jpg,paper,clothes,0.8954
+/content/drive/MyDrive/SmartSort_AI/real_photos/plastic/plastic_024.jpg,plastic,glass,0.8847

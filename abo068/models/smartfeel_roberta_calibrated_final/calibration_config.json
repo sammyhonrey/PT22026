@@ -1,0 +1,12 @@
+{
+    "model_name": "SmartFeel AI",
+    "base_model": "cardiffnlp/twitter-roberta-base",
+    "labels": {
+        "0": "Negative",
+        "1": "Neutral",
+        "2": "Positive"
+    },
+    "neutral_bias": 0.55,
+    "test_accuracy": 0.7305,
+    "test_macro_f1": 0.728
+}

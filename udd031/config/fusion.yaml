@@ -1,0 +1,63 @@
+# ---------------------------------------------------------------------------
+# Fusion engine configuration.
+#
+#   mode: credal    -> per-class reliability pooling with explicit ignorance
+#   mode: weighted  -> fixed-alpha late fusion baseline (used only for ablation)
+#
+# Every constant here has a documented origin: see report Sections 3.3-3.5 and the
+# report, Section 3.5. None of these were fitted, so none of them is described
+# as fitted.
+# ---------------------------------------------------------------------------
+mode: credal
+
+# r_m(c) = rho_m(c) * coverage_m^gamma * confidence_m^delta
+gamma: 0.75      # exponent on coverage: how hard a blind branch is punished
+delta: 0.50      # exponent on confidence: how hard an unsure branch is punished
+epsilon: 1.0e-06 # guards the per-class weights against exact zeros
+
+# Baseline (weighted) mode only.
+alpha: 0.55      # start weight given to the acoustic branch
+
+# A branch that can express less than this fraction of the target space may not
+# contribute a *numeric* conflict index; the conflict is reported as
+# "indeterminate" instead. Rationale: a branch with no vocabulary for a class has
+# no standing to disagree about it.
+ignorance_threshold: 0.50
+
+# Conflict bands on the normalised Jensen-Shannon divergence, in [0, 1].
+conflict_bands:
+  aligned: 0.15
+  mild: 0.40
+
+# How much a transcript's own lexical evidence scales the text branch's vote.
+# `src/mmsa/evidence.py` measures that evidence; the multiplier is
+# max(floor, evidence), so a transcript with no affect word and no self-reference
+# (e.g. the RAVDESS carrier sentence "Kids are talking by the door") keeps ~2 %
+# of its reliability instead of casting a confident vote it cannot support.
+# Below `withhold_below` the branch also may not assert a numeric conflict index:
+# a channel with no evidence has no standing to disagree.
+text_evidence:
+  floor: 0.02
+  withhold_below: 0.15
+
+# Per-class modality priors rho_m(c). These encode which channel is empirically
+# more diagnostic of which emotion, *not* which channel is generally better.
+# The acoustic priors for fear and disgust were 0.60 / 0.55 while the zero-shot
+# four-label head structurally could not emit those classes; the fitted six-class
+# head (scripts/train_acoustic_probe.py) can, so the punitive values are lifted to
+# 1.0 -- there is no longer a class this channel cannot speak.
+priors:
+  acoustic:
+    happy: 0.95
+    sad: 1.00
+    angry: 1.05
+    fear: 1.00
+    disgust: 1.00
+    neutral: 0.90
+  text:
+    happy: 1.00
+    sad: 0.85
+    angry: 0.95
+    fear: 1.10
+    disgust: 0.90
+    neutral: 1.00

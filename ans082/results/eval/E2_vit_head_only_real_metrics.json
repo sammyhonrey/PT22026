@@ -1,0 +1,73 @@
+{
+  "n_images": 214,
+  "accuracy": 0.5934579439252337,
+  "macro_precision": 0.6693988557672768,
+  "macro_recall": 0.6077067669172933,
+  "macro_f1": 0.5860281522920635,
+  "per_class": {
+    "battery": {
+      "precision": 1.0,
+      "recall": 0.47619047619047616,
+      "f1-score": 0.6451612903225806,
+      "support": 21.0
+    },
+    "biological": {
+      "precision": 0.8,
+      "recall": 0.42105263157894735,
+      "f1-score": 0.5517241379310345,
+      "support": 19.0
+    },
+    "cardboard": {
+      "precision": 0.6153846153846154,
+      "recall": 0.38095238095238093,
+      "f1-score": 0.47058823529411764,
+      "support": 21.0
+    },
+    "clothes": {
+      "precision": 0.76,
+      "recall": 1.0,
+      "f1-score": 0.8636363636363636,
+      "support": 19.0
+    },
+    "glass": {
+      "precision": 0.4473684210526316,
+      "recall": 0.8095238095238095,
+      "f1-score": 0.576271186440678,
+      "support": 21.0
+    },
+    "metal": {
+      "precision": 0.5416666666666666,
+      "recall": 0.6842105263157895,
+      "f1-score": 0.6046511627906976,
+      "support": 19.0
+    },
+    "paper": {
+      "precision": 0.39285714285714285,
+      "recall": 0.5789473684210527,
+      "f1-score": 0.46808510638297873,
+      "support": 19.0
+    },
+    "plastic": {
+      "precision": 0.3783783783783784,
+      "recall": 0.5833333333333334,
+      "f1-score": 0.45901639344262296,
+      "support": 24.0
+    },
+    "shoes": {
+      "precision": 0.9583333333333334,
+      "recall": 1.0,
+      "f1-score": 0.9787234042553191,
+      "support": 23.0
+    },
+    "trash": {
+      "precision": 0.8,
+      "recall": 0.14285714285714285,
+      "f1-score": 0.24242424242424243,
+      "support": 28.0
+    }
+  },
+  "experiment": "E2_vit_head_only",
+  "split": "real",
+  "checkpoint_epoch": 7,
+  "device": "cuda"
+}

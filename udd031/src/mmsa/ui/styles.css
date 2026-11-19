@@ -1,0 +1,278 @@
+/* ---------------------------------------------------------------------------
+   Multimodal Mental State Analyser - custom interface skin
+   Loaded after the Gradio theme, so these rules win where they overlap.
+   Design language: holographic clinic. Deep navy, glass, one cyan/violet accent.
+   --------------------------------------------------------------------------- */
+
+:root {
+  --mmsa-bg-deep: #070b18;
+  --mmsa-bg-mid: #0b1226;
+  --mmsa-panel: rgba(255, 255, 255, 0.045);
+  --mmsa-border: rgba(255, 255, 255, 0.1);
+  --mmsa-cyan: #22d3ee;
+  --mmsa-violet: #a78bfa;
+  --mmsa-magenta: #f472b6;
+  --mmsa-amber: #fbbf24;
+  --mmsa-green: #34d399;
+  --mmsa-rose: #fb7185;
+  --mmsa-text: #e8eef9;
+  --mmsa-muted: #93a4c3;
+  --mmsa-radius: 18px;
+}
+
+body,
+.gradio-container {
+  background: linear-gradient(160deg, #070b18 0%, #0b1226 45%, #101a38 100%) !important;
+  color: var(--mmsa-text) !important;
+}
+
+.gradio-container {
+  max-width: 1320px !important;
+  margin: 0 auto !important;
+  font-feature-settings: "cv02", "cv03", "cv04";
+}
+
+/* ---- hero ---------------------------------------------------------------- */
+
+.mmsa-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 26px 30px 22px;
+  border-radius: 22px;
+  border: 1px solid var(--mmsa-border);
+  background:
+    radial-gradient(1200px 320px at 12% -10%, rgba(34, 211, 238, 0.18), transparent 60%),
+    radial-gradient(900px 280px at 92% 0%, rgba(167, 139, 250, 0.16), transparent 55%),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.015));
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.5);
+}
+
+.mmsa-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent 85%);
+}
+
+.mmsa-kicker {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mmsa-cyan);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.mmsa-title {
+  font-size: 30px;
+  line-height: 1.15;
+  font-weight: 700;
+  margin: 0 0 8px;
+  background: linear-gradient(100deg, #ffffff 10%, #a5f3fc 55%, #c4b5fd 95%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mmsa-sub {
+  color: var(--mmsa-muted);
+  font-size: 13.5px;
+  max-width: 78ch;
+  margin: 0;
+}
+
+.mmsa-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.mmsa-badge {
+  font-family: "JetBrains Mono", Consolas, monospace;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--mmsa-border);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--mmsa-text);
+  letter-spacing: 0.02em;
+}
+
+.mmsa-badge--accent {
+  border-color: rgba(34, 211, 238, 0.45);
+  color: #a5f3fc;
+}
+
+/* ---- disclaimer ---------------------------------------------------------- */
+
+.mmsa-disclaimer {
+  margin-top: 14px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  background: linear-gradient(90deg, rgba(251, 191, 36, 0.12), rgba(251, 191, 36, 0.03));
+  color: #fde68a;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+.mmsa-disclaimer strong {
+  color: #fbbf24;
+}
+
+/* ---- panels -------------------------------------------------------------- */
+
+.mmsa-panel {
+  border-radius: var(--mmsa-radius);
+  border: 1px solid var(--mmsa-border);
+  background: var(--mmsa-panel);
+  backdrop-filter: blur(14px) saturate(140%);
+  padding: 16px 18px;
+  height: 100%;
+}
+
+.mmsa-panel--fused {
+  border-color: rgba(244, 114, 182, 0.4);
+  box-shadow: 0 0 0 1px rgba(244, 114, 182, 0.12), 0 22px 60px rgba(244, 114, 182, 0.12);
+  background: linear-gradient(165deg, rgba(244, 114, 182, 0.1), rgba(255, 255, 255, 0.035));
+}
+
+.mmsa-panel__label {
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mmsa-muted);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.mmsa-panel__value {
+  font-family: "JetBrains Mono", Consolas, monospace;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--mmsa-text);
+  line-height: 1.1;
+}
+
+.mmsa-panel__meta {
+  font-size: 11.5px;
+  color: var(--mmsa-muted);
+  margin-top: 6px;
+}
+
+/* ---- chips --------------------------------------------------------------- */
+
+.mmsa-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.mmsa-chip {
+  font-family: "JetBrains Mono", Consolas, monospace;
+  font-size: 10.5px;
+  padding: 3px 9px;
+  border-radius: 8px;
+  border: 1px solid var(--mmsa-border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--mmsa-muted);
+}
+
+.mmsa-chip--ok { color: #a7f3d0; border-color: rgba(52, 211, 153, 0.4); }
+.mmsa-chip--warn { color: #fde68a; border-color: rgba(251, 191, 36, 0.4); }
+.mmsa-chip--alert { color: #fecdd3; border-color: rgba(251, 113, 133, 0.45); }
+
+/* ---- narrative callout --------------------------------------------------- */
+
+.mmsa-narrative {
+  border-radius: var(--mmsa-radius);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  border-left: 4px solid var(--mmsa-cyan);
+  background: linear-gradient(100deg, rgba(34, 211, 238, 0.1), rgba(255, 255, 255, 0.02));
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: 1.62;
+  color: var(--mmsa-text);
+}
+
+/* ---- transcript ---------------------------------------------------------- */
+
+.mmsa-transcript {
+  font-family: "JetBrains Mono", Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #dbeafe;
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid var(--mmsa-border);
+  border-radius: 14px;
+  padding: 14px 16px;
+  min-height: 72px;
+  white-space: pre-wrap;
+}
+
+/* ---- Gradio surfaces ----------------------------------------------------- */
+
+.gradio-container .block,
+.gradio-container .form {
+  border-radius: var(--mmsa-radius) !important;
+  border-color: var(--mmsa-border) !important;
+}
+
+.gradio-container .panel {
+  background: transparent !important;
+  border: none !important;
+}
+
+.gradio-container button.primary {
+  font-weight: 700 !important;
+  letter-spacing: 0.02em;
+  border: none !important;
+  box-shadow: 0 10px 30px rgba(34, 211, 238, 0.28) !important;
+}
+
+.gradio-container button.primary:hover {
+  filter: brightness(1.08);
+}
+
+.gradio-container .tabs {
+  border: none !important;
+}
+
+.gradio-container footer {
+  display: none !important;
+}
+
+/* Plotly containers should not paint their own background. */
+.js-plotly-plot .plotly,
+.js-plotly-plot .plotly .main-svg {
+  background: transparent !important;
+}
+
+/* ---- responsive ---------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  .mmsa-title { font-size: 24px; }
+  .mmsa-panel__value { font-size: 22px; }
+  .mmsa-hero { padding: 20px 20px 18px; }
+}
+
+/* ---- print (a reviewer may well print the page) -------------------------- */
+
+@media print {
+  body, .gradio-container {
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+  .mmsa-hero, .mmsa-panel, .mmsa-narrative {
+    box-shadow: none !important;
+    border: 1px solid #d1d5db !important;
+    background: #ffffff !important;
+  }
+  .mmsa-title { -webkit-text-fill-color: #111827; }
+}

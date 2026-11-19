@@ -1,0 +1,48 @@
+{
+  "corpus": "RAVDESS held-out speakers 21-24",
+  "n": 208,
+  "text_branch_on_carrier_sentences": {
+    "kids are talking by the door": {
+      "top": "angry",
+      "confidence": 0.839,
+      "evidence": 0.0
+    },
+    "dogs are sitting by the door": {
+      "top": "fear",
+      "confidence": 0.587,
+      "evidence": 0.0
+    }
+  },
+  "acoustic": {
+    "natural_gain": 0.716,
+    "minus_3dbfs_app_path": 0.659
+  },
+  "without_evidence_gate": {
+    "natural_gain": 0.514,
+    "minus_3dbfs_app_path": 0.428
+  },
+  "with_evidence_gate": {
+    "natural_gain": 0.702,
+    "minus_3dbfs_app_path": 0.663,
+    "confusions_app_path": {
+      "neutral->sad": 13,
+      "disgust->angry": 8,
+      "happy->sad": 7,
+      "sad->disgust": 6,
+      "happy->angry": 5,
+      "fear->happy": 5,
+      "fear->disgust": 3,
+      "fear->sad": 3,
+      "disgust->happy": 3,
+      "happy->fear": 3,
+      "disgust->sad": 3,
+      "neutral->angry": 2,
+      "neutral->happy": 2,
+      "sad->neutral": 2,
+      "sad->happy": 2,
+      "disgust->fear": 2,
+      "neutral->fear": 1
+    }
+  },
+  "note": "Replayed from the cached embeddings and the two RAVDESS carrier sentences, so the comparison isolates fusion: the only difference between the two rows is the text branch's evidence multiplier. Both gain variants are reported because the application feeds peak-normalised audio; the natural-gain row is the archive as recorded and is kept as a robustness signal, not as a headline."
+}

@@ -1,0 +1,10 @@
+{
+  "base_model": "distilbert-base-uncased-finetuned-sst-2-english",
+  "train_samples": 2000,
+  "max_length": 256,
+  "epochs": 1,
+  "learning_rate": 2e-05,
+  "batch_size": 16,
+  "final_train_loss": 0.3573777370452881,
+  "training_minutes": 24.5
+}

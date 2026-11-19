@@ -1,0 +1,3605 @@
+{
+  "measured_at": "2026-11-05T09:11:22Z",
+  "samples": [
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-01-01-01-01-01.wav",
+      "gold": "neutral",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9344,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.13827860355377197,
+          0.006118925753980875,
+          0.8511782288551331,
+          0.004424348007887602
+        ],
+        "mapped": {
+          "happy": 0.006118925104329864,
+          "sad": 0.004424347538151201,
+          "angry": 0.8511781384848917,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.13827858887262723
+        },
+        "coverage": 1.0,
+        "confidence": 0.6639221977579641,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-01-01-01-02-01.wav",
+      "gold": "neutral",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9265,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.1532808095216751,
+          0.04348055645823479,
+          0.795289158821106,
+          0.00794951245188713
+        ],
+        "mapped": {
+          "happy": 0.0434805548384579,
+          "sad": 0.007949512155744725,
+          "angry": 0.7952891291942772,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.1532808038115202
+        },
+        "coverage": 1.0,
+        "confidence": 0.5351636092954344,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-01-01-02-01-01.wav",
+      "gold": "neutral",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9651,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.5632808208465576,
+          0.009465384297072887,
+          0.4265901744365692,
+          0.0006636313046328723
+        ],
+        "mapped": {
+          "happy": 0.009465384194043766,
+          "sad": 0.0006636312974093567,
+          "angry": 0.42659016979320663,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.5632808147153402
+        },
+        "coverage": 1.0,
+        "confidence": 0.4693032463912621,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-01-01-02-02-01.wav",
+      "gold": "neutral",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9753,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.8452918529510498,
+          0.050521187484264374,
+          0.10397537052631378,
+          0.00021158682648092508
+        ],
+        "mapped": {
+          "happy": 0.05052118759601174,
+          "sad": 0.00021158682694893212,
+          "angry": 0.10397537075629598,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.8452918548207433
+        },
+        "coverage": 1.0,
+        "confidence": 0.6176540363493543,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-02-01-01-01-01.wav",
+      "gold": "neutral",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9358,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.15685482323169708,
+          0.03741687908768654,
+          0.7992005348205566,
+          0.006527781952172518
+        ],
+        "mapped": {
+          "happy": 0.03741687837331928,
+          "sad": 0.0065277818275433705,
+          "angry": 0.7992005195621302,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.15685482023700717
+        },
+        "coverage": 1.0,
+        "confidence": 0.5488095851182846,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-02-01-01-02-01.wav",
+      "gold": "neutral",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9287,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.19862832129001617,
+          0.24590423703193665,
+          0.3742178678512573,
+          0.18124955892562866
+        ],
+        "mapped": {
+          "happy": 0.24590424069619538,
+          "sad": 0.18124956162645758,
+          "angry": 0.37421787342753815,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.19862832424980886
+        },
+        "coverage": 1.0,
+        "confidence": 0.030954490685716207,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-02-01-02-01-01.wav",
+      "gold": "neutral",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9723,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.6935129165649414,
+          0.029918767511844635,
+          0.2684324085712433,
+          0.008135925978422165
+        ],
+        "mapped": {
+          "happy": 0.029918766954564174,
+          "sad": 0.008135925826878738,
+          "angry": 0.26843240357130016,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.6935129036472569
+        },
+        "coverage": 1.0,
+        "confidence": 0.4582789137429142,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-02-01-02-02-01.wav",
+      "gold": "neutral",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.97,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.8790854811668396,
+          0.011985065415501595,
+          0.10630903393030167,
+          0.002620421350002289
+        ],
+        "mapped": {
+          "happy": 0.01198506539317767,
+          "sad": 0.0026204213451213737,
+          "angry": 0.10630903373228566,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.8790854795294153
+        },
+        "coverage": 1.0,
+        "confidence": 0.6969099351278139,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-02-02-01-01-01.wav",
+      "gold": "neutral",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9206,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.19255302846431732,
+          0.1339402198791504,
+          0.0540303997695446,
+          0.6194763779640198
+        ],
+        "mapped": {
+          "happy": 0.13394021638638706,
+          "sad": 0.6194763618099148,
+          "angry": 0.05403039836059217,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.19255302344310596
+        },
+        "coverage": 1.0,
+        "confidence": 0.24921842694288265,
+        "top_label": "sad"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-02-02-01-02-01.wav",
+      "gold": "neutral",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9413,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.49317461252212524,
+          0.11923358589410782,
+          0.030445387586951256,
+          0.35714641213417053
+        ],
+        "mapped": {
+          "happy": 0.11923358611619768,
+          "sad": 0.35714641279940756,
+          "angry": 0.03044538764366021,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.49317461344073454
+        },
+        "coverage": 1.0,
+        "confidence": 0.22366925885843547,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-03-01-01-01-01.wav",
+      "gold": "happy",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9102,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.4042833149433136,
+          0.12038379907608032,
+          0.4095289409160614,
+          0.0658039003610611
+        ],
+        "mapped": {
+          "happy": 0.12038380445765574,
+          "sad": 0.0658039033027248,
+          "angry": 0.4095289592234325,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.40428333301618696
+        },
+        "coverage": 1.0,
+        "confidence": 0.15915454769537296,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-03-01-01-02-01.wav",
+      "gold": "happy",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.8964,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.12487692385911942,
+          0.06444210559129715,
+          0.807025134563446,
+          0.003655875101685524
+        ],
+        "mapped": {
+          "happy": 0.06444210307060896,
+          "sad": 0.003655874958683971,
+          "angry": 0.8070251029962168,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.12487691897449028
+        },
+        "coverage": 1.0,
+        "confidence": 0.5455236576332542,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-03-01-02-01-01.wav",
+      "gold": "happy",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.97,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.35694441199302673,
+          0.11913768202066422,
+          0.5214171409606934,
+          0.0025007084477692842
+        ],
+        "mapped": {
+          "happy": 0.11913768876121807,
+          "sad": 0.0025007085892539906,
+          "angry": 0.5214171704613539,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.356944432188174
+        },
+        "coverage": 1.0,
+        "confidence": 0.29617445985283364,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-03-01-02-02-01.wav",
+      "gold": "happy",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9657,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.28738299012184143,
+          0.02683347836136818,
+          0.6841418147087097,
+          0.0016416999278590083
+        ],
+        "mapped": {
+          "happy": 0.02683347881432325,
+          "sad": 0.0016416999555712674,
+          "angry": 0.6841418262571753,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.2873829949729301
+        },
+        "coverage": 0.9999999999999999,
+        "confidence": 0.4765501457846987,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-03-02-01-01-01.wav",
+      "gold": "happy",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.8986,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.09649291634559631,
+          0.3721887767314911,
+          0.5056390166282654,
+          0.025679361075162888
+        ],
+        "mapped": {
+          "happy": 0.37218875038777943,
+          "sad": 0.025679359257564597,
+          "angry": 0.5056389808388776,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.09649290951577842
+        },
+        "coverage": 1.0,
+        "confidence": 0.25532884556706004,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-03-02-01-02-01.wav",
+      "gold": "happy",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9212,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.31117504835128784,
+          0.3924914002418518,
+          0.2783767580986023,
+          0.017956798896193504
+        ],
+        "mapped": {
+          "happy": 0.3924913980486352,
+          "sad": 0.01795679879585207,
+          "angry": 0.27837675654305094,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.31117504661246176
+        },
+        "coverage": 0.9999999999999999,
+        "confidence": 0.16431554806046678,
+        "top_label": "happy"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-03-02-02-01-01.wav",
+      "gold": "happy",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9473,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.10785375535488129,
+          0.18588292598724365,
+          0.7057991623878479,
+          0.00046409055357798934
+        ],
+        "mapped": {
+          "happy": 0.18588293820281032,
+          "sad": 0.0004640905840763746,
+          "angry": 0.7057992087704658,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.10785376244264759
+        },
+        "coverage": 1.0,
+        "confidence": 0.4211607296183688,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-03-02-02-02-01.wav",
+      "gold": "happy",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9389,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.14819282293319702,
+          0.11078469455242157,
+          0.7406217455863953,
+          0.00040065855137072504
+        ],
+        "mapped": {
+          "happy": 0.11078470323535165,
+          "sad": 0.0004006585827729887,
+          "angry": 0.7406218036338256,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.14819283454804982
+        },
+        "coverage": 1.0,
+        "confidence": 0.45740407714776565,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-04-01-01-01-01.wav",
+      "gold": "sad",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9171,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.9088708758354187,
+          0.05516985058784485,
+          0.030962610617280006,
+          0.00499672582373023
+        ],
+        "mapped": {
+          "happy": 0.05516984711963247,
+          "sad": 0.00499672550961471,
+          "angry": 0.0309626086708381,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.9088708186999147
+        },
+        "coverage": 1.0,
+        "confidence": 0.7253381019213713,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-04-01-01-02-01.wav",
+      "gold": "sad",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9228,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.5439504981040955,
+          0.07717582583427429,
+          0.23089958727359772,
+          0.14797408878803253
+        ],
+        "mapped": {
+          "happy": 0.07717582583427429,
+          "sad": 0.14797408878803253,
+          "angry": 0.23089958727359772,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.5439504981040955
+        },
+        "coverage": 1.0,
+        "confidence": 0.1703841569134259,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-04-01-02-01-01.wav",
+      "gold": "sad",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9697,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.9582576751708984,
+          0.004972235299646854,
+          0.03078467771410942,
+          0.005985413212329149
+        ],
+        "mapped": {
+          "happy": 0.004972235292700722,
+          "sad": 0.005985413203967623,
+          "angry": 0.030784677671103725,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.9582576738322279
+        },
+        "coverage": 1.0,
+        "confidence": 0.8521091705746806,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-04-01-02-02-01.wav",
+      "gold": "sad",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9733,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.8046146035194397,
+          0.03903871402144432,
+          0.1535235196352005,
+          0.002823097398504615
+        ],
+        "mapped": {
+          "happy": 0.03903871657556839,
+          "sad": 0.0028230975832069342,
+          "angry": 0.1535235296795405,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.8046146561616841
+        },
+        "coverage": 1.0,
+        "confidence": 0.5630175019241253,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-04-02-01-01-01.wav",
+      "gold": "sad",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9153,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.8994994759559631,
+          0.02355133183300495,
+          0.061285071074962616,
+          0.015664175152778625
+        ],
+        "mapped": {
+          "happy": 0.023551330560839575,
+          "sad": 0.015664174306651475,
+          "angry": 0.061285067764544926,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.8994994273679641
+        },
+        "coverage": 1.0,
+        "confidence": 0.6971901278838917,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-04-02-01-02-01.wav",
+      "gold": "sad",
+      "asr_text": "kids are talking by the door.",
+      "asr_confidence": 0.8319,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.41875866055488586,
+          0.09510691463947296,
+          0.358693927526474,
+          0.12744048237800598
+        ],
+        "mapped": {
+          "happy": 0.09510691605667645,
+          "sad": 0.12744048427701718,
+          "angry": 0.3586939328714301,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.4187586667948763
+        },
+        "coverage": 1.0,
+        "confidence": 0.1209798352190542,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-04-02-02-01-01.wav",
+      "gold": "sad",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9656,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.9583789706230164,
+          0.024666406214237213,
+          0.01571369543671608,
+          0.0012408667244017124
+        ],
+        "mapped": {
+          "happy": 0.024666407718928255,
+          "sad": 0.001240866800096608,
+          "angry": 0.01571369639527715,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.9583790290856979
+        },
+        "coverage": 1.0,
+        "confidence": 0.8516681571271886,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-04-02-02-02-01.wav",
+      "gold": "sad",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9686,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.7408484220504761,
+          0.053083378821611404,
+          0.13979409635066986,
+          0.06627406179904938
+        ],
+        "mapped": {
+          "happy": 0.05308338099687245,
+          "sad": 0.0662740645148408,
+          "angry": 0.13979410207917958,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.7408484524091071
+        },
+        "coverage": 1.0,
+        "confidence": 0.3991225582723783,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-05-01-01-01-01.wav",
+      "gold": "angry",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9052,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.0024998411536216736,
+          0.004478704184293747,
+          0.9929231405258179,
+          9.824057633522898e-05
+        ],
+        "mapped": {
+          "happy": 0.004478704513746944,
+          "sad": 9.824058356179957e-05,
+          "angry": 0.9929232135651814,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.002499841337509831
+        },
+        "coverage": 1.0,
+        "confidence": 0.9659820799750785,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-05-01-01-02-01.wav",
+      "gold": "angry",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9135,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.004919190891087055,
+          0.020527023822069168,
+          0.9744518995285034,
+          0.00010186721192440018
+        ],
+        "mapped": {
+          "happy": 0.020527024202771898,
+          "sad": 0.0001018672138136719,
+          "angry": 0.9744519176010941,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.004919190982320417
+        },
+        "coverage": 1.0,
+        "confidence": 0.9047337013974004,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-05-01-02-01-01.wav",
+      "gold": "angry",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9696,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.008917617611587048,
+          0.0015715438639745116,
+          0.9895032644271851,
+          7.543505944340723e-06
+        ],
+        "mapped": {
+          "happy": 0.001571543912050097,
+          "sad": 7.543506175106452e-06,
+          "angry": 0.9895032946973862,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.008917617884388652
+        },
+        "coverage": 1.0,
+        "confidence": 0.9547249668711096,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-05-01-02-02-01.wav",
+      "gold": "angry",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9638,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.022915665060281754,
+          0.006879870779812336,
+          0.9701511859893799,
+          5.3325522458180785e-05
+        ],
+        "mapped": {
+          "happy": 0.006879870454037177,
+          "sad": 5.3325519933114387e-05,
+          "angry": 0.9701511400508489,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.022915663975180786
+        },
+        "coverage": 0.9999999999999999,
+        "confidence": 0.8912874820620611,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-05-02-01-01-01.wav",
+      "gold": "angry",
+      "asr_text": "Kids are talking by the door!",
+      "asr_confidence": 0.9028,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.00026596031966619194,
+          0.020018991082906723,
+          0.9488029479980469,
+          0.03091217204928398
+        ],
+        "mapped": {
+          "happy": 0.02001898965255184,
+          "sad": 0.03091216984061242,
+          "angry": 0.9488028802061724,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.00026596030066335406
+        },
+        "coverage": 1.0,
+        "confidence": 0.8284504433226547,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0033060640562325716,
+          0.008199523203074932,
+          0.0006454696995206177,
+          0.9301157593727112,
+          0.05650143325328827,
+          0.0012317008804529905
+        ],
+        "mapped": {
+          "happy": 0.008988589217146476,
+          "sad": 0.003306064219997535,
+          "angry": 0.9301158054457367,
+          "fear": 0.05693253138158379,
+          "disgust": 0.0,
+          "neutral": 0.0006570097355355557
+        },
+        "coverage": 1.0,
+        "confidence": 0.8320061124564134,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-05-02-01-02-01.wav",
+      "gold": "angry",
+      "asr_text": "Kids are talking by the door!",
+      "asr_confidence": 0.8528,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.001150075113400817,
+          0.006550150457769632,
+          0.9526991844177246,
+          0.03960053250193596
+        ],
+        "mapped": {
+          "happy": 0.006550150834463363,
+          "sad": 0.0396005347793298,
+          "angry": 0.9526992392066661,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.0011500751795406848
+        },
+        "coverage": 1.0,
+        "confidence": 0.8450904650398058,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0033060640562325716,
+          0.008199523203074932,
+          0.0006454696995206177,
+          0.9301157593727112,
+          0.05650143325328827,
+          0.0012317008804529905
+        ],
+        "mapped": {
+          "happy": 0.008988589217146476,
+          "sad": 0.003306064219997535,
+          "angry": 0.9301158054457367,
+          "fear": 0.05693253138158379,
+          "disgust": 0.0,
+          "neutral": 0.0006570097355355557
+        },
+        "coverage": 1.0,
+        "confidence": 0.8320061124564134,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-05-02-02-01-01.wav",
+      "gold": "angry",
+      "asr_text": "Dogs are sitting by the door!",
+      "asr_confidence": 0.8714,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.00024730750010348856,
+          0.0008118770783767104,
+          0.9989336133003235,
+          7.105809800123097e-06
+        ],
+        "mapped": {
+          "happy": 0.0008118771565697329,
+          "sad": 7.105810484493626e-06,
+          "angry": 0.9989337095090237,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.0002473075239220215
+        },
+        "coverage": 0.9999999999999999,
+        "confidence": 0.993521385963619,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.005170917138457298,
+          0.012095076963305473,
+          0.001123452908359468,
+          0.4572460651397705,
+          0.5218568444252014,
+          0.0025075406301766634
+        ],
+        "mapped": {
+          "happy": 0.013577584938496293,
+          "sad": 0.0051709176700003795,
+          "angry": 0.4572461121422608,
+          "fear": 0.5227345373801184,
+          "disgust": 0.0,
+          "neutral": 0.0012708478691241085
+        },
+        "coverage": 1.0,
+        "confidence": 0.5532464632313758,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-05-02-02-02-01.wav",
+      "gold": "angry",
+      "asr_text": "Dogs are sitting by the door!",
+      "asr_confidence": 0.8577,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.0008225934579968452,
+          0.09273079037666321,
+          0.8784139156341553,
+          0.0280326995998621
+        ],
+        "mapped": {
+          "happy": 0.09273079046302549,
+          "sad": 0.028032699625969586,
+          "angry": 0.878413916452242,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.0008225934587629451
+        },
+        "coverage": 1.0,
+        "confidence": 0.6822920770646737,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.005170917138457298,
+          0.012095076963305473,
+          0.001123452908359468,
+          0.4572460651397705,
+          0.5218568444252014,
+          0.0025075406301766634
+        ],
+        "mapped": {
+          "happy": 0.013577584938496293,
+          "sad": 0.0051709176700003795,
+          "angry": 0.4572461121422608,
+          "fear": 0.5227345373801184,
+          "disgust": 0.0,
+          "neutral": 0.0012708478691241085
+        },
+        "coverage": 1.0,
+        "confidence": 0.5532464632313758,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-06-01-01-01-01.wav",
+      "gold": "fear",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9058,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.30429553985595703,
+          0.020235391333699226,
+          0.6700584292411804,
+          0.005410660989582539
+        ],
+        "mapped": {
+          "happy": 0.02023539090024867,
+          "sad": 0.005410660873683915,
+          "angry": 0.6700584148882482,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.30429553333781917
+        },
+        "coverage": 1.0,
+        "confidence": 0.46801542727818324,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-06-01-01-02-01.wav",
+      "gold": "fear",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9076,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.5471887588500977,
+          0.157411590218544,
+          0.26572802662849426,
+          0.02967170439660549
+        ],
+        "mapped": {
+          "happy": 0.1574115776108618,
+          "sad": 0.029671702020087863,
+          "angry": 0.26572800534534413,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.5471887150237063
+        },
+        "coverage": 1.0,
+        "confidence": 0.22274282051728622,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-06-01-02-01-01.wav",
+      "gold": "fear",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.924,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.04084378480911255,
+          0.01504087820649147,
+          0.9434539675712585,
+          0.0006613216828554869
+        ],
+        "mapped": {
+          "happy": 0.015040878924396862,
+          "sad": 0.0006613217144205587,
+          "angry": 0.9434540126025845,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.040843786758598004
+        },
+        "coverage": 1.0,
+        "confidence": 0.817136429662377,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-06-01-02-02-01.wav",
+      "gold": "fear",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9477,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.9159411787986755,
+          0.06704233586788177,
+          0.015018589794635773,
+          0.0019979728385806084
+        ],
+        "mapped": {
+          "happy": 0.06704233068552479,
+          "sad": 0.0019979726841377722,
+          "angry": 0.01501858863370227,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.9159411079966352
+        },
+        "coverage": 1.0,
+        "confidence": 0.7568528438876844,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-06-02-01-01-01.wav",
+      "gold": "fear",
+      "asr_text": "kids are talking by the door.",
+      "asr_confidence": 0.7922,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.01606624573469162,
+          0.36319369077682495,
+          0.33339500427246094,
+          0.2873449921607971
+        ],
+        "mapped": {
+          "happy": 0.36319371513086135,
+          "sad": 0.2873450114287816,
+          "angry": 0.3333950266283396,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.01606624681201742
+        },
+        "coverage": 1.0,
+        "confidence": 0.16412435865493424,
+        "top_label": "happy"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-06-02-01-02-01.wav",
+      "gold": "fear",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.8319,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.03446036949753761,
+          0.6035317778587341,
+          0.1010240986943245,
+          0.2609837055206299
+        ],
+        "mapped": {
+          "happy": 0.6035318070870396,
+          "sad": 0.26098371815975135,
+          "angry": 0.10102410358679796,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.03446037116641114
+        },
+        "coverage": 0.9999999999999999,
+        "confidence": 0.2765000128927818,
+        "top_label": "happy"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-06-02-02-01-01.wav",
+      "gold": "fear",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9111,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.023955198004841805,
+          0.045165494084358215,
+          0.9152564406394958,
+          0.015622922219336033
+        ],
+        "mapped": {
+          "happy": 0.045165491602603344,
+          "sad": 0.015622921360887252,
+          "angry": 0.9152563903479585,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.02395519668855089
+        },
+        "coverage": 0.9999999999999999,
+        "confidence": 0.729271083991436,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-06-02-02-02-01.wav",
+      "gold": "fear",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.883,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.01564805954694748,
+          0.05823160335421562,
+          0.8700591325759888,
+          0.056061215698719025
+        ],
+        "mapped": {
+          "happy": 0.05823160270342675,
+          "sad": 0.05606121507218612,
+          "angry": 0.8700591228523203,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.01564805937206679
+        },
+        "coverage": 1.0,
+        "confidence": 0.6297584510405728,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-07-01-01-01-01.wav",
+      "gold": "disgust",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.8767,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.04686441272497177,
+          0.16633613407611847,
+          0.7134386897087097,
+          0.07336074113845825
+        ],
+        "mapped": {
+          "happy": 0.16633613779402087,
+          "sad": 0.07336074277819864,
+          "angry": 0.7134387056553074,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.046864413772473044
+        },
+        "coverage": 1.0,
+        "confidence": 0.36929925237494987,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-07-01-01-02-01.wav",
+      "gold": "disgust",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.8721,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.021923894062638283,
+          0.5055786967277527,
+          0.3171774446964264,
+          0.155319944024086
+        ],
+        "mapped": {
+          "happy": 0.5055787070866037,
+          "sad": 0.1553199472064514,
+          "angry": 0.3171774511951058,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.021923894511839077
+        },
+        "coverage": 0.9999999999999999,
+        "confidence": 0.21947007383291917,
+        "top_label": "happy"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-07-01-02-01-01.wav",
+      "gold": "disgust",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9374,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.3563631474971771,
+          0.2034711092710495,
+          0.17095157504081726,
+          0.2692142128944397
+        ],
+        "mapped": {
+          "happy": 0.20347110017518252,
+          "sad": 0.2692142008596271,
+          "angry": 0.17095156739868667,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.35636313156650373
+        },
+        "coverage": 1.0,
+        "confidence": 0.028409321161907974,
+        "top_label": "neutral"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-07-01-02-02-01.wav",
+      "gold": "disgust",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9383,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.27298328280448914,
+          0.2538062036037445,
+          0.315677672624588,
+          0.15753287076950073
+        ],
+        "mapped": {
+          "happy": 0.2538061960397304,
+          "sad": 0.15753286607465547,
+          "angry": 0.3156776632166605,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.27298327466895356
+        },
+        "coverage": 1.0,
+        "confidence": 0.020721498129184446,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-07-02-01-01-01.wav",
+      "gold": "disgust",
+      "asr_text": "Kids are talking by the door!",
+      "asr_confidence": 0.9008,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.0003338843525853008,
+          0.010686668567359447,
+          0.9846959710121155,
+          0.004283510614186525
+        ],
+        "mapped": {
+          "happy": 0.01068666819817517,
+          "sad": 0.004283510466207316,
+          "angry": 0.9846959369945667,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.00033388434105084995
+        },
+        "coverage": 1.0,
+        "confidence": 0.935279896850894,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0033060640562325716,
+          0.008199523203074932,
+          0.0006454696995206177,
+          0.9301157593727112,
+          0.05650143325328827,
+          0.0012317008804529905
+        ],
+        "mapped": {
+          "happy": 0.008988589217146476,
+          "sad": 0.003306064219997535,
+          "angry": 0.9301158054457367,
+          "fear": 0.05693253138158379,
+          "disgust": 0.0,
+          "neutral": 0.0006570097355355557
+        },
+        "coverage": 1.0,
+        "confidence": 0.8320061124564134,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-07-02-01-02-01.wav",
+      "gold": "disgust",
+      "asr_text": "Kids are talking by the door!",
+      "asr_confidence": 0.8965,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.005790570750832558,
+          0.7445777654647827,
+          0.11623737961053848,
+          0.1333942860364914
+        ],
+        "mapped": {
+          "happy": 0.7445777640778986,
+          "sad": 0.13339428578802517,
+          "angry": 0.11623737939402949,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.005790570740046779
+        },
+        "coverage": 0.9999999999999999,
+        "confidence": 0.4457836546616706,
+        "top_label": "happy"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0033060640562325716,
+          0.008199523203074932,
+          0.0006454696995206177,
+          0.9301157593727112,
+          0.05650143325328827,
+          0.0012317008804529905
+        ],
+        "mapped": {
+          "happy": 0.008988589217146476,
+          "sad": 0.003306064219997535,
+          "angry": 0.9301158054457367,
+          "fear": 0.05693253138158379,
+          "disgust": 0.0,
+          "neutral": 0.0006570097355355557
+        },
+        "coverage": 1.0,
+        "confidence": 0.8320061124564134,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-07-02-02-01-01.wav",
+      "gold": "disgust",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.7087,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.00473221018910408,
+          0.007105256896466017,
+          0.9697446227073669,
+          0.018417920917272568
+        ],
+        "mapped": {
+          "happy": 0.007105256820367227,
+          "sad": 0.018417920720012776,
+          "angry": 0.9697446123211989,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.004732210138421118
+        },
+        "coverage": 1.0,
+        "confidence": 0.881811175883227,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-07-02-02-02-01.wav",
+      "gold": "disgust",
+      "asr_text": "Dogs are sitting by the door.",
+      "asr_confidence": 0.9062,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.010020939633250237,
+          0.2924790382385254,
+          0.6851286888122559,
+          0.012371400371193886
+        ],
+        "mapped": {
+          "happy": 0.2924790186262789,
+          "sad": 0.012371399541626901,
+          "angry": 0.6851286428708003,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.010020938961293916
+        },
+        "coverage": 1.0,
+        "confidence": 0.48127172890515124,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.003976734355092049,
+          0.0059282416477799416,
+          0.000999102252535522,
+          0.20332399010658264,
+          0.784153938293457,
+          0.001618041773326695
+        ],
+        "mapped": {
+          "happy": 0.0070630703018702045,
+          "sad": 0.003976734162503689,
+          "angry": 0.20332398025985157,
+          "fear": 0.7847202149110836,
+          "disgust": 0.0,
+          "neutral": 0.0009160003646910014
+        },
+        "coverage": 1.0,
+        "confidence": 0.6739325178828977,
+        "top_label": "fear"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-03-01-01-01-02.wav",
+      "gold": "happy",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9209,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.0350666269659996,
+          0.0023250833619385958,
+          0.9624831080436707,
+          0.00012512816465459764
+        ],
+        "mapped": {
+          "happy": 0.0023250834862462468,
+          "sad": 0.00012512817134441724,
+          "angry": 0.9624831595016168,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.03506662884079261
+        },
+        "coverage": 1.0,
+        "confidence": 0.8777180560245653,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-03-01-01-02-02.wav",
+      "gold": "happy",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.958,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.18788796663284302,
+          0.009371435269713402,
+          0.8025857210159302,
+          0.0001548624422866851
+        ],
+        "mapped": {
+          "happy": 0.00937143540690397,
+          "sad": 0.00015486244455375155,
+          "angry": 0.8025857327651647,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.1878879693833776
+        },
+        "coverage": 1.0,
+        "confidence": 0.6135325638130149,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-04-01-01-01-02.wav",
+      "gold": "sad",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9427,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.005899105221033096,
+          0.0005539099220186472,
+          0.991905689239502,
+          0.0016412528930231929
+        ],
+        "mapped": {
+          "happy": 0.0005539099456841301,
+          "sad": 0.001641252963144779,
+          "angry": 0.9919057316181021,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.005899105473068975
+        },
+        "coverage": 1.0,
+        "confidence": 0.9617549057798288,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-04-01-01-02-02.wav",
+      "gold": "sad",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.94,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.004851359874010086,
+          0.000801360874902457,
+          0.9915338158607483,
+          0.002813525265082717
+        ],
+        "mapped": {
+          "happy": 0.0008013608253184615,
+          "sad": 0.0028135250909965734,
+          "angry": 0.9915337545098515,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.004851359573833457
+        },
+        "coverage": 0.9999999999999999,
+        "confidence": 0.9592304893138835,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-05-01-01-01-02.wav",
+      "gold": "angry",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9329,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.0003557960444595665,
+          3.983200804213993e-05,
+          0.999521017074585,
+          8.343357330886647e-05
+        ],
+        "mapped": {
+          "happy": 3.983200490734539e-05,
+          "sad": 8.343356674261177e-05,
+          "angry": 0.9995209384118917,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.00035579601645827926
+        },
+        "coverage": 1.0,
+        "confidence": 0.9967600877594308,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-05-01-01-02-02.wav",
+      "gold": "angry",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9292,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.0004875553713645786,
+          7.485008973162621e-05,
+          0.9994056224822998,
+          3.1904859497444704e-05
+        ],
+        "mapped": {
+          "happy": 7.4850094761336e-05,
+          "sad": 3.190486164135909e-05,
+          "angry": 0.9994056896394704,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.00048755540412689105
+        },
+        "coverage": 1.0,
+        "confidence": 0.996138147762104,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-06-01-01-01-02.wav",
+      "gold": "fear",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9146,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.016203491017222404,
+          0.0019042609492316842,
+          0.9558069109916687,
+          0.026085326448082924
+        ],
+        "mapped": {
+          "happy": 0.001904260969405033,
+          "sad": 0.026085326724425508,
+          "angry": 0.9558069211172906,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.016203491188878857
+        },
+        "coverage": 1.0,
+        "confidence": 0.843434457939508,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-06-01-01-02-02.wav",
+      "gold": "fear",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.935,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.005356915295124054,
+          0.0014063757844269276,
+          0.9749000072479248,
+          0.018336743116378784
+        ],
+        "mapped": {
+          "happy": 0.0014063757261412965,
+          "sad": 0.0183367423564335,
+          "angry": 0.9748999668443123,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.005356915073112845
+        },
+        "coverage": 1.0,
+        "confidence": 0.9023607153596942,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-07-01-01-01-02.wav",
+      "gold": "disgust",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9381,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.0008635950507596135,
+          0.012701690196990967,
+          0.9857478737831116,
+          0.0006868544733151793
+        ],
+        "mapped": {
+          "happy": 0.012701690025465092,
+          "sad": 0.0006868544640397749,
+          "angry": 0.9857478604713976,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.000863595039097473
+        },
+        "coverage": 1.0,
+        "confidence": 0.941786746170952,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    },
+    {
+      "path": "E:\\5th semester\\professional Tranning 2\\Midtram\\Multimodal Mental State Analyser---\\mej031\\data\\ravdess\\03-01-07-01-01-02-02.wav",
+      "gold": "disgust",
+      "asr_text": "Kids are talking by the door.",
+      "asr_confidence": 0.9416,
+      "acoustic": {
+        "raw_labels": [
+          "neu",
+          "hap",
+          "ang",
+          "sad"
+        ],
+        "raw_probs": [
+          0.009375553578138351,
+          0.0878506451845169,
+          0.8986670970916748,
+          0.004106707870960236
+        ],
+        "mapped": {
+          "happy": 0.08785064485724775,
+          "sad": 0.004106707855661557,
+          "angry": 0.898667093743879,
+          "fear": 0.0,
+          "disgust": 0.0,
+          "neutral": 0.009375553543211693
+        },
+        "coverage": 1.0,
+        "confidence": 0.7287542428964809,
+        "top_label": "angry"
+      },
+      "text": {
+        "raw_labels": [
+          "sadness",
+          "joy",
+          "love",
+          "anger",
+          "fear",
+          "surprise"
+        ],
+        "raw_probs": [
+          0.0035422532819211483,
+          0.004814217332750559,
+          0.0006660516373813152,
+          0.8506343364715576,
+          0.13925716280937195,
+          0.001086078118532896
+        ],
+        "mapped": {
+          "happy": 0.005572973777253,
+          "sad": 0.0035422529289302757,
+          "angry": 0.8506342517045653,
+          "fear": 0.13963727623579228,
+          "disgust": 0.0,
+          "neutral": 0.0006132453534591451
+        },
+        "coverage": 1.0,
+        "confidence": 0.7376274241074439,
+        "top_label": "angry"
+      }
+    }
+  ]
+}

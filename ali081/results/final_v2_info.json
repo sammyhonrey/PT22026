@@ -1,0 +1,29 @@
+{
+  "model_file": "sentiment_pipeline_v2.joblib",
+  "model_sha256": "f7b1a2f56d578d92997dc436282abed6c61018714d7471bc093ee820c00116a2",
+  "classifier": "LogisticRegression",
+  "classifier_params": {
+    "C": "10.0",
+    "class_weight": "None",
+    "dual": "False",
+    "fit_intercept": "True",
+    "intercept_scaling": "1",
+    "l1_ratio": "None",
+    "max_iter": "2000",
+    "multi_class": "deprecated",
+    "n_jobs": "None",
+    "penalty": "l2",
+    "random_state": "42",
+    "solver": "liblinear",
+    "tol": "0.0001",
+    "verbose": "0",
+    "warm_start": "False"
+  },
+  "training_reviews": 19993,
+  "from_training_split": 15994,
+  "from_validation_split": 3999,
+  "positive_share": 0.49327264542589905,
+  "scikit_learn_version": "1.7.2",
+  "trained": "2026-11-13T09:31:42",
+  "note": "Fitted on training + validation data. Evaluate once on the untouched test set."
+}

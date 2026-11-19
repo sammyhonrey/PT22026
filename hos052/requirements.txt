@@ -1,0 +1,23 @@
+# AgroGuard AI dependencies
+# Versions below are the ones the project was developed and tested with (Python 3.12).
+
+# Web app framework
+gradio>=6.31.0
+
+# Deep learning
+torch>=2.15.0
+torchvision>=0.29.2
+transformers>=5.22.1
+
+# Classic machine learning and data handling
+scikit-learn>=1.9.1
+pandas>=3.1.0
+numpy>=2.5.4
+joblib>=1.6.0
+
+# Image processing and plotting
+pillow>=12.3.0
+matplotlib>=3.11.2
+
+# Explainable AI (Grad-CAM heatmaps)
+grad-cam>=1.5.7

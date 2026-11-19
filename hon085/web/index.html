@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>See your Life X-ray</title>
+<meta name="description" content="Real-time anatomy mirror with a machine learning pose coach: recognises your pose and lights up the muscles that are working. By Mohammad Kazim Honarjo.">
+<meta name="author" content="Mohammad Kazim Honarjo">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/app.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three/three.module.min.js", "three/addons/": "./vendor/three/addons/" } }
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <svg class="logo" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#f472b6"/></linearGradient></defs>
+      <rect x="1.5" y="1.5" width="37" height="37" rx="11" fill="none" stroke="url(#lg)" stroke-width="2"/>
+      <circle cx="20" cy="11" r="3.6" fill="none" stroke="#e6f6ff" stroke-width="1.8"/>
+      <path d="M20 15v13M13 19.5h14M15 22.5h10M16 25.5h8M20 28l-4.5 7M20 28l4.5 7M13 19.5l-3 7M27 19.5l3 7" stroke="#e6f6ff" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+      <path d="M21.6 21.2c1.4-1.6 3.8-.4 3 1.5-.6 1.4-3 2.6-3 2.6s-2.4-1.2-3-2.6c-.8-1.9 1.6-3.1 3-1.5z" fill="#ff3b5c"/>
+    </svg>
+    <div>
+      <h1>See your Life X-ray</h1>
+      <p>Anatomy mirror · ML pose coach</p>
+    </div>
+  </div>
+  <div class="badge-wrap" title="Author"><canvas id="badge"></canvas><div class="badge-flat">Mohammad Kazim Honarjo<small>AUTHOR · SEE YOUR LIFE X-RAY</small></div></div>
+  <div class="chips" role="status" aria-live="polite">
+    <span class="chip" id="chipTrack"><i></i><b>Idle</b></span>
+    <span class="chip mono" id="chipFps">– fps</span>
+    <span class="chip mono" id="chipQuality">quality –</span>
+    <span class="chip" id="chipEngine">engine –</span>
+  </div>
+</header>
+
+<main class="layout">
+  <section class="stagecol">
+    <div class="stage" id="stage">
+      <canvas id="gl"></canvas>
+      <canvas id="hud"></canvas>
+      <div class="frame-deco" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="readout mono" id="readout" hidden></div>
+      <div class="posebanner" id="poseBanner" hidden></div>
+
+      <div id="intro" class="intro">
+        <div class="intro-card">
+          <div class="eyebrow">Live anatomy · on this computer · no upload</div>
+          <h2>See your <span>Life</span> X-ray</h2>
+          <p>Stand in front of your camera and watch your skeleton, muscles, heart and organs follow your body in 3D. A pose recognition model names the pose you hold, scores your form and lights up the muscles that are working.</p>
+          <div class="intro-actions">
+            <button class="btn primary big" id="btnStart"><svg viewBox="0 0 24 24"><path d="M4 7h3l2-2h6l2 2h3v12H4z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="13" r="3.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Start camera</button>
+            <label class="btn ghost big" for="fileInput"><svg viewBox="0 0 24 24"><path d="M5 4h9l5 5v11H5z M14 4v5h5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 12v5l4-2.5z" fill="currentColor"/></svg>Open a video</label>
+            <input type="file" id="fileInput" accept="video/*" hidden>
+          </div>
+          <p class="fine">Best results: stand 1.5–2.5 m from the camera so your whole upper body (or whole body) is in the picture, with light in front of you. This is an educational visual overlay, not a medical or diagnostic tool.</p>
+        </div>
+      </div>
+
+      <div id="loader" class="loader" hidden>
+        <div class="ring"></div>
+        <div class="loader-text" id="loaderText">Loading…</div>
+        <div class="bar"><i id="loaderBar"></i></div>
+      </div>
+      <div id="toast" class="toast" hidden></div>
+    </div>
+
+    <div class="toolbar" role="toolbar" aria-label="Camera tools">
+      <div class="seg" id="lookSeg" aria-label="Look">
+        <button data-look="xray">X-ray</button><button data-look="anatomy">Anatomical</button><button data-look="holo">Hologram</button>
+      </div>
+      <span class="sp"></span>
+      <button class="tool" id="btnMirror" title="Mirror the picture"><svg viewBox="0 0 24 24"><path d="M12 3v18M9 6 3 18h6zM15 6l6 12h-6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span>Mirror</span></button>
+      <button class="tool" id="btnSnap" title="Save a picture (P)"><svg viewBox="0 0 24 24"><path d="M4 7h3l2-2h6l2 2h3v12H4z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="13" r="3.5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>Photo</span></button>
+      <button class="tool" id="btnRec" title="Record a video (R)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Record</span></button>
+      <button class="tool" id="btnFull" title="Full screen (F)"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>Full screen</span></button>
+      <button class="tool" id="btnStop" title="Stop the camera"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>Stop</span></button>
+    </div>
+  </section>
+
+  <aside class="panel">
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-tab="coach" class="on">Coach</button>
+      <button role="tab" data-tab="layers">Layers</button>
+      <button role="tab" data-tab="view">View</button>
+      <button role="tab" data-tab="fit">Fit</button>
+      <button role="tab" data-tab="data">Data</button>
+      <button role="tab" data-tab="train">Train</button>
+      <button role="tab" data-tab="about">About</button>
+    </nav>
+
+    <section class="pane on" data-pane="coach">
+      <label class="switch first"><input type="checkbox" id="coachOn"><span></span>Recognise my pose</label>
+      <div class="posecard" id="poseCard">
+        <div class="pose-top">
+          <div><div class="pose-name" id="poseName">Start the camera</div><div class="pose-cue" id="poseCue"></div></div>
+          <div class="pose-score" title="Form score, 0 to 100"><b id="poseScore">–</b><span>form</span></div>
+        </div>
+        <div class="pose-stats mono"><span id="poseConf"></span><span id="poseHold"></span><span id="poseReps"></span></div>
+        <ul class="pose-hints" id="poseHints"></ul>
+      </div>
+      <h3>Muscles working</h3>
+      <div class="mchips" id="muscleChips"><span class="hint">Hold one of the poses the model knows.</span></div>
+      <label class="switch"><input type="checkbox" id="coachMuscles"><span></span>Light up these muscles on my body</label>
+      <h3>Model output</h3>
+      <div class="probs" id="probBars"></div>
+      <h3>Session</h3>
+      <div class="btnrow">
+        <button class="btn ghost" id="btnSummary">Show summary</button>
+        <button class="btn ghost" id="btnCoachReset">Reset</button>
+      </div>
+      <table class="metrics mono" id="sessionTable"></table>
+      <h3>Analyse a photo</h3>
+      <label class="btn ghost wide" for="photoInput">Choose a picture</label>
+      <input type="file" id="photoInput" accept="image/*" hidden>
+      <div class="photo" id="photoResult" hidden><canvas id="photoCanvas"></canvas><p id="photoText"></p></div>
+      <p class="hint">The picture is analysed by the Python server on this computer: pose landmarks first, then the trained classifier.</p>
+    </section>
+
+    <section class="pane" data-pane="layers">
+      <h3>Quick presets</h3>
+      <div class="presets">
+        <button data-preset="coach">Coach view</button>
+        <button data-preset="skeleton">Skeleton</button>
+        <button data-preset="muscles">Muscles</button>
+        <button data-preset="heart">Heart &amp; vessels</button>
+        <button data-preset="organs">Organs</button>
+        <button data-preset="all">Everything</button>
+      </div>
+      <h3>Layers</h3>
+      <div class="layerlist" id="layerList"></div>
+      <h3>Labels</h3>
+      <label class="switch"><input type="checkbox" id="labels"><span></span>Show anatomy labels</label>
+      <div class="row"><label for="maxLabels">How many labels <b id="maxLabelsV"></b></label><input type="range" id="maxLabels" min="2" max="16" step="2"></div>
+      <label class="switch"><input type="checkbox" id="heartbeat"><span></span>Animated heartbeat <em>(illustration, not measured)</em></label>
+    </section>
+
+    <section class="pane" data-pane="view">
+      <h3>Look</h3>
+      <div class="row"><label for="bright">Brightness <b id="brightV"></b></label><input type="range" id="bright" min="0.3" max="2.2" step="0.01"></div>
+      <div class="row"><label for="opacity">Solid opacity <b id="opacityV"></b></label><input type="range" id="opacity" min="0.2" max="1" step="0.01"></div>
+      <h3>Mixed reality</h3>
+      <div class="row"><label for="real">Real me showing through <b id="realV"></b></label><input type="range" id="real" min="0" max="1" step="0.01"></div>
+      <div class="row"><label for="dim">Calm background <b id="dimV"></b></label><input type="range" id="dim" min="0" max="1" step="0.01"></div>
+      <label class="switch"><input type="checkbox" id="mask"><span></span>Keep anatomy inside my body outline</label>
+      <div class="row"><label for="feather">Edge softness <b id="featherV"></b></label><input type="range" id="feather" min="0" max="1" step="0.01"></div>
+      <h3>Reveal</h3>
+      <div class="row"><label for="reveal">Show</label>
+        <select id="reveal">
+          <option value="whole">Whole body</option>
+          <option value="left">My left side only</option>
+          <option value="right">My right side only</option>
+          <option value="upper">Upper body only</option>
+          <option value="lower">Lower body only</option>
+          <option value="lens">X-ray lens (follows your finger)</option>
+        </select></div>
+      <div class="row" id="cutRow"><label for="cut" id="cutLabel">Cut position</label><input type="range" id="cut" min="0" max="1" step="0.005"></div>
+      <h3>Camera</h3>
+      <div class="row"><label for="camSel">Camera</label><select id="camSel"><option value="">Default camera</option></select></div>
+      <div class="row"><label for="resSel">Resolution</label>
+        <select id="resSel"><option value="640">640 × 480 (fastest)</option><option value="1280">1280 × 720 (recommended)</option><option value="1920">1920 × 1080 (sharpest)</option></select></div>
+    </section>
+
+    <section class="pane" data-pane="fit">
+      <h3>Tracking</h3>
+      <div class="row"><label for="model">Body model</label>
+        <select id="model"><option value="lite">Lite (fastest)</option><option value="full">Full (balanced)</option><option value="heavy">Heavy (most precise)</option></select></div>
+      <label class="switch"><input type="checkbox" id="hands"><span></span>Finger tracking (every finger bone)</label>
+      <label class="switch"><input type="checkbox" id="boneLock"><span></span>Keep bone lengths constant (steadier depth)</label>
+      <div class="row"><label for="smooth">Smoothness <b id="smoothV"></b></label><input type="range" id="smooth" min="0" max="1" step="0.01"></div>
+      <button class="btn ghost wide" id="btnCalib">Calibrate to my body (stand still 3 s)</button>
+      <p class="hint" id="calibInfo">Bone lengths are learned automatically in the first seconds.</p>
+      <h3>Fit the anatomy to me</h3>
+      <div class="row"><label for="fsize">Overall size <b id="fsizeV"></b></label><input type="range" id="fsize" min="0.75" max="1.3" step="0.005"></div>
+      <div class="row"><label for="fwidth">Width <b id="fwidthV"></b></label><input type="range" id="fwidth" min="0.75" max="1.3" step="0.005"></div>
+      <div class="row"><label for="fdepth">Depth <b id="fdepthV"></b></label><input type="range" id="fdepth" min="0.7" max="1.3" step="0.005"></div>
+      <div class="row"><label for="fhead">Head size <b id="fheadV"></b></label><input type="range" id="fhead" min="0.75" max="1.3" step="0.005"></div>
+      <div class="row"><label for="fshift">Up / down <b id="fshiftV"></b></label><input type="range" id="fshift" min="-0.25" max="0.25" step="0.005"></div>
+      <button class="linkbtn" id="btnFitReset">Reset fit</button>
+    </section>
+
+    <section class="pane" data-pane="data">
+      <h3>Live measurements</h3>
+      <div class="quality"><div class="qbar"><i id="qBar"></i></div><span id="qText" class="mono">–</span></div>
+      <table class="metrics mono" id="metrics"></table>
+      <div class="row"><label for="chartSel">Chart</label><select id="chartSel"></select></div>
+      <canvas id="chart" class="chart" width="600" height="180"></canvas>
+      <h3>Record the data</h3>
+      <div class="btnrow">
+        <button class="btn ghost" id="btnDataRec">● Start data recording</button>
+        <button class="btn ghost" id="btnCsv" disabled>Download CSV</button>
+        <button class="btn ghost" id="btnReport" disabled>Download report</button>
+      </div>
+      <p class="hint" id="dataInfo">Records every tracked frame: time, all 33 body points in metres, joint angles and tracking quality.</p>
+      <label class="switch"><input type="checkbox" id="points"><span></span>Show tracking points on the picture</label>
+      <label class="switch"><input type="checkbox" id="readoutOn"><span></span>Show engine readout on the picture</label>
+    </section>
+
+    <section class="pane" data-pane="train">
+      <h3>Current model</h3>
+      <table class="metrics" id="modelTable"></table>
+      <h3>Teach a new pose</h3>
+      <p class="hint">Start the camera, stand so your whole body is visible, name the pose and record. Move a little while recording so the model sees some variation. Record a pose two or three times, then train.</p>
+      <div class="row"><label for="teachName">Pose name</label><input type="text" id="teachName" maxlength="24" placeholder="for example arms_up" autocomplete="off"></div>
+      <p class="hint">Muscles this pose works (optional)</p>
+      <div class="picks" id="teachMuscles"></div>
+      <button class="btn ghost wide" id="btnTeach">Record 5 seconds</button>
+      <p class="hint" id="teachInfo"></p>
+      <table class="metrics" id="sampleTable"></table>
+      <h3>Train</h3>
+      <div class="row"><label for="algoSel">Algorithm</label><select id="algoSel"></select></div>
+      <button class="btn primary wide" id="btnTrain">Train the model</button>
+      <p class="hint" id="trainInfo">Training runs in Python on this computer and takes a few seconds.</p>
+    </section>
+
+    <section class="pane about" data-pane="about">
+      <div class="author">
+        <div class="avatar">MKH</div>
+        <div><b>Mohammad Kazim Honarjo</b><span>Author &amp; developer · Student ID 20243120085</span></div>
+      </div>
+      <p><b>See your Life X-ray</b> tracks 33 body points and 21 points on each hand with MediaPipe BlazePose. A Python server (FastAPI, scikit-learn) turns the body points into 76 pose features and a classifier trained for this project recognises the pose, scores the form and reports the working muscles. A 3D anatomy dataset of one adult is split into 45 body segments and bent to follow you every frame.</p>
+      <p class="warn">Educational visual overlay. It shows where structures typically sit in an average adult body, scaled to you. It is not a scan of you and not a medical or diagnostic tool. The heartbeat animation is an illustration, not your pulse.</p>
+      <h3>References &amp; licences</h3>
+      <ul class="refs">
+        <li>Anatomy models: <b>BodyParts3D</b>, © The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan. Simplified, re-oriented and rigged for this app; shared under the same licence. Mitsuhashi N. et al., <i>Nucleic Acids Res.</i> 2009;37:D782-5.</li>
+        <li>Training data: yoga pose images from the <b>TensorFlow pose classification tutorial</b> (Apache License 2.0) and the <b>Dual-View Squat Movement Dataset</b> (nihar787airobotics, GitHub). Neither is shipped with the app; a script downloads them.</li>
+        <li>Machine learning: <b>scikit-learn</b> (BSD 3-Clause), <b>FastAPI</b> (MIT), <b>NumPy</b> (BSD).</li>
+        <li>Body &amp; hand tracking: <b>MediaPipe Tasks Vision</b> (Pose Landmarker, Hand Landmarker), © Google, Apache License 2.0. Bazarevsky V. et al., <i>BlazePose</i>, 2020.</li>
+        <li>3D engine: <b>three.js</b> r170, MIT License.</li>
+        <li>Badge font: <b>Droid Sans Bold</b>, Apache License 2.0.</li>
+        <li>Idea inspired by the head-only web demo <b>X-Ray Mirror</b> by masterofvfx2070. This app is a new program written from scratch; none of that demo's code is used.</li>
+        <li>Smoothing: One Euro filter, Casiez G., Roussel N., Vogel D., CHI 2012.</li>
+      </ul>
+      <p class="hint">Your camera picture stays in the browser. Only the 33 body points are sent to the Python server on this same computer.</p>
+    </section>
+  </aside>
+</main>
+<video id="video" playsinline muted></video>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

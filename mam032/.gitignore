@@ -1,0 +1,42 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Python environments, caches and build output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.coverage
+coverage.xml
+htmlcov/
+*.egg-info/
+build/
+dist/
+.build/
+
+# Local datasets, trained models and generated experiment files
+data/
+artifacts/
+checkpoints/
+reports/
+*.joblib
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.ckpt
+*.tmp
+*.log
+
+# Local secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Archives and temporary exports
+*.zip

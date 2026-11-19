@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# Model weights and datasets (large files - downloaded at runtime / from Kaggle)
+model/*.keras
+models/*.keras
+model/*.h5
+models/*.h5
+model/*.part
+models/*.part
+data/
+chest_xray/
+
+# Generated output
+reports/
+.gradio/
+flagged/
+
+# OS
+.DS_Store
+Thumbs.db

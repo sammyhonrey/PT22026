@@ -1,0 +1,71 @@
+{
+    "project_name": "Weather Prediction System",
+    "model_name": "Random Forest",
+    "target_column": "RainTomorrow",
+    "target_classes": [
+        "No",
+        "Yes"
+    ],
+    "positive_class": "Yes",
+    "numeric_features": [
+        "MinTemp",
+        "MaxTemp",
+        "Rainfall",
+        "Evaporation",
+        "Sunshine",
+        "WindGustSpeed",
+        "WindSpeed9am",
+        "WindSpeed3pm",
+        "Humidity9am",
+        "Humidity3pm",
+        "Pressure9am",
+        "Pressure3pm",
+        "Cloud9am",
+        "Cloud3pm",
+        "Temp9am",
+        "Temp3pm"
+    ],
+    "categorical_features": [
+        "Location",
+        "WindGustDir",
+        "WindDir9am",
+        "WindDir3pm",
+        "RainToday",
+        "Month"
+    ],
+    "feature_columns": [
+        "MinTemp",
+        "MaxTemp",
+        "Rainfall",
+        "Evaporation",
+        "Sunshine",
+        "WindGustSpeed",
+        "WindSpeed9am",
+        "WindSpeed3pm",
+        "Humidity9am",
+        "Humidity3pm",
+        "Pressure9am",
+        "Pressure3pm",
+        "Cloud9am",
+        "Cloud3pm",
+        "Temp9am",
+        "Temp3pm",
+        "Location",
+        "WindGustDir",
+        "WindDir9am",
+        "WindDir3pm",
+        "RainToday",
+        "Month"
+    ],
+    "training_start_date": "2007-11-01",
+    "training_end_date": "2015-08-07",
+    "testing_start_date": "2015-08-08",
+    "testing_end_date": "2017-06-25",
+    "metrics": {
+        "Accuracy": 0.8142957039919735,
+        "Precision": 0.5604251123041525,
+        "Recall": 0.7093329635279434,
+        "F1-Score": 0.6261476312890195,
+        "ROC-AUC": 0.8621458983786885
+    }
+}

@@ -1,0 +1,6 @@
+#the exact versions that work on my machine
+gradio==5.50.0
+transformers==4.57.6
+torch==2.15.0
+datasets==5.0.1
+tqdm

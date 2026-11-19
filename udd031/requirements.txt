@@ -1,0 +1,19 @@
+# ---------------------------------------------------------------------------
+# Multimodal Mental State Analyser - runtime dependencies
+# Python 3.13 (verified on Windows 11); CPU-only by default.
+# Install:  python -m venv .venv && . .venv/Scripts/activate && pip install -r requirements.txt
+# ---------------------------------------------------------------------------
+torch>=2.6,<3
+transformers>=4.46,<5
+accelerate>=1.0,<2
+librosa>=0.10.2
+soundfile>=0.13
+numpy>=1.26,<3
+scipy>=1.11
+pandas>=2.1
+scikit-learn>=1.4
+plotly>=5.20
+matplotlib>=3.8
+gradio>=5.0,<6
+PyYAML>=6.0
+pytest>=8.0

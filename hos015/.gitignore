@@ -1,0 +1,48 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local environment configuration
+.env
+.env.*
+!.env.example
+
+# Model checkpoints
+models/
+checkpoints/
+hf_cache/
+.cache/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+pytorch_model.bin
+
+# Local image datasets
+data/
+datasets/
+test_images/
+
+# Generated images and analysis
+results/
+results_yoloe/
+outputs/
+
+# Temporary files
+*.log
+*.tmp

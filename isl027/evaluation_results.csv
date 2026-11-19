@@ -1,0 +1,17 @@
+﻿Test Type,Test Name,Expected,Predicted,Score,Level,Result
+Skill Extraction,Software Developer,"aws, django, machine learning, python, sql","aws, django, machine learning, python, sql",,,PASS
+Skill Extraction,Frontend Developer,"css, html, javascript, python, react","css, html, javascript, python, react",,,PASS
+Skill Extraction,Data Analyst,"excel, numpy, pandas, power bi, python","excel, numpy, pandas, power bi, python",,,PASS
+Skill Extraction,Unrelated Profile,None,None,,,PASS
+Skill Extraction,Cloud Developer,"aws, docker, git, kubernetes, linux","aws, docker, git, kubernetes, linux",,,PASS
+Candidate Matching,Candidate A - Strong Skill Match,"aws, django, machine learning, python, sql","aws, django, machine learning, python, sql",93.5,Strong match,PASS
+Candidate Matching,Candidate B - Partial Skill Match,python,python,40.7,Low match,PASS
+Candidate Matching,Candidate C - Low Skill Match,None,None,12.6,Low match,PASS
+Fake Job Detector,Registration Fee Request,1,1,,,PASS
+Fake Job Detector,Suspicious Payment Method,1,1,,,PASS
+Fake Job Detector,Crypto Job Offer,1,1,,,PASS
+Fake Job Detector,Suspicious Messaging Recruitment,1,1,,,PASS
+Fake Job Detector,Normal Company Application,0,0,,,PASS
+Fake Job Detector,Normal Technical Job,0,0,,,PASS
+Fake Job Detector,Normal Internship,0,0,,,PASS
+Fake Job Detector,Normal Data Analyst Vacancy,0,0,,,PASS

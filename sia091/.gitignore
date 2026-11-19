@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+data/
+*.pth
+*.pt
+*.bin
+*.safetensors
+.ipynb_checkpoints/
+eval/figures/
+
+# Local backup files
+*_backup.py
+*_backup.csv

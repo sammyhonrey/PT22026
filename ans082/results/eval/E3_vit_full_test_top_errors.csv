@@ -1,0 +1,13 @@
+path,true,pred,confidence
+/content/data/garbage_classification/paper/paper906.jpg,paper,metal,0.9968
+/content/data/garbage_classification/clothes/clothes4150.jpg,clothes,shoes,0.9928
+/content/data/garbage_classification/clothes/clothes4319.jpg,clothes,shoes,0.9913
+/content/data/garbage_classification/plastic/plastic155.jpg,plastic,metal,0.9885
+/content/data/garbage_classification/clothes/clothes2162.jpg,clothes,shoes,0.9761
+/content/data/garbage_classification/clothes/clothes5045.jpg,clothes,shoes,0.9757
+/content/data/garbage_classification/clothes/clothes4465.jpg,clothes,shoes,0.9709
+/content/data/garbage_classification/paper/paper699.jpg,paper,cardboard,0.9457
+/content/data/garbage_classification/plastic/plastic541.jpg,plastic,metal,0.9418
+/content/data/garbage_classification/shoes/shoes379.jpg,shoes,glass,0.9375
+/content/data/garbage_classification/white-glass/white-glass120.jpg,glass,plastic,0.9282
+/content/data/garbage_classification/white-glass/white-glass51.jpg,glass,plastic,0.9227

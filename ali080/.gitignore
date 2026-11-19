@@ -1,0 +1,29 @@
+# Environments
+venv/
+.venv/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model weights and large files
+*.pt
+*.pth
+*.onnx
+*.weights
+*.zip
+
+# Datasets and training outputs
+datasets/
+runs/
+checkpoints/
+
+# Gradio and notebooks
+.gradio/
+.ipynb_checkpoints/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/

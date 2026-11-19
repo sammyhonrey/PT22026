@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pt
+*.safetensors
+*.bin
+checkpoints/
+data/
+.env
+models/

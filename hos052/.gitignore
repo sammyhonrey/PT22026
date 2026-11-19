@@ -1,0 +1,30 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Large files: datasets and model weights must NOT be uploaded
+data/*
+!data/.gitkeep
+models/*
+!models/.gitkeep
+*.pth
+*.pt
+*.h5
+*.ckpt
+*.safetensors
+*.pkl
+*.joblib
+*.zip
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/

@@ -1,0 +1,16 @@
+{
+  "experiment": "E3_vit_full",
+  "model": "vit",
+  "total_parameters": 85806346,
+  "trainable_parameters": 85806346,
+  "epochs_logged": 8,
+  "best_epoch": 7,
+  "best_val_macro_f1": 0.9825,
+  "best_val_acc": 0.9858,
+  "total_train_time_s": 1251.2,
+  "mean_epoch_time_s": 156.4,
+  "device": "Tesla T4",
+  "fp16": true,
+  "seed": 42,
+  "torch_version": "2.14.1+cu130"
+}

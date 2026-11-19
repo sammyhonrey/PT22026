@@ -1,0 +1,22 @@
+Rows: 549346 -> 507195 after removing duplicate URLs
+Class counts (0=safe, 1=phishing):
+y
+0    392897
+1    114298
+Name: count, dtype: int64
+Training Random Forest WITHOUT augmentation...
+=== random_forest, no augmentation ===
+              precision    recall  f1-score   support
+
+        safe       0.92      0.98      0.95     78579
+    phishing       0.90      0.69      0.78     22860
+
+    accuracy                           0.91    101439
+   macro avg       0.91      0.83      0.86    101439
+weighted avg       0.91      0.91      0.91    101439
+
+ROC-AUC: 0.9522
+Domain-only test (path removed): safe recall=0.00, phishing recall=1.00, phishing precision=0.23, phishing F1=0.37, ROC-AUC=0.4523
+phishing probability 0.98 <- www.wikipedia.org
+phishing probability 1.00 <- https://github.com
+phishing probability 0.91 <- paypa1-secure-login.xyz

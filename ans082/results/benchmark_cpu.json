@@ -1,0 +1,49 @@
+{
+  "machine": {
+    "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+    "system": "Windows-10-10.0.26300-SP0",
+    "torch": "2.15.0+cpu",
+    "threads": 4,
+    "python": "3.11.0"
+  },
+  "settings": {
+    "batch_size": 1,
+    "repeats": 30,
+    "warmup": 5,
+    "image": "plastic_001.jpg"
+  },
+  "models": [
+    {
+      "experiment": "E1_resnet50",
+      "checkpoint_mb": 94.4,
+      "parameters_m": 23.53,
+      "preprocess": {
+        "mean_ms": 24.5,
+        "median_ms": 24.7,
+        "p95_ms": 28.0
+      },
+      "forward": {
+        "mean_ms": 151.2,
+        "median_ms": 137.8,
+        "p95_ms": 190.4
+      },
+      "total_median_ms": 162.5
+    },
+    {
+      "experiment": "E3_vit_full",
+      "checkpoint_mb": 343.3,
+      "parameters_m": 85.81,
+      "preprocess": {
+        "mean_ms": 15.3,
+        "median_ms": 15.1,
+        "p95_ms": 17.5
+      },
+      "forward": {
+        "mean_ms": 283.9,
+        "median_ms": 280.6,
+        "p95_ms": 303.0
+      },
+      "total_median_ms": 295.7
+    }
+  ]
+}

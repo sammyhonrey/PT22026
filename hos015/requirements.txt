@@ -1,0 +1,20 @@
+
+# SceneSense - MaskFormer dependencies
+
+# Deep learning
+torch>=2.2
+
+# Pretrained model and image processing
+transformers>=4.57,<5.0
+safetensors>=0.4.5
+scipy>=1.11,<2.0
+
+# Images and numerical operations
+numpy>=1.26,<3.0
+Pillow>=10.0
+
+# Interactive application
+gradio>=6.0,<7.0
+
+# Automated tests
+pytest>=8.0

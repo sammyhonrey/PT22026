@@ -1,0 +1,348 @@
+{
+  "name": "smallcnn_weather",
+  "model": "smallcnn",
+  "weather_p": 0.5,
+  "temperature": 0.9697213768959045,
+  "val_nll_raw": 0.012585915625095367,
+  "val_nll_temp": 0.012572643347084522,
+  "clean": {
+    "accuracy": 0.9885193982581156,
+    "ece_raw": 0.0017939040279539046,
+    "ece_temp": 0.002174758139528764,
+    "mean_confidence_temp": 0.9903848171234131
+  },
+  "reliability_clean_raw": [
+    {
+      "lo": 0.0,
+      "hi": 0.1,
+      "count": 0,
+      "confidence": null,
+      "accuracy": null
+    },
+    {
+      "lo": 0.1,
+      "hi": 0.2,
+      "count": 1,
+      "confidence": 0.1122061163187027,
+      "accuracy": 0.0
+    },
+    {
+      "lo": 0.2,
+      "hi": 0.30000000000000004,
+      "count": 5,
+      "confidence": 0.25764697790145874,
+      "accuracy": 0.0
+    },
+    {
+      "lo": 0.30000000000000004,
+      "hi": 0.4,
+      "count": 18,
+      "confidence": 0.3373244106769562,
+      "accuracy": 0.3333333333333333
+    },
+    {
+      "lo": 0.4,
+      "hi": 0.5,
+      "count": 37,
+      "confidence": 0.4581926167011261,
+      "accuracy": 0.43243243243243246
+    },
+    {
+      "lo": 0.5,
+      "hi": 0.6000000000000001,
+      "count": 52,
+      "confidence": 0.5501741766929626,
+      "accuracy": 0.46153846153846156
+    },
+    {
+      "lo": 0.6000000000000001,
+      "hi": 0.7000000000000001,
+      "count": 58,
+      "confidence": 0.6558957695960999,
+      "accuracy": 0.6724137931034483
+    },
+    {
+      "lo": 0.7000000000000001,
+      "hi": 0.8,
+      "count": 74,
+      "confidence": 0.7521491646766663,
+      "accuracy": 0.6621621621621622
+    },
+    {
+      "lo": 0.8,
+      "hi": 0.9,
+      "count": 97,
+      "confidence": 0.8592549562454224,
+      "accuracy": 0.865979381443299
+    },
+    {
+      "lo": 0.9,
+      "hi": 1.0,
+      "count": 12288,
+      "confidence": 0.9987890124320984,
+      "accuracy": 0.998291015625
+    }
+  ],
+  "reliability_clean_temp": [
+    {
+      "lo": 0.0,
+      "hi": 0.1,
+      "count": 0,
+      "confidence": null,
+      "accuracy": null
+    },
+    {
+      "lo": 0.1,
+      "hi": 0.2,
+      "count": 1,
+      "confidence": 0.11563105881214142,
+      "accuracy": 0.0
+    },
+    {
+      "lo": 0.2,
+      "hi": 0.30000000000000004,
+      "count": 4,
+      "confidence": 0.25495412945747375,
+      "accuracy": 0.0
+    },
+    {
+      "lo": 0.30000000000000004,
+      "hi": 0.4,
+      "count": 19,
+      "confidence": 0.34287747740745544,
+      "accuracy": 0.3157894736842105
+    },
+    {
+      "lo": 0.4,
+      "hi": 0.5,
+      "count": 35,
+      "confidence": 0.46391117572784424,
+      "accuracy": 0.42857142857142855
+    },
+    {
+      "lo": 0.5,
+      "hi": 0.6000000000000001,
+      "count": 50,
+      "confidence": 0.5523704290390015,
+      "accuracy": 0.42
+    },
+    {
+      "lo": 0.6000000000000001,
+      "hi": 0.7000000000000001,
+      "count": 55,
+      "confidence": 0.6582049131393433,
+      "accuracy": 0.6727272727272727
+    },
+    {
+      "lo": 0.7000000000000001,
+      "hi": 0.8,
+      "count": 71,
+      "confidence": 0.7530009150505066,
+      "accuracy": 0.6619718309859155
+    },
+    {
+      "lo": 0.8,
+      "hi": 0.9,
+      "count": 92,
+      "confidence": 0.856855571269989,
+      "accuracy": 0.8369565217391305
+    },
+    {
+      "lo": 0.9,
+      "hi": 1.0,
+      "count": 12303,
+      "confidence": 0.9988263249397278,
+      "accuracy": 0.9982930992440868
+    }
+  ],
+  "selective_clean": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.9953285827395091,
+      "accuracy_on_answered": 0.9914883461936203
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.98701504354711,
+      "accuracy_on_answered": 0.995186908390823
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.9741092636579572,
+      "accuracy_on_answered": 0.9982930992440868
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.966904196357878,
+      "accuracy_on_answered": 0.998689813298395
+    }
+  ],
+  "conditions": [
+    {
+      "condition": "fog",
+      "severity": 1,
+      "accuracy": 0.9894695170229612,
+      "ece_raw": 0.0018044146852934783,
+      "ece_temp": 0.0020465009911421242,
+      "mean_confidence_temp": 0.9892156720161438
+    },
+    {
+      "condition": "fog",
+      "severity": 3,
+      "accuracy": 0.9838479809976247,
+      "ece_raw": 0.0028193152361414564,
+      "ece_temp": 0.0025864221733756876,
+      "mean_confidence_temp": 0.9849575161933899
+    },
+    {
+      "condition": "fog",
+      "severity": 5,
+      "accuracy": 0.9293745051464767,
+      "ece_raw": 0.006500210128695094,
+      "ece_temp": 0.005594183518739318,
+      "mean_confidence_temp": 0.9321185946464539
+    },
+    {
+      "condition": "night",
+      "severity": 1,
+      "accuracy": 0.9856690419635787,
+      "ece_raw": 0.0029554044903032112,
+      "ece_temp": 0.002901345115045837,
+      "mean_confidence_temp": 0.9869227409362793
+    },
+    {
+      "condition": "night",
+      "severity": 3,
+      "accuracy": 0.9176563737133808,
+      "ece_raw": 0.007264867620815477,
+      "ece_temp": 0.007937426872179796,
+      "mean_confidence_temp": 0.921185314655304
+    },
+    {
+      "condition": "night",
+      "severity": 5,
+      "accuracy": 0.6709422011084719,
+      "ece_raw": 0.03170612648613193,
+      "ece_temp": 0.038019806566638635,
+      "mean_confidence_temp": 0.7089620232582092
+    },
+    {
+      "condition": "rain",
+      "severity": 1,
+      "accuracy": 0.9883610451306414,
+      "ece_raw": 0.0019934513524281364,
+      "ece_temp": 0.002404034921128156,
+      "mean_confidence_temp": 0.989891529083252
+    },
+    {
+      "condition": "rain",
+      "severity": 3,
+      "accuracy": 0.9847189231987332,
+      "ece_raw": 0.003333396128926723,
+      "ece_temp": 0.0038266900505041883,
+      "mean_confidence_temp": 0.9867045283317566
+    },
+    {
+      "condition": "rain",
+      "severity": 5,
+      "accuracy": 0.9647664291369754,
+      "ece_raw": 0.005681273405479189,
+      "ece_temp": 0.0065134809683545375,
+      "mean_confidence_temp": 0.9702476859092712
+    },
+    {
+      "condition": "blur",
+      "severity": 1,
+      "accuracy": 0.9885193982581156,
+      "ece_raw": 0.0022598593548140413,
+      "ece_temp": 0.002357471714818232,
+      "mean_confidence_temp": 0.9902203679084778
+    },
+    {
+      "condition": "blur",
+      "severity": 3,
+      "accuracy": 0.9889152810768013,
+      "ece_raw": 0.002157465992045651,
+      "ece_temp": 0.001736636281674238,
+      "mean_confidence_temp": 0.9895582795143127
+    },
+    {
+      "condition": "blur",
+      "severity": 5,
+      "accuracy": 0.9720506730007917,
+      "ece_raw": 0.006872047656175174,
+      "ece_temp": 0.007127896663883958,
+      "mean_confidence_temp": 0.9782014489173889
+    },
+    {
+      "condition": "noise",
+      "severity": 1,
+      "accuracy": 0.9880443388756928,
+      "ece_raw": 0.0015218505861498825,
+      "ece_temp": 0.0018866010393685164,
+      "mean_confidence_temp": 0.9890734553337097
+    },
+    {
+      "condition": "noise",
+      "severity": 3,
+      "accuracy": 0.9688044338875693,
+      "ece_raw": 0.0029540195542012036,
+      "ece_temp": 0.003723558361154655,
+      "mean_confidence_temp": 0.9715574979782104
+    },
+    {
+      "condition": "noise",
+      "severity": 5,
+      "accuracy": 0.8965162311955661,
+      "ece_raw": 0.011296891033507837,
+      "ece_temp": 0.012344667064180834,
+      "mean_confidence_temp": 0.9053982496261597
+    },
+    {
+      "condition": "glare",
+      "severity": 1,
+      "accuracy": 0.9701504354711006,
+      "ece_raw": 0.006156563413161986,
+      "ece_temp": 0.007206009748382225,
+      "mean_confidence_temp": 0.9768106341362
+    },
+    {
+      "condition": "glare",
+      "severity": 3,
+      "accuracy": 0.8987331749802059,
+      "ece_raw": 0.04029127098649437,
+      "ece_temp": 0.04234263943899079,
+      "mean_confidence_temp": 0.9408859610557556
+    },
+    {
+      "condition": "glare",
+      "severity": 5,
+      "accuracy": 0.24465558194774348,
+      "ece_raw": 0.2171064855095798,
+      "ece_temp": 0.22744002892493445,
+      "mean_confidence_temp": 0.4720956087112427
+    }
+  ],
+  "selective_sev3_pooled": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.9743599894431249,
+      "accuracy_on_answered": 0.9736717363923236
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.9513855898653999,
+      "accuracy_on_answered": 0.9838826009764758
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.9196621799947216,
+      "accuracy_on_answered": 0.9922659702691844
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.9038268672472948,
+      "accuracy_on_answered": 0.994568708754307
+    }
+  ]
+}

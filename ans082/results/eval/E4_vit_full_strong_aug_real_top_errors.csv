@@ -1,0 +1,13 @@
+path,true,pred,confidence
+/content/drive/MyDrive/SmartSort_AI/real_photos/paper/paper_004.jpg,paper,clothes,0.9856
+/content/drive/MyDrive/SmartSort_AI/real_photos/cardboard/cardboard_013.jpg,cardboard,paper,0.9679
+/content/drive/MyDrive/SmartSort_AI/real_photos/plastic/plastic_009.jpg,plastic,metal,0.9659
+/content/drive/MyDrive/SmartSort_AI/real_photos/plastic/plastic_002.jpg,plastic,glass,0.9618
+/content/drive/MyDrive/SmartSort_AI/real_photos/cardboard/cardboard_011.jpg,cardboard,paper,0.9486
+/content/drive/MyDrive/SmartSort_AI/real_photos/trash/trash_023.jpg,trash,plastic,0.9353
+/content/drive/MyDrive/SmartSort_AI/real_photos/biological/biological_004.jpg,biological,plastic,0.9123
+/content/drive/MyDrive/SmartSort_AI/real_photos/plastic/plastic_003.jpg,plastic,metal,0.9051
+/content/drive/MyDrive/SmartSort_AI/real_photos/cardboard/cardboard_005.jpg,cardboard,plastic,0.8988
+/content/drive/MyDrive/SmartSort_AI/real_photos/plastic/plastic_023.jpg,plastic,metal,0.8808
+/content/drive/MyDrive/SmartSort_AI/real_photos/cardboard/cardboard_008.jpg,cardboard,paper,0.8795
+/content/drive/MyDrive/SmartSort_AI/real_photos/plastic/plastic_007.jpg,plastic,metal,0.876

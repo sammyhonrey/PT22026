@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# pip transient working directories (created in the project folder by some
+# installs; never source files)
+pip-*/
+
+# pytest temp roots (this machine resolves tempfile to the working directory)
+pytest-of-*/
+pytest-*/
+
+# headless-browser scratch profiles used while capturing UI screenshots
+mrs-chrome-*/
+mrs-chrome-*.txt
+
+# Virtual environments
+.venv/
+venv/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Dataset files: large, downloaded rather than committed (see docs/dataset.md)
+data/*.csv
+data/*.parquet
+data/*.zip
+data/*.gz
+data/*.json
+!data/.gitkeep
+
+# Cached intermediates and models
+*.npz
+*.pkl
+*.joblib
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# LaTeX scratch files for the report
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.synctex.gz
+
+# The Arabic catalogue is small (~3 MB) MusicBrainz metadata released under CC0,
+# and rebuilding it takes many slow API calls, so it is committed on purpose.
+!data/arabic_catalogue*.csv
+!data/arabic_catalogue*_provenance.json
+!data/arabic_artist_aliases.json

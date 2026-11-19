@@ -1,0 +1,90 @@
+{
+  "source": "MusicBrainz",
+  "licence": "CC0 1.0 Universal (public domain dedication)",
+  "retrieved_at": "2026-11-18T12:11:52+00:00",
+  "purpose": "Corrected Yemeni catalogue (Phase 12.1): verified MBIDs only",
+  "verified_seeds": [
+    {
+      "label": "Abu Bakr Salem",
+      "arabic": "أبو بكر سالم",
+      "mbid": "b0b889b4-e694-41ec-9092-e510edd51bc9",
+      "mb_name": "ابو بكر سالم بلفقيه",
+      "area": "Yemen",
+      "releases": 40,
+      "tracks": 166
+    },
+    {
+      "label": "Mohammed Morshed Naji",
+      "arabic": "محمد مرشد ناجي",
+      "mbid": "a4bfc9b8-087b-4756-9c25-2cbc1d0cfc5a",
+      "mb_name": "محمد مرشد ناجي",
+      "area": "Yemen",
+      "releases": 3,
+      "tracks": 31
+    },
+    {
+      "label": "Mohammed Al-Harithi",
+      "arabic": "محمد الحارثي",
+      "mbid": "4bd7a78f-b2de-4ba8-ae73-d532f852fc7e",
+      "mb_name": "Muhammad Hamud Al‐Harithi",
+      "area": "Yemen",
+      "releases": 1,
+      "tracks": 7
+    }
+  ],
+  "unresolved_seeds": [
+    {
+      "label": "Fouad Al-Kibsi",
+      "arabic": "فؤاد الكبسي",
+      "reason": "no MusicBrainz artist record for this name"
+    },
+    {
+      "label": "Ali bin Ali Al-Ansi",
+      "arabic": "علي بن علي الآنسي",
+      "reason": "MusicBrainz only has the different artist علي بن محمد"
+    },
+    {
+      "label": "Faisal Al-Radhi",
+      "arabic": "فيصل الرضي",
+      "reason": "MusicBrainz only has the different artist فيصل علوي"
+    },
+    {
+      "label": "Ayoub Tarish",
+      "arabic": "أيوب طارش",
+      "reason": "resolved earlier but no releases"
+    },
+    {
+      "label": "Ahmed Fathi",
+      "arabic": "أحمد فتحي",
+      "reason": "resolved earlier but no releases"
+    },
+    {
+      "label": "Ahmed Al-Sunaidar",
+      "arabic": "أحمد السنيدار",
+      "reason": "resolved earlier but no releases"
+    },
+    {
+      "label": "Ali Al-Sumaie",
+      "arabic": "علي السميعة",
+      "reason": "no verifiable MusicBrainz artist"
+    },
+    {
+      "label": "Huda Al-Yamani",
+      "arabic": "هدى اليماني",
+      "reason": "no verifiable MusicBrainz artist"
+    }
+  ],
+  "rows_before_dedup": 204,
+  "tracks": 187,
+  "dedup_removed": 17,
+  "multi_artist_credit_rows": 5,
+  "regions": [
+    "Yemen"
+  ],
+  "traditions": [
+    "Yemeni Sanaani",
+    "Yemeni traditional"
+  ],
+  "region_source": "curated (project editorial label)",
+  "genre_source": "curated (project editorial label)"
+}

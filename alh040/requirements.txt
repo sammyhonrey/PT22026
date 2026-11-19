@@ -1,0 +1,10 @@
+# Python 3.10 - 3.12 recommended
+# Install with:  pip install -r requirements.txt
+
+gradio>=5.0,<6.0          # web interface
+transformers>=4.44,<5.0   # loads the T5 model from Hugging Face
+torch>=2.6                # runs the model (CPU is fine)
+sentencepiece>=0.2        # T5 tokenizer
+datasets>=2.19            # downloads the JFLEG dataset (quiz + evaluation)
+matplotlib>=3.8           # charts
+pytest>=8.0               # unit tests (python -m pytest tests/)

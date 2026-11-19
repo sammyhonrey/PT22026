@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.env
+
+# Never commit datasets, weights or checkpoints
+data/
+datasets/
+checkpoints/
+outputs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.zip
+*.csv
+!evaluation/results/*.csv
+
+# Notebooks / OS / editors
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/

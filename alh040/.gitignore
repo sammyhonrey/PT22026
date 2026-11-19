@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Downloaded data and model files (too large / re-downloadable - see README)
+data/
+models/
+*.bin
+*.safetensors
+*.pt
+.cache/
+
+# Gradio
+.gradio/
+flagged/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Note: results/ (small charts + metrics.json) is intentionally NOT ignored,
+# so the evaluation results are visible in the repository.

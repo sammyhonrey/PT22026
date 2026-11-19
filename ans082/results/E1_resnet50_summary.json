@@ -1,0 +1,16 @@
+{
+  "experiment": "E1_resnet50",
+  "model": "resnet50",
+  "total_parameters": 23528522,
+  "trainable_parameters": 23528522,
+  "epochs_logged": 8,
+  "best_epoch": 8,
+  "best_val_macro_f1": 0.9682,
+  "best_val_acc": 0.9755,
+  "total_train_time_s": 949.3000000000001,
+  "mean_epoch_time_s": 118.66250000000001,
+  "device": "Tesla T4",
+  "fp16": true,
+  "seed": 42,
+  "torch_version": "2.14.1+cu130"
+}

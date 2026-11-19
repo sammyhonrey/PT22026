@@ -1,0 +1,166 @@
+[
+  {
+    "model": "distilbert/distilbert-base-cased-distilled-squad",
+    "questions": 100,
+    "EM": 37.0,
+    "F1": 39.06,
+    "HasAns_EM": 77.08,
+    "HasAns_F1": 81.37,
+    "NoAns_EM": 0.0,
+    "avg_seconds_per_question": 0.538,
+    "example_failures": [
+      {
+        "question": "What increases or decreases in response to static friction?",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "increases or decreases"
+      },
+      {
+        "question": "What would Henry David Thoreau quote to audiences in India?",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "Masque of Anarchy"
+      },
+      {
+        "question": "What revolution was fought in the 1899's?",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "French Revolution"
+      },
+      {
+        "question": "How are the rates of social goods in countries with lower inequality?",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "life expectancy by country, educational performance, trust among strangers, women's status, social mobility, even numbers of patents issued"
+      },
+      {
+        "question": "What is held inside the formal legal ownership registration system in many developing countries?",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "land and housing"
+      },
+      {
+        "question": "In what year were there 5751 Filipinos in Jacksonville",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "2010"
+      },
+      {
+        "question": "What changes the way a mineral is deposited?",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "heat and pressure"
+      },
+      {
+        "question": "What was done to counteract the overpopulation of mnemiopsis in The Black Sea?",
+        "gold": [
+          "introduction of Beroe"
+        ],
+        "prediction": "over-fishing and long-term environmental changes"
+      },
+      {
+        "question": "Of what form do Euler primes take?",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "2p − 1"
+      },
+      {
+        "question": "What seminal paper was written by Juris Hartmanis and Richard Stearns in 1975?",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "On the Computational Complexity of Algorithms"
+      }
+    ]
+  },
+  {
+    "model": "deepset/roberta-base-squad2",
+    "questions": 100,
+    "EM": 79.0,
+    "F1": 82.3,
+    "HasAns_EM": 79.17,
+    "HasAns_F1": 86.04,
+    "NoAns_EM": 78.85,
+    "avg_seconds_per_question": 1.094,
+    "example_failures": [
+      {
+        "question": "In what year were there 5751 Filipinos in Jacksonville",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "2000"
+      },
+      {
+        "question": "What conviction did many Poles have regarding how the Varsovians thought of themselves?",
+        "gold": [
+          "as better"
+        ],
+        "prediction": "better only because they lived in the capital"
+      },
+      {
+        "question": "How many modern types of algorithm tests for general numbers n are there?",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "deterministic algorithms"
+      },
+      {
+        "question": "Where did Fresno residents move to during the flooding?",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "Millerton"
+      },
+      {
+        "question": "What should be avoided when talking to authorities?",
+        "gold": [
+          "suspect's talking to criminal investigators"
+        ],
+        "prediction": "<no answer>"
+      },
+      {
+        "question": "How did the black death make it to the Mediterranean and Europe?",
+        "gold": [
+          "merchant ships."
+        ],
+        "prediction": "Oriental rat fleas"
+      },
+      {
+        "question": "What kind of sediment particles are there?",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "swirling"
+      },
+      {
+        "question": "How many billionaires are now living in Cambridge?",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "62"
+      },
+      {
+        "question": "Where was the famous artist Tamara de Maria born?",
+        "gold": [
+          "<no answer>"
+        ],
+        "prediction": "Warsaw"
+      },
+      {
+        "question": "What document formed the Parliament of Victoria?",
+        "gold": [
+          "Victoria Constitution Act 1855"
+        ],
+        "prediction": "<no answer>"
+      }
+    ]
+  }
+]

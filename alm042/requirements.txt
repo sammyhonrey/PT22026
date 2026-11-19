@@ -1,0 +1,23 @@
+# Core runtime
+torch
+torchaudio
+numpy
+soundfile
+
+# Pretrained TTS engine (Kokoro-82M).
+# Weights are downloaded from Hugging Face on first use (about 330 MB).
+kokoro
+
+# Document to speech (PDF and DOCX text extraction).
+pypdf
+python-docx
+
+# MP3 export. Bundles the LAME encoder, so no FFmpeg is required.
+lameenc
+
+# Testing
+pytest
+
+# Optional: Gradio front-end (python app_gradio.py).
+# The bundled interface (python app.py) needs no extra packages.
+# gradio

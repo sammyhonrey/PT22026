@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "timestamp_columns": ["timestamp", "datetime"],
+  "energy_columns": ["energy_kwh", "consumption_kwh"],
+  "header_case": "insensitive",
+  "row_order": "ascending_required",
+  "minimum_history_rows": 169,
+  "minimum_backtest_rows": 193,
+  "maximum_bytes": 20971520,
+  "maximum_columns": 32,
+  "maximum_rows": 100000,
+  "timestamp_format": "YYYY-MM-DD HH:mm[:ss[.fraction]][Z|+HH:mm|-HH:mm] (T is also accepted)",
+  "timestamp_minimum": "1677-09-21T00:12:43.145224193",
+  "timestamp_maximum": "2262-04-11T23:47:16.854775807",
+  "timestamp_pattern": "^\\d{4}-\\d{2}-\\d{2}[T ]\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,9})?)?(?:Z|[+-]\\d{2}:\\d{2})?$",
+  "energy_pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)(?:[eE][+-]?\\d+)?$",
+  "interval_seconds": 3600,
+  "require_whole_hour": true,
+  "timezone_policy": "Use one consistent explicit offset or all naive timestamps. XKY aware uploads convert to UTC; naive XKY uploads are interpreted as UTC. UCI keeps supplied wall-clock labels because its source timezone is unconfirmed.",
+  "extra_columns": "ignored_within_column_limit",
+  "duplicate_semantic_headers": "rejected"
+}

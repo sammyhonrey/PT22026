@@ -1,0 +1,6 @@
+| experiment | model | trainable_params_M | total_params_M | best_epoch | best_val_acc | best_val_macro_f1 | total_train_min | mean_epoch_s |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| E1_resnet50 | resnet50 | 23.529 | 23.53 | 8 | 0.9755 | 0.9682 | 15.8 | 118.7 |
+| E2_vit_head_only | vit | 0.008 | 85.81 | 7 | 0.978 | 0.971 | 17.5 | 131.6 |
+| E3_vit_full | vit | 85.806 | 85.81 | 7 | 0.9858 | 0.9825 | 20.9 | 156.4 |
+| E4_vit_full_strong_aug | vit | 85.806 | 85.81 | 5 | 0.9841 | 0.9777 | 25.7 | 192.7 |

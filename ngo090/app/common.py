@@ -1,0 +1,290 @@
+"""Pieces shared by every mode: loaders and the policy and cost settings."""
+from __future__ import annotations
+
+import os
+import re
+import sys
+from pathlib import Path
+
+# The app lives in app/, the shared code in ../src: add the project root and this folder.
+APP_DIR = Path(__file__).resolve().parent
+ROOT = APP_DIR.parent
+for _p in (str(ROOT), str(APP_DIR)):
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
+
+import streamlit as st  # noqa: E402
+
+from src.artifacts import load_engine, load_run  # noqa: E402
+from src.audit import AuditLog  # noqa: E402
+from src.assistant import RiskPilot  # noqa: E402
+from src.cases import CaseStore  # noqa: E402
+from src.chat import ChatStore  # noqa: E402
+from src.decision import PRESETS, CostConfig, Policy  # noqa: E402
+from src.agent import InvestigationAgent, LLMWriter  # noqa: E402
+from src.proposals import ProposalStore  # noqa: E402
+from src.tools import Toolkit  # noqa: E402
+
+MIN_EXPLAIN_RISK = 80.0     # the policy cannot flag anything below this risk (see the review slider)
+CASES_DB = "FRAUD_CASES_DB"  # environment override, used by tests and for throwaway databases
+AUDIT_DB = "FRAUD_AUDIT_DB"  # same, for the decision log
+PROPOSALS_DB = "FRAUD_PROPOSALS_DB"   # same, for the assistant's recommendations
+CHAT_DB = "FRAUD_CHAT_DB"             # same, for the conversation with the assistant
+
+
+# --------------------------------------------------------------------------- #
+# Cached loading
+# --------------------------------------------------------------------------- #
+@st.cache_resource(show_spinner="Loading the risk engine...")
+def get_engine(tag: str):
+    return load_engine(ROOT, tag)
+
+
+@st.cache_data(show_spinner="Loading replay data...")
+def get_run(tag: str):
+    return load_run(ROOT, tag)
+
+
+@st.cache_resource(show_spinner=False)
+def get_band_stats(tag: str):
+    """How often each score band was fraud on the labelled replay window (src.verdict).
+
+    Scored once per engine and shared by every session: it is a property of the run,
+    not of the transaction being looked at.
+    """
+    from src.verdict import band_stats
+
+    return band_stats(get_engine(tag), get_run(tag).replay)
+
+
+def cases_path() -> Path:
+    """Where investigation cases live: data/cases.db unless the environment says otherwise."""
+    override = os.environ.get(CASES_DB)
+    return Path(override) if override else ROOT / "data" / "cases.db"
+
+
+@st.cache_resource(show_spinner=False)
+def get_case_store(path: str) -> CaseStore:
+    """One store per database file, shared by every page and session."""
+    return CaseStore(path)
+
+
+def audit_path() -> Path:
+    """Where the decision log lives: data/audit.db unless the environment says otherwise."""
+    override = os.environ.get(AUDIT_DB)
+    return Path(override) if override else ROOT / "data" / "audit.db"
+
+
+@st.cache_resource(show_spinner=False)
+def get_audit_log(path: str) -> AuditLog:
+    """One audit log per database file: the live page writes, the audit page reads."""
+    return AuditLog(path)
+
+
+def audits() -> AuditLog:
+    """The shared audit log at the default (or overridden) location."""
+    return get_audit_log(str(audit_path()))
+
+
+def toolkit(tag: str, policy: Policy | None = None, corpus=None) -> Toolkit:
+    """The tool layer (src/tools.py), wired to what this app has already loaded.
+
+    The pages call the same functions a script or a future agent calls; this
+    only supplies the engine, the policy in the sidebar and the two stores at
+    their configured paths.
+    """
+    return Toolkit(get_engine(tag), policy=policy, cases=get_case_store(str(cases_path())),
+                   audit=get_audit_log(str(audit_path())), corpus=corpus, model_tag=tag)
+
+
+# --------------------------------------------------------------------------- #
+# The investigation assistant (src/agent.py, src/proposals.py)
+# --------------------------------------------------------------------------- #
+def proposals_path() -> Path:
+    """Where the assistant's recommendations live: data/proposals.db by default."""
+    override = os.environ.get(PROPOSALS_DB)
+    return Path(override) if override else ROOT / "data" / "proposals.db"
+
+
+@st.cache_resource(show_spinner=False)
+def get_proposal_store(path: str) -> ProposalStore:
+    """One queue per database file: the case pop-up files, the approvals page reads."""
+    return ProposalStore(path)
+
+
+def proposals() -> ProposalStore:
+    return get_proposal_store(str(proposals_path()))
+
+
+def live_feed():
+    """The live stream of this session, or None when the analyst never started one.
+
+    Two things need it: the corpus to compare a transaction against, and the
+    original row (the case only keeps the amount and the type, and the engine
+    needs the balances). Without it the assistant says what it could not check
+    instead of guessing.
+    """
+    stream = st.session_state.get("live_stream")
+    if stream is None or getattr(stream, "rows", None) is None or stream.rows.empty:
+        return None
+    return stream
+
+
+def agent_for(tools: Toolkit) -> InvestigationAgent:
+    """Ready-to-run assistant for this session: live feed in, proposal queue out."""
+    stream = live_feed()
+    return InvestigationAgent(
+        tools, proposals=proposals(),
+        corpus=None if stream is None else stream.rows,
+        lookup=None if stream is None else stream.get,
+        writer=LLMWriter() if LLMWriter.available() else None)
+
+
+# --------------------------------------------------------------------------- #
+# The conversation (src/chat.py, src/assistant.py)
+# --------------------------------------------------------------------------- #
+def chat_path() -> Path:
+    """Where the transcripts live: data/chat.db by default."""
+    override = os.environ.get(CHAT_DB)
+    return Path(override) if override else ROOT / "data" / "chat.db"
+
+
+@st.cache_resource(show_spinner=False)
+def get_chat_store(path: str) -> ChatStore:
+    """One transcript store per database file: every case page reads the same one."""
+    return ChatStore(path)
+
+
+def chats() -> ChatStore:
+    return get_chat_store(str(chat_path()))
+
+
+def pilot_for(tools: Toolkit) -> RiskPilot:
+    """RiskPilot wired to this session: same tools, queue and feed as the panel."""
+    return RiskPilot(tools, proposals=proposals(), chat=chats(), agent=agent_for(tools))
+
+
+# --------------------------------------------------------------------------- #
+# Policy and cost settings (the same widgets in every mode)
+# --------------------------------------------------------------------------- #
+def popover():
+    return st.popover if hasattr(st, "popover") else st.expander
+
+
+def set_policy_widgets(block: float, capacity: int, review_min: int) -> None:
+    st.session_state.block_risk = 100.0 if block >= 100 else float(block)
+    st.session_state.capacity = int(capacity)
+    st.session_state.review_min = int(review_min)
+
+
+def apply_preset() -> None:
+    preset = PRESETS.get(st.session_state.preset)
+    if preset is not None:
+        set_policy_widgets(preset.block_threshold, preset.daily_capacity, preset.review_min_score)
+
+
+def mark_custom() -> None:
+    st.session_state.preset = "Custom"              # a slider was moved by hand
+
+
+def apply_recommendation() -> None:
+    block, capacity = st.session_state.get("advisor_rec", (None, None))
+    if block is not None:
+        set_policy_widgets(block, capacity, st.session_state.get("review_min", 90))
+        st.session_state.preset = "Custom"
+
+
+def render_policy_popover() -> Policy:
+    with popover()("Decision policy"):
+        st.selectbox("Preset", [*PRESETS, "Custom"], key="preset", on_change=apply_preset,
+                     help="Balanced is the default. Light touch raises fewer alerts, Strict raises more. "
+                          "Moving a slider switches to Custom.")
+        block_risk = st.slider("Auto-block above risk score", 90.0, 100.0, 99.5, 0.1, key="block_risk",
+                               on_change=mark_custom,
+                               help="Transactions at or above this risk are blocked automatically. 100 = never block.")
+        capacity = st.slider("Daily review capacity", 0, 1000, 150, 10, key="capacity", on_change=mark_custom,
+                             help="How many transactions the review team can check per simulated day.")
+        review_min = st.slider("Only review above risk score", int(MIN_EXPLAIN_RISK), 99, 90, 1, key="review_min",
+                               on_change=mark_custom, help="Reviewers skip transactions that look clearly normal.")
+    return Policy(block_threshold=float("inf") if block_risk >= 100 else float(block_risk),
+                  review_min_score=float(review_min), daily_capacity=int(capacity), capacity_mode="rolling")
+
+
+# --------------------------------------------------------------------------- #
+# The page in the URL, so a reload lands where the analyst was
+# --------------------------------------------------------------------------- #
+# Streamlit throws session state away when the tab reloads -- the mode button
+# that was pressed is forgotten and the app falls back to the first page. The
+# query string survives, so the page is mirrored there and read back on the
+# first run of a new session.
+PAGE_SLUGS = {
+    "Live simulation": "live",
+    "Historical replay": "replay",
+    "Transaction testing": "testing",
+    "Scenario comparison": "compare",
+    "Model insights": "model",
+    "Cases": "cases",
+    "Case": "case",
+    "Audit": "audit",
+    "Approvals": "approvals",
+}
+MODE_BY_SLUG = {slug: mode for mode, slug in PAGE_SLUGS.items()}
+DEFAULT_PAGE = "Live simulation"
+
+
+def page_params(mode: str, case: int | None = None) -> dict[str, str]:
+    """The query string for a page: {"page": "case", "case": "C-0007"}.
+
+    The case number only rides along on the case page -- on the list it would
+    be a leftover that reopens a page the analyst already left.
+    """
+    params = {"page": PAGE_SLUGS.get(mode, PAGE_SLUGS[DEFAULT_PAGE])}
+    if mode == "Case" and case is not None:
+        params["case"] = f"C-{int(case):04d}"
+    return params
+
+
+def page_from_params(params: dict) -> tuple[str, int | None]:
+    """The page a query string asks for, and the case it names, if any.
+
+    Falls back to the live feed: a stale or hand-edited URL must never open a
+    page that does not exist. A case page without a case number becomes the
+    list instead, which is the page it would have been reached from.
+    """
+    mode = MODE_BY_SLUG.get(str(params.get("page", "") or "").lower(), DEFAULT_PAGE)
+    found = re.fullmatch(r"C-(\d+)", str(params.get("case", "") or "").strip().upper())
+    case = int(found.group(1)) if found else None
+    if mode == "Case" and case is None:
+        mode = "Cases"
+    return mode, case
+
+
+def remember_page(mode: str, case: int | None = None) -> None:
+    """Write the visible page into the URL -- only when it changed.
+
+    Writing on every run would push the query string (and, in some versions, a
+    rerun) on each repaint; the comparison keeps it silent.
+    """
+    wanted = page_params(mode, case)
+    if dict(st.query_params) == wanted:
+        return
+    for key in list(st.query_params):
+        if key not in wanted:
+            del st.query_params[key]
+    for key, value in wanted.items():
+        if st.query_params.get(key) != value:
+            st.query_params[key] = value
+
+
+def restore_page() -> tuple[str, int | None]:
+    """The page the URL asks for. Read once, when the session has no mode yet."""
+    return page_from_params(dict(st.query_params))
+
+
+def render_costs_popover() -> CostConfig:
+    with popover()("Costs"):
+        review_cost = st.slider("Cost of one review", 0, 20_000, 1_000, 100, key="review_cost")
+        friction_cost = st.slider("Cost of blocking a legitimate customer", 0, 50_000, 5_000, 500, key="friction_cost")
+        catch_rate = st.slider("Share of reviewed fraud analysts stop (%)", 0, 100, 100, 5, key="catch_rate")
+    return CostConfig(review_cost=float(review_cost), friction_cost=float(friction_cost),
+                      review_catch_rate=catch_rate / 100)

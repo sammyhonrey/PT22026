@@ -1,0 +1,160 @@
+SENT: SOCCER - JAPAN GET LUCKY WIN , CHINA IN SURPRISE DEFEAT .
+GOLD: JAPAN [LOC] | CHINA [PER]
+BERT-FT: JAPAN [ORG] | LUCKY [MISC] | CHINA [ORG]
+
+SENT: Three FBI agents who testified against Rashid during the trial , held at Korydallos prison , said they had ample evidence against Rashid for a bomb planted on a Pan American plane in Brazil in 1982 and a mid-air bomb blast on a TWA airliner approaching Athens in 1986 which killed four U.S. citizens .
+GOLD: FBI [ORG] | Rashid [PER] | Korydallos [LOC] | Rashid [PER] | Pan American [MISC] | Brazil [LOC] | TWA [ORG] | Athens [LOC] | U.S. [LOC]
+BERT-FT: FBI [ORG] | Rashid [PER] | Korydallos [LOC] | Rashid [PER] | Pan American [MISC] | Brazil [LOC] | TWA [ORG] | Athens [LOC] | U.S. [MISC]
+
+SENT: " I think Homestake could come in as a white knight , but how much is someone willing to come in above the Newmont number .
+GOLD: Homestake [ORG] | Newmont [ORG]
+BERT-FT: Homestake [ORG] | Newmont [LOC]
+
+SENT: I think that this fidelity to our beers is a factor which can limit the Czech beers , " he said .
+GOLD: Czech [LOC]
+BERT-FT: Czech [MISC]
+
+SENT: Philadelphia 6 DALLAS 3
+GOLD: Philadelphia [LOC] | DALLAS [LOC]
+BERT-FT: Philadelphia [ORG] | DALLAS [ORG]
+
+SENT: Homestake Mining Co tops Wall Street 's list as the most likely white knight buyer for Santa Fe Pacific Gold Corp if Santa Fe rejects unsolicited suitor Newmont Mining Corp .
+GOLD: Homestake Mining Co [ORG] | Wall Street [LOC] | Santa Fe Pacific Gold Corp [ORG] | Santa Fe [ORG] | Newmont Mining Corp [ORG]
+BERT-FT: Homestake Mining Co [ORG] | Wall Street [ORG] | Santa Fe Pacific Gold Corp [ORG] | Santa Fe [ORG] | Newmont Mining Corp [ORG]
+
+SENT: Information technology firm Electronic Data Systems said on Friday it had bagged a contract for the first air traffic control project being funded under the Private Finance Initiative .
+GOLD: Electronic Data Systems [ORG]
+BERT-FT: Electronic Data Systems [ORG] | Private [MISC] | Finance Initiative [ORG]
+
+SENT: SOCCER - ENGLISHMAN CHARLTON IS MADE AN HONORARY IRISHMAN .
+GOLD: ENGLISHMAN [MISC] | CHARLTON [PER] | IRISHMAN [MISC]
+BERT-FT: ENGLISHMAN [MISC] | CHARLTON [MISC] | HONORARY [MISC] | IRISHMAN [MISC]
+
+SENT: ATLANTIC DIVISION
+GOLD: ATLANTIC [LOC]
+BERT-FT: ATLANTIC DIVISION [MISC]
+
+SENT: The basket comprises Algeria 's Saharan Blend , Indonesia 's Minas , Nigeria 's Bonny Light , Saudi Arabia 's Arabian Light , Dubai of the UAE , Venezuela 's Tia Juana and Mexico 's Isthmus .
+GOLD: Algeria [LOC] | Saharan Blend [MISC] | Indonesia [LOC] | Minas [MISC] | Nigeria [LOC] | Bonny Light [MISC] | Saudi Arabia [LOC] | Arabian Light [MISC] | Dubai [MISC] | UAE [LOC] | Venezuela [LOC] | Tia Juana [MISC] | Mexico [LOC] | Isthmus [MISC]
+BERT-FT: Algeria [LOC] | Saharan Blend [MISC] | Indonesia [LOC] | Minas [ORG] | Nigeria [LOC] | Bonny Light [MISC] | Saudi Arabia [LOC] | Arabian [ORG] | Light [MISC] | Dubai [LOC] | UAE [LOC] | Venezuela [LOC] | Tia Juana [PER] | Mexico [LOC] | Isthmus [ORG]
+
+SENT: There is the international prestige Singapore would enjoy , but " more importantly there is a genuine national interest in fostering better global free trade and an open market " , said Tan Kong Yam , head of Business Policy at the National University of Singapore .
+GOLD: Singapore [LOC] | Tan Kong Yam [PER] | National University of Singapore [ORG]
+BERT-FT: Singapore [LOC] | Tan Kong Yam [PER] | Policy [ORG] | National University of Singapore [ORG]
+
+SENT: Electronic Data bags flight data contract .
+GOLD: Electronic Data [ORG]
+BERT-FT: Electronic Data bags [ORG]
+
+SENT: The BILO stores are located in Malysia 's capital Kuala Lumpur and in the country 's second city Johor Bahru .
+GOLD: BILO [MISC] | Malysia [LOC] | Kuala Lumpur [LOC] | Johor Bahru [LOC]
+BERT-FT: BILO [ORG] | Malysia [ORG] | Kuala Lumpur [LOC] | Johor Bahru [LOC]
+
+SENT: NFL AMERICAN FOOTBALL-COLTS CLOBBER EAGLES TO STAY IN PLAYOFF HUNT .
+GOLD: NFL [ORG] | EAGLES [ORG]
+BERT-FT: NFL AMERICAN [MISC] | CLOBBER [PER]
+
+SENT: 4-1 Barcelona Barcelona
+GOLD: Barcelona [ORG] | Barcelona [ORG]
+BERT-FT: Barcelona Barcelona [ORG]
+
+SENT: Texas / w Okla fed cattle roundup - USDA .
+GOLD: Texas [LOC] | Okla [LOC] | USDA [ORG]
+BERT-FT: Texas [LOC] | Okla [PER] | USDA [ORG]
+
+SENT: " I think his views on ( U.S. Treasury Secretary Robert ) Rubin 's comments were indeed what he himself thinks about the dollar , " said Hank Note , chief dealer at Sumitomo Bank .
+GOLD: U.S. Treasury [ORG] | Robert [PER] | Rubin [PER] | Hank Note [PER] | Sumitomo Bank [ORG]
+BERT-FT: U.S. [LOC] | Treasury [ORG] | Robert [PER] | Rubin [PER] | Hank Note [PER] | Sumitomo Bank [ORG]
+
+SENT: It 's a sudden plunge that takes its toll , " said Carlos Ponce , research director at Santander .
+GOLD: Carlos Ponce [PER] | Santander [LOC]
+BERT-FT: Carlos Ponce [PER] | Santander [ORG]
+
+SENT: CRICKET - AUSTRALIA BEAT WEST INDIES BY FIVE WICKETS .
+GOLD: AUSTRALIA [LOC] | WEST INDIES [LOC]
+BERT-FT: AUSTRALIA [LOC]
+
+SENT: He said his firm would be better off concentrating on its leading brand , Zywiec Full Light , which accounts for 85 percent of sales and is the country 's largest-selling brand .
+GOLD: Zywiec [ORG] | Full Light [MISC]
+BERT-FT: Zywiec Full Light [MISC]
+
+SENT: ALPINE SKIING-WOMEN 'S WORLD CUP STANDINGS .
+GOLD: WORLD CUP [MISC]
+BERT-FT: 'S [MISC] | WORLD CUP [MISC]
+
+SENT: He too had never browsed the Net .
+GOLD: (none)
+BERT-FT: Net [MISC]
+
+SENT: The city-state met U.S. opposition two years ago in its bid to host the meeting , expected to gather 4,000 officials from 160 countries from December 9 to 13 .
+GOLD: U.S. [LOC]
+BERT-FT: U.S. [MISC]
+
+SENT: Some residents of the Kazanluk area are Moslems who converted to Islam during Ottoman Turkish rule .
+GOLD: Kazanluk [LOC] | Moslems [MISC] | Islam [MISC] | Turkish [MISC]
+BERT-FT: Kazanluk [LOC] | Moslems [MISC] | Islam [MISC] | Ottoman Turkish [MISC]
+
+SENT: Daily Argentine grain fixings - Camaras Arbitrales .
+GOLD: Argentine [MISC]
+BERT-FT: Argentine [MISC] | Camaras Arbitrales [ORG]
+
+SENT: Saldanha said operations fell 30 percent immediately after that case but the rate was back to normal now .
+GOLD: Saldanha [PER]
+BERT-FT: Saldanha [ORG]
+
+SENT: UAE 2 1 1 0 4 3 4
+GOLD: UAE [LOC]
+BERT-FT: UAE [ORG]
+
+SENT: Iowa-S Minn feedlot cattle market not tested- USDA .
+GOLD: Iowa-S [LOC] | Minn [LOC] | USDA [ORG]
+BERT-FT: Iowa-S Minn [MISC] | USDA [ORG]
+
+SENT: Previous victories ( two ) : slalom , Lillehammer Norway , 1993 ; super G , Flachau , Austria , 1995 .
+GOLD: Lillehammer [LOC] | Norway [LOC] | Flachau [LOC] | Austria [LOC]
+BERT-FT: Lillehammer Norway [LOC] | Flachau [LOC] | Austria [LOC]
+
+SENT: Blinker was fined 75,000 Swiss francs ( $ 57,600 ) for failing to inform the Engllsh club of his previous commitment to Udinese .
+GOLD: Blinker [PER] | Swiss [MISC] | Engllsh [MISC] | Udinese [ORG]
+BERT-FT: Blinker [PER] | Swiss [MISC] | Engllsh [ORG] | Udinese [ORG]
+
+SENT: Relations between Clarke , Major good - spokesman .
+GOLD: Clarke [PER] | Major [PER]
+BERT-FT: Clarke [PER]
+
+SENT: Bre-X has a partnership deal with PT Panutan Duta of the Panutan Group run by President Suharto 's eldest son , Sigit Harjojudanto , under which Panutan would receive $ 40 million over 40 months plus a 10 percent stake Busang 's richest parts .
+GOLD: Bre-X [ORG] | PT Panutan Duta [PER] | Panutan Group [ORG] | Suharto [PER] | Sigit Harjojudanto [PER] | Panutan [PER] | Busang [ORG]
+BERT-FT: Bre-X [ORG] | PT Panutan Duta [ORG] | Panutan Group [ORG] | Suharto [PER] | Sigit Harjojudanto [PER] | Panutan [ORG] | Busang [ORG]
+
+SENT: Members of the Hindu nationalist Bharatiya Janata Party ( BJP ) shouted pro-Hindu slogans in the house after a communist deputy made the proposal in remembrance of the Babri mosque , which was razed on December 6 , 1992 .
+GOLD: Hindu [MISC] | Bharatiya Janata Party [ORG] | BJP [ORG] | pro-Hindu [MISC]
+BERT-FT: Hindu [MISC] | Bharatiya Janata Party [ORG] | BJP [ORG] | pro-Hindu [MISC] | Babri [LOC]
+
+SENT: Holstein - ( weight only ) Select to mostly Choice 2-3 1250-1400 lbs no sales .
+GOLD: (none)
+BERT-FT: Holstein [MISC] | Choice 2-3 [MISC]
+
+SENT: League games on Friday ( home team in CAPS ) :
+GOLD: League [ORG]
+BERT-FT: (none)
+
+SENT: 3. Canada I ( Pierre Lueders , Dave MacEachern ) 1:45.94
+GOLD: Canada I [ORG] | Pierre Lueders [PER] | Dave MacEachern [PER]
+BERT-FT: Canada [LOC] | Pierre Lueders [PER] | Dave MacEachern [PER]
+
+SENT: Semifinals ( on Saturday ) : Fung Permadi ( Taiwan ) v Indra
+GOLD: Fung Permadi [PER] | Taiwan [LOC] | Indra [PER]
+BERT-FT: Fung Permadi [PER] | Taiwan [LOC] | Indra [ORG]
+
+SENT: ORE - IMC TBN - 70,000 tonnes Dampier / Kaohsiung 20-30/12 $ 5.25 fio 35,000 shinc / 30,000 shinc China Steel .
+GOLD: Dampier [LOC] | Kaohsiung [LOC] | China Steel [ORG]
+BERT-FT: ORE [ORG] | IMC [ORG] | Dampier [LOC] | Kaohsiung [LOC] | China Steel [ORG]
+
+SENT: Iowa-S Minn fed cattle market quiet , no sales-USDA .
+GOLD: Iowa-S [LOC] | Minn [LOC] | sales-USDA [MISC]
+BERT-FT: Iowa-S [MISC] | Minn [ORG] | sales-USDA [ORG]
+
+SENT: 28-1 Real Madrid Barcelona
+GOLD: Real Madrid [ORG] | Barcelona [ORG]
+BERT-FT: Real Madrid Barcelona [ORG]
+

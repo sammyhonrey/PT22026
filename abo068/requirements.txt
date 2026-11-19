@@ -1,0 +1,9 @@
+
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+transformers==5.22.2
+torch==2.15.0
+accelerate
+scikit-learn
+pandas
+numpy

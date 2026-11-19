@@ -1,0 +1,30 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+venv313/
+.venv/
+
+# Gradio temporary files
+.gradio/
+
+# Secrets
+.env
+
+# Datasets (see README for how to obtain them)
+dataset/
+housing.csv
+housing_clean.csv
+cal_housing.tgz
+
+# Large model files (run download_model.py)
+models/*.joblib
+temp_models/
+
+# Logs and local helper files
+*.log
+dump.ps1
+dump.txt
+app_backup.py

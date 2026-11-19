@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+
+# Test and tool caches
+.pytest_cache/
+pytest-of-*/
+
+# espeak-ng runtime extraction (Kokoro dependency) when TEMP is not set
+/tmp*/
+*.egg-info/
+
+# Datasets (large, downloaded separately)
+data/
+datasets/
+
+# Model checkpoints and weights (large, trained separately)
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Generated audio and application output
+outputs/
+
+# Runtime databases and generated audio outside outputs/ (defensive)
+*.db
+*.sqlite
+*.sqlite3
+*.wav
+*.mp3
+
+# Temporary files and OS/editor noise
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+.env
+
+# Node.js (frontend tests need none of these)
+node_modules/

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "purpose": "Fixed-parameter diagnostic evaluation on the original development period only",
+  "development_partition": "original train plus validation origins",
+  "reserved_test_policy": "Never fit or evaluate rolling folds on reserved test targets",
+  "fold_count": 3,
+  "initial_training_fraction": 0.5,
+  "origin_hour": 23,
+  "purge_rule": "last training target <= first evaluation origin",
+  "model_configuration": "Unchanged src.training._models factory; no parameter search or model replacement",
+  "peak_threshold": "Each fold's training-target 90th percentile",
+  "selection_policy": "Diagnostic only; preserve published model selection and held-out benchmark",
+  "random_seed": 42
+}

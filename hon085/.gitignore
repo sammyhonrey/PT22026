@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# downloaded by scripts/fetch_assets.py
+web/models/*.task
+web/vendor/
+
+# downloaded by scripts/download_data.py
+data/raw/
+
+# recorded on this computer
+data/user_samples.csv
+data/user_poses.json
+data/external_check.csv

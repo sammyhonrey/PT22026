@@ -1,0 +1,30 @@
+# E3: ViT-B/16, full fine-tuning (main model).
+# Paths below are the Colab defaults; override them on the command line if needed.
+experiment: E3_vit_full
+seed: 42
+
+data:
+  split_csv: splits/split_v1.csv
+  data_root: /content/data/garbage_classification
+  image_size: 224
+  batch_size: 32
+  num_workers: 2
+  augmentation: standard
+
+model:
+  name: vit
+  hf_name: google/vit-base-patch16-224
+  freeze_backbone: false
+
+train:
+  epochs: 8
+  lr: 2.0e-5
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  fp16: true
+  class_weights: false
+  label_smoothing: 0.0
+
+output:
+  checkpoint_dir: /content/drive/MyDrive/SmartSort_AI/checkpoints/E3_vit_full
+  results_dir: /content/drive/MyDrive/SmartSort_AI/outputs

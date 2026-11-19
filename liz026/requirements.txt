@@ -1,0 +1,12 @@
+# Web UI
+gradio>=6.0
+# Deep learning: Keras 3 running on the PyTorch backend
+# (PyTorch is the Keras backend, so TensorFlow is not needed; developed on Python 3.12)
+keras>=3.9
+torch>=2.5
+h5py>=3.10
+# Image / numeric
+numpy>=1.26
+pillow>=10.0
+# Optional: plots in scripts/evaluate.py
+matplotlib>=3.8

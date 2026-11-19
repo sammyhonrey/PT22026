@@ -1,0 +1,14 @@
+from pathlib import Path
+import subprocess
+
+repo_url = "https://github.com/xahiru/PT22026.git"
+repo_dir = Path.cwd() / "PT22026"
+
+if repo_dir.exists():
+    print("Folder already exists:", repo_dir)
+else:
+    subprocess.run(
+        ["git", "clone", repo_url, str(repo_dir)],
+        check=True
+    )
+    print("Repository downloaded:", repo_dir)

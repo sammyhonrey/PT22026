@@ -1,0 +1,112 @@
+[
+  {
+    "question": "What is the deadline of the assignment?",
+    "answer": "12th Week",
+    "evidence": "Deadline: 12th Week"
+  },
+  {
+    "question": "What is the mode of the assignment?",
+    "answer": "Individual Project",
+    "evidence": "Mode: Individual Project"
+  },
+  {
+    "question": "What is the course code of Professional Training?",
+    "answer": "YN3012170034",
+    "evidence": "YN3012170034"
+  },
+  {
+    "question": "What level is the course?",
+    "answer": "Intermediate",
+    "evidence": "Intermediate level"
+  },
+  {
+    "question": "How many pages must the technical report have at least?",
+    "answer": "10 pages",
+    "evidence": "technical report of at least 10 pages"
+  },
+  {
+    "question": "What is the repository link for submission?",
+    "answer": "https://github.com/xahiru/PT22026",
+    "evidence": "https://github.com/xahiru/PT22026"
+  },
+  {
+    "question": "How must the folder name be formed?",
+    "answer": "First 3 letters of student's first name + last 3 digits of Student ID",
+    "evidence": "First 3 letters of student's first name"
+  },
+  {
+    "question": "What is the example folder name for Ahmed?",
+    "answer": "ahm123",
+    "evidence": "ahm123"
+  },
+  {
+    "question": "Who will create the student folders in the repository?",
+    "answer": "TAs",
+    "evidence": "TAs will create your folder"
+  },
+  {
+    "question": "What is the official project submission?",
+    "answer": "Pull Request",
+    "evidence": "The Pull Request is the official project submission"
+  },
+  {
+    "question": "What will plagiarism result in?",
+    "answer": "zero grade",
+    "evidence": "will result in a zero grade"
+  },
+  {
+    "question": "What will late submissions result in?",
+    "answer": "mark deductions",
+    "evidence": "Late submissions will result in mark deductions"
+  },
+  {
+    "question": "Which programming language must be used as the primary language?",
+    "answer": "Python",
+    "evidence": "Python must be used as the primary programming language"
+  },
+  {
+    "question": "Which file must contain the installation instructions?",
+    "answer": "README.md",
+    "evidence": "README.md containing project information"
+  },
+  {
+    "question": "What must not be uploaded to the repository?",
+    "answer": "Large files",
+    "evidence": "Large files, including datasets, model weights"
+  },
+  {
+    "question": "Which branch cannot be modified directly?",
+    "answer": "main branch",
+    "evidence": "modifications to the main branch are not permitted"
+  },
+  {
+    "question": "How long should the demonstration be?",
+    "answer": "3–5 minutes",
+    "evidence": "Demonstration Duration"
+  },
+  {
+    "question": "What is the total number of marks?",
+    "answer": "100 marks",
+    "evidence": "Total Marks: 100 marks"
+  },
+  {
+    "question": "Where can pre-trained models come from?",
+    "answer": "Hugging Face Model Hub",
+    "evidence": "pre-trained models from the Hugging Face Model Hub"
+  },
+  {
+    "question": "What should the .gitignore file prevent?",
+    "answer": "unnecessary files",
+    "evidence": "to prevent unnecessary files from being committed"
+  },
+  {
+    "question": "Who should be able to access the Pull Request?",
+    "answer": "the instructor",
+    "evidence": "accessible to the instructor"
+  },
+  {
+    "question": "In which format must the technical report be submitted?",
+    "answer": "PDF",
+    "evidence": "Technical report PDF (minimum 10 pages)"
+  }
+]

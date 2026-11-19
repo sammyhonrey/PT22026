@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+
+# Dataset
+dataset/
+
+# Trained model
+models/*.joblib
+
+# IDE settings
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db

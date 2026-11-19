@@ -1,0 +1,279 @@
+{
+  "corpus": "RAVDESS held-out speakers 21-24",
+  "n": 24,
+  "per_emotion": {
+    "neutral": {
+      "n": 4,
+      "mean": 0.4706,
+      "min": 0.4299,
+      "max": 0.5048
+    },
+    "happy": {
+      "n": 4,
+      "mean": 0.4321,
+      "min": 0.3582,
+      "max": 0.4884
+    },
+    "sad": {
+      "n": 4,
+      "mean": 0.4953,
+      "min": 0.3953,
+      "max": 0.5607
+    },
+    "angry": {
+      "n": 4,
+      "mean": 0.7927,
+      "min": 0.4575,
+      "max": 0.9491
+    },
+    "fear": {
+      "n": 4,
+      "mean": 0.6661,
+      "min": 0.3877,
+      "max": 0.855
+    },
+    "disgust": {
+      "n": 4,
+      "mean": 0.8012,
+      "min": 0.7732,
+      "max": 0.8168
+    }
+  },
+  "score": {
+    "min": 0.358228,
+    "median": 0.522412,
+    "max": 0.949123
+  },
+  "thresholds_before": {
+    "low": 0.35,
+    "high": 0.65
+  },
+  "thresholds_measured": {
+    "low": 0.477,
+    "high": 0.784
+  },
+  "bands_before": {
+    "Low": 0,
+    "Medium": 15,
+    "High": 9
+  },
+  "note": "Thresholds are the 33rd and 67th percentile of this measured distribution, so each band holds roughly a third of the reference corpus. The index itself is unchanged: only the boundaries were moved to where the score actually falls.",
+  "records": [
+    {
+      "clip": "03-01-01-01-01-01-21",
+      "gold": "neutral",
+      "score": 0.484447,
+      "band": "Medium",
+      "logit": -0.0622,
+      "fused": "neutral",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-01-01-01-02-21",
+      "gold": "neutral",
+      "score": 0.504838,
+      "band": "Medium",
+      "logit": 0.0194,
+      "fused": "neutral",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-01-01-02-01-21",
+      "gold": "neutral",
+      "score": 0.429871,
+      "band": "Medium",
+      "logit": -0.2824,
+      "fused": "neutral",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-01-01-02-02-21",
+      "gold": "neutral",
+      "score": 0.46314,
+      "band": "Medium",
+      "logit": -0.1477,
+      "fused": "neutral",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-03-01-01-01-21",
+      "gold": "happy",
+      "score": 0.432418,
+      "band": "Medium",
+      "logit": -0.272,
+      "fused": "neutral",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-03-01-01-02-21",
+      "gold": "happy",
+      "score": 0.358228,
+      "band": "Medium",
+      "logit": -0.5831,
+      "fused": "neutral",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-03-01-02-01-21",
+      "gold": "happy",
+      "score": 0.449238,
+      "band": "Medium",
+      "logit": -0.2038,
+      "fused": "neutral",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-03-01-02-02-21",
+      "gold": "happy",
+      "score": 0.488395,
+      "band": "Medium",
+      "logit": -0.0464,
+      "fused": "neutral",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-04-01-01-01-21",
+      "gold": "sad",
+      "score": 0.395334,
+      "band": "Medium",
+      "logit": -0.4249,
+      "fused": "happy",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-04-01-01-02-21",
+      "gold": "sad",
+      "score": 0.539986,
+      "band": "Medium",
+      "logit": 0.1603,
+      "fused": "neutral",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-04-01-02-01-21",
+      "gold": "sad",
+      "score": 0.485023,
+      "band": "Medium",
+      "logit": -0.0599,
+      "fused": "neutral",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-04-01-02-02-21",
+      "gold": "sad",
+      "score": 0.560714,
+      "band": "Medium",
+      "logit": 0.2441,
+      "fused": "neutral",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-05-01-01-01-21",
+      "gold": "angry",
+      "score": 0.949123,
+      "band": "High",
+      "logit": 2.9261,
+      "fused": "angry",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-05-01-01-02-21",
+      "gold": "angry",
+      "score": 0.831403,
+      "band": "High",
+      "logit": 1.5956,
+      "fused": "angry",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-05-01-02-01-21",
+      "gold": "angry",
+      "score": 0.932586,
+      "band": "High",
+      "logit": 2.6271,
+      "fused": "angry",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-05-01-02-02-21",
+      "gold": "angry",
+      "score": 0.457516,
+      "band": "Medium",
+      "logit": -0.1703,
+      "fused": "happy",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-06-01-01-01-21",
+      "gold": "fear",
+      "score": 0.821831,
+      "band": "High",
+      "logit": 1.5288,
+      "fused": "disgust",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-06-01-01-02-21",
+      "gold": "fear",
+      "score": 0.387661,
+      "band": "Medium",
+      "logit": -0.4572,
+      "fused": "happy",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-06-01-02-01-21",
+      "gold": "fear",
+      "score": 0.855024,
+      "band": "High",
+      "logit": 1.7746,
+      "fused": "disgust",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-06-01-02-02-21",
+      "gold": "fear",
+      "score": 0.599776,
+      "band": "Medium",
+      "logit": 0.4045,
+      "fused": "neutral",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-07-01-01-01-21",
+      "gold": "disgust",
+      "score": 0.773157,
+      "band": "High",
+      "logit": 1.2262,
+      "fused": "angry",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-07-01-01-02-21",
+      "gold": "disgust",
+      "score": 0.808498,
+      "band": "High",
+      "logit": 1.4403,
+      "fused": "disgust",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-07-01-02-01-21",
+      "gold": "disgust",
+      "score": 0.816786,
+      "band": "High",
+      "logit": 1.4947,
+      "fused": "angry",
+      "text_evidence": 0.0
+    },
+    {
+      "clip": "03-01-07-01-02-02-21",
+      "gold": "disgust",
+      "score": 0.806233,
+      "band": "High",
+      "logit": 1.4257,
+      "fused": "angry",
+      "text_evidence": 0.0
+    }
+  ]
+}

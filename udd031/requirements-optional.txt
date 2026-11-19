@@ -1,0 +1,20 @@
+# ---------------------------------------------------------------------------
+# Optional dependencies. None of these are needed to run the application.
+#
+#   openai-whisper : alternative ASR backend. Requires ffmpeg on PATH.
+#                    The default backend uses the Transformers port of the same
+#                    weights, which needs no ffmpeg. See README, "Design notes".
+#   playwright     : headless Chromium, used only by scripts/build_report.py to
+#                    render the technical report HTML to PDF. After installing,
+#                    run: python -m playwright install chromium
+#   pypdf          : optional hard verification of the PDF page count.
+#   python-docx,
+#   beautifulsoup4 : build the Word versions of the report and the project
+#                    handbook from the same HTML sources. Playwright is reused
+#                    to rasterise the inline SVG diagrams for Word.
+# ---------------------------------------------------------------------------
+openai-whisper>=20240930
+playwright>=1.44
+pypdf>=4.2
+python-docx>=1.1
+beautifulsoup4>=4.12

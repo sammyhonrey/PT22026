@@ -1,0 +1,343 @@
+{
+  "source": "MusicBrainz artist aliases",
+  "source_url": "https://musicbrainz.org/",
+  "licence": "CC0 1.0 Universal (public domain dedication)",
+  "retrieved_at": "2026-11-18T11:38:43+00:00",
+  "artists": {
+    "ba26c1ff-e5e2-42c2-b1d7-b6f82ebc37ac": {
+      "name": "عمرو دياب",
+      "seed": "Amr Diab",
+      "aliases": [
+        "Amer Diab",
+        "Ami Diab",
+        "Amr Abd El-Basset Abd El-Azeez Diab",
+        "Amr Diab",
+        "Amr Diad",
+        "Amr Diyab",
+        "Amro Diab",
+        "Diab, Amr",
+        "عمر دياب",
+        "عمرو دياب",
+        "عمرو عبدالباسط عبد العزيز دياب"
+      ]
+    },
+    "5235052b-7fa0-498b-accf-26b9e7767da7": {
+      "name": "محمد منير",
+      "seed": "Mohamed Mounir",
+      "aliases": [
+        "Mohamed Moneer",
+        "Mohamed Mounir"
+      ]
+    },
+    "e5e59f75-9ff7-4ddc-9245-f9c0082c0ade": {
+      "name": "تامر حسني",
+      "seed": "Tamer Hosny",
+      "aliases": [
+        "Tamer Hosny",
+        "Тэмер Хосни",
+        "ターメル・ホスニー"
+      ]
+    },
+    "0f1a5afe-2675-48e3-b1bb-907152cc1db8": {
+      "name": "Sherine",
+      "seed": "Sherine",
+      "aliases": [
+        "Shereen",
+        "Sherine",
+        "Sherine Abdel Wahhab",
+        "Sherine Ahmed",
+        "شيرين أحمد",
+        "شيرين عبد الوهاب"
+      ]
+    },
+    "c270a427-b263-499b-88ae-c2f295b60de1": {
+      "name": "أنغام",
+      "seed": "Angham",
+      "aliases": [
+        "Angham",
+        "Angham Mohamed Ali Sulayman"
+      ]
+    },
+    "c8faf6df-c2a5-4499-8661-c2cddef7d771": {
+      "name": "محمد حماقي",
+      "seed": "Mohamed Hamaki",
+      "aliases": [
+        "Mohamed Hamaky",
+        "محمد إبراهيم محمد الحماقي"
+      ]
+    },
+    "0a354a70-b879-4697-ad9b-60bfe2bd1d63": {
+      "name": "أم كلثوم",
+      "seed": "Umm Kulthum",
+      "aliases": [
+        "Om Kalsoum",
+        "Om Kalthoum",
+        "Om Kolthom",
+        "Omme Kolsoum",
+        "Oum Kalsoum",
+        "Oum Kalthoum",
+        "Oum Kalthoun",
+        "Oum Khalsoum",
+        "Oum Kolsoum",
+        "Oum Kolthoum",
+        "Oum Koulsoum",
+        "Oum Koulthoum",
+        "Umm Kulthum",
+        "Ümmü Gülsüm"
+      ]
+    },
+    "9c22e6c5-56a0-4559-b017-5b4e305141a2": {
+      "name": "عبد الحليم حافظ",
+      "seed": "Abdel Halim Hafez",
+      "aliases": [
+        "Abdel Halim Hafez",
+        "Abdelhaleem Hafez"
+      ]
+    },
+    "77229bca-1a90-4015-bb80-29745aa0232f": {
+      "name": "محمد عبد الوهاب",
+      "seed": "Mohammed Abdel Wahab",
+      "aliases": [
+        "Mahamad Abdel Wahab",
+        "Mohamed Abdel Wahab",
+        "Mohamed Abdel Wehab",
+        "Mohamed Abdel‐waheb",
+        "Mohammed Abdel Wahab",
+        "محمد عبد الوهاب"
+      ]
+    },
+    "f0867abd-c959-495b-9774-f1966076027b": {
+      "name": "محمد عبده",
+      "seed": "Mohammed Abdu",
+      "aliases": [
+        "Mohamed Abdo",
+        "Mohamed Abdu",
+        "Mohammad Abdu",
+        "Mohammed Abdo",
+        "Mohammed Abdou",
+        "Mohammed Abdu"
+      ]
+    },
+    "ccc6a969-b0d9-48d0-8bfd-6360bbcef02d": {
+      "name": "طلال مداح",
+      "seed": "Talal Maddah",
+      "aliases": [
+        "Talal El Madaah",
+        "Talal Maddah"
+      ]
+    },
+    "df48c616-9f71-4e0d-85af-daf848beda2d": {
+      "name": "عبدالمجيد عبدالله",
+      "seed": "Abdul Majeed Abdullah",
+      "aliases": [
+        "Abdul Majeed Abdullah",
+        "عبدالمجيد عبدالله"
+      ]
+    },
+    "4aaaa92b-e094-4317-b42a-eea1dd34f602": {
+      "name": "راشد الماجد",
+      "seed": "Rashed Al Majed",
+      "aliases": [
+        "Rashed Al-Majed"
+      ]
+    },
+    "0d72039b-5734-407d-9b19-23511c09a306": {
+      "name": "ماجد المهندس",
+      "seed": "Majid Al Muhandis",
+      "aliases": []
+    },
+    "33ff0f96-fe04-49c4-a2fc-cdbb710d0121": {
+      "name": "حسين الجسمي",
+      "seed": "Hussain Al Jassmi",
+      "aliases": [
+        "Hussain Al Jassmi"
+      ]
+    },
+    "5838f72f-6d16-43be-a5ed-67a83b60cc30": {
+      "name": "بلقيس",
+      "seed": "Balqees",
+      "aliases": []
+    },
+    "0b91b4e7-5c97-4446-8665-27fe6026cd2f": {
+      "name": "كاظم الساهر",
+      "seed": "Kadim Al Sahir",
+      "aliases": [
+        "Kadim Al Saher",
+        "Kadim Al Sahib",
+        "Kadim Al Sahir",
+        "Kadim El Sahir",
+        "Kadim al Sahir",
+        "Kathem Al Saher",
+        "Kathem Al Sahir",
+        "Kathim Al Saher",
+        "Kazem Al Saher",
+        "Kazem el Saher",
+        "Kazim Al Saher",
+        "Kazim Al Sahir",
+        "Kzem Al Sahir"
+      ]
+    },
+    "b9de28fd-6750-46b3-aef7-71638ee74652": {
+      "name": "محمد العبدالله",
+      "seed": "Rida Al Abdullah",
+      "aliases": [
+        "Mohammed Al Abdullah"
+      ]
+    },
+    "9e109dc3-df52-46fe-b141-39adfc69d88e": {
+      "name": "Essa",
+      "seed": "Ali Al Essa",
+      "aliases": []
+    },
+    "338bbb53-5b96-447a-9444-8906844a0790": {
+      "name": "فيروز",
+      "seed": "Fairuz",
+      "aliases": [
+        "Fairouz",
+        "Fairuz",
+        "Fayrouz",
+        "Feyruz",
+        "فيروز"
+      ]
+    },
+    "e29614b4-0143-45bd-9feb-6f8129245d71": {
+      "name": "وائل كفوري",
+      "seed": "Wael Kfoury",
+      "aliases": [
+        "Wael Kafoury",
+        "Wael Kfouri",
+        "Wael Kfoury",
+        "وائل كفوري"
+      ]
+    },
+    "8bd1e3c9-780a-4bbe-b59b-39e4aa2eca5a": {
+      "name": "إليسا",
+      "seed": "Elissa",
+      "aliases": [
+        "Elissa Khoury",
+        "أليسا",
+        "أليسا خوري",
+        "اليسا"
+      ]
+    },
+    "375e25cc-67cf-4233-b7a7-f2129bdad9c5": {
+      "name": "راغب علامة",
+      "seed": "Ragheb Alama",
+      "aliases": [
+        "Ragheb Alama",
+        "Ragheb alameh",
+        "Raghev Alama"
+      ]
+    },
+    "c5fb9677-b013-4cd7-b89b-bb6e73ad851b": {
+      "name": "نانسي عجرم",
+      "seed": "Nancy Ajram",
+      "aliases": [
+        "Nancy Agram",
+        "Nancy Ajram"
+      ]
+    },
+    "486bade7-2ca7-4518-b2a1-4f44d2287163": {
+      "name": "ماجدة الرومي",
+      "seed": "Majida El Roumi",
+      "aliases": [
+        "Majida El Roumi",
+        "Majida El Roumi Baradhi",
+        "ماجدة الرومي برادعي",
+        "ماجده الرومى"
+      ]
+    },
+    "67541793-5159-4f0d-a3a0-6b96163933f3": {
+      "name": "جورج وسوف",
+      "seed": "Georges Wassouf",
+      "aliases": [
+        "George Wassouf",
+        "George Wassuf",
+        "جورج وسوف"
+      ]
+    },
+    "94bf8ccf-61ea-4aa7-a273-b22184aa718a": {
+      "name": "أصالة",
+      "seed": "Assala Nasri",
+      "aliases": [
+        "Assala Nasri",
+        "آصاله نصري"
+      ]
+    },
+    "c563f74a-ebde-4c22-a8a1-b82108738046": {
+      "name": "صباح فخري",
+      "seed": "Sabah Fakhri",
+      "aliases": [
+        "Sabah Fakhri",
+        "صباح فخري"
+      ]
+    },
+    "51c1564d-167c-48bc-8ca7-6c1bb7bf1106": {
+      "name": "سعد لمجرد",
+      "seed": "Saad Lamjarred",
+      "aliases": [
+        "Saad Lamjarred"
+      ]
+    },
+    "b4a479aa-4384-4acf-88b0-dee9188faeb5": {
+      "name": "Khaled",
+      "seed": "Cheb Khaled",
+      "aliases": [
+        "Cheb Khaled",
+        "Kaled",
+        "Khaled",
+        "Khaled Hadj Brahim",
+        "Khaled Hadj Ibrahim",
+        "Khalèd",
+        "الشاب خالد",
+        "خالد الحج ابراهيم",
+        "شب خالد"
+      ]
+    },
+    "634ef2ec-ffe2-4846-ba68-156f852bf5cb": {
+      "name": "Cheb Mami",
+      "seed": "Cheb Mami",
+      "aliases": [
+        "Ahmed Khelifati Mohamed",
+        "أحمد خليفاتي محمد",
+        "شاب مامي"
+      ]
+    },
+    "3f9d077d-f2e8-4cff-9ab6-d53ad7ace217": {
+      "name": "وردة",
+      "seed": "Warda",
+      "aliases": [
+        "Warda",
+        "Warda El Djazayriya",
+        "Warda Jazairia",
+        "Warda al-Jazairia",
+        "وردة",
+        "وردة الجزائرية",
+        "وردة فتوكي"
+      ]
+    },
+    "5bd3a41b-17b0-42e7-8218-e5794d99d41a": {
+      "name": "لطيفة",
+      "seed": "Latifa",
+      "aliases": [
+        "لطيفة",
+        "لطيفة بنت عليه العرفاوي"
+      ]
+    },
+    "9ad48f85-bd75-4291-a5b7-99f1ecbab7d5": {
+      "name": "صابر الرباعي",
+      "seed": "Saber Rebaï",
+      "aliases": [
+        "Saber Al Roubai"
+      ]
+    },
+    "a6a53cbc-0e98-47d6-8dc6-575efc733dcf": {
+      "name": "سيف أبو بكر",
+      "seed": "Abu Bakr Salem",
+      "aliases": [
+        "Saif Abu Bakr",
+        "Seif Abu Bakr"
+      ]
+    }
+  }
+}

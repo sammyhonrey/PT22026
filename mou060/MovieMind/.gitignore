@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+htmlcov/
+coverage/
+*.py,cover
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Model weights & artifacts (local only)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+backend/artifacts/
+
+# Datasets (MovieLens etc.)
+ml/data/
+backend/data/
+*.sqlite
+*.sqlite3
+*.db
+
+# Logs / local files
+*.log
+pip_install.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tmp
+*.temp
+
+# Local planning notes
+backend_task.md
+API_CONTRACT.md
+frontend_task.md
+MovieMind_UI_UX_Design_Skill_v2.md
+
+# Node.js / frontend builds
+node_modules/
+dist/
+build/
+.vite/
+.vitest/
+coverage/
+playwright-report/
+test-results/
+mobile*.png
+mobile*.jpg
+mobile*.jpeg
+
+# Editor / OS
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db

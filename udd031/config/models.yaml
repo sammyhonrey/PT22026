@@ -1,0 +1,15 @@
+# ---------------------------------------------------------------------------
+# Which model artefacts this deployment loads.
+#
+# Weights are never committed: the three Hub checkpoints are downloaded at run
+# time, and the fitted acoustic head is produced locally by
+# scripts/train_acoustic_probe.py (~50 KB, ~20 s once the embedding cache exists).
+#
+# acoustic_probe
+#   Repo-relative path to the fitted six-class head. When the file is present the
+#   acoustic branch speaks the canonical ontology directly (coverage 1.0,
+#   fear/disgust reachable). When it is missing, the branch falls back to the
+#   zero-shot four-class SUPERB head, whose blindness is reported as coverage.
+#   Set to an empty string to force the fallback path deliberately.
+# ---------------------------------------------------------------------------
+acoustic_probe: models/acoustic_probe.npz

@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f9ff">
+  <title>SmartFeel AI | Sentiment Analytics</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#dashboard" aria-label="SmartFeel AI dashboard">
+        <span class="brand-mark">S</span>
+        <span class="brand-copy"><strong>SmartFeel AI</strong><small>RoBERTa v2.4</small></span>
+      </a>
+
+      <button class="workspace-switch" type="button" aria-label="Current workspace">
+        <span class="workspace-icon">✣</span>
+        <span><small>WORKSPACE</small><strong>Enterprise NLP Lab</strong></span>
+        <span class="workspace-chevron">⌄</span>
+      </button>
+
+      <nav class="nav-list">
+        <button class="nav-item is-active" type="button" data-page="dashboard"><span class="nav-icon">▦</span>Dashboard</button>
+        <button class="nav-item" type="button" data-page="playground"><span class="nav-icon">▣</span>AI Playground</button>
+        <button class="nav-item" type="button" data-page="review"><span class="nav-icon">▧</span>ReviewAI</button>
+        <button class="nav-item" type="button" data-page="social"><span class="nav-icon">▱</span>SocialMind</button>
+        <button class="nav-item" type="button" data-page="history"><span class="nav-icon">◷</span>History</button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="model-status">
+          <span class="status-dot"></span>
+          <strong>ROBERTA MODEL EVAL</strong>
+          <span>Acc: <b>73.05%</b> &nbsp; F1: <b>0.728</b></span>
+        </div>
+        <div class="sidebar-settings"><span>⚙</span>Settings</div>
+        <div class="profile-card">
+          <span class="profile-avatar">SF</span>
+          <span><strong>Local workspace</strong><small>Sentiment analysis</small></span>
+          <span class="profile-menu">⋮</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumbs"><span>Platform</span><span class="crumb-separator">›</span><strong id="breadcrumb-current">Sentiment Analytics Engine</strong></div>
+        <div class="topbar-actions">
+          <span class="engine-badge"><i></i>Model: Ready · Fine-tuned RoBERTa</span>
+          <a class="topbar-link" href="/docs" target="_blank" rel="noreferrer">▤ <span>Docs</span></a>
+          <button class="button button-secondary topbar-export" id="topbar-export" type="button">⇩ <span>Export</span></button>
+          <span class="topbar-status" id="topbar-status" role="status" aria-live="polite"></span>
+          <span class="notification-bell" role="img" aria-label="No new notifications" title="No new notifications">🔔</span>
+          <span class="topbar-avatar" role="img" aria-label="SmartFeel AI profile">SF</span>
+        </div>
+      </header>
+
+      <section class="page is-visible" id="page-dashboard" data-page-panel="dashboard">
+        <div class="page-intro dashboard-intro">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span>CLUSTER SYNC: ACTIVE</div>
+            <h1>Your customer insights, at a glance.</h1>
+            <p>Real-time aggregation of sentiment inferences, trend activity, and model evaluation metrics.</p>
+            <p class="dashboard-updated">Updated <span id="dashboard-updated">—</span></p>
+          </div>
+          <div class="intro-controls">
+            <label class="sr-only" for="dashboard-range">Activity range</label>
+            <select id="dashboard-range" class="select-control">
+              <option value="30" selected>Last 30 Days</option>
+              <option value="7">Last 7 days</option>
+              <option value="90">Last 90 days</option>
+              <option value="">All saved analyses</option>
+            </select>
+            <label class="sr-only" for="dashboard-source">Analysis source</label>
+            <select id="dashboard-source" class="select-control">
+              <option value="All">All sources</option>
+              <option>AI Playground</option>
+              <option>ReviewAI</option>
+              <option>SocialMind</option>
+              <option>Test</option>
+            </select>
+            <button class="button button-primary dashboard-export" id="dashboard-export" type="button">⇩ Export report</button>
+            <button class="button button-secondary" id="dashboard-refresh" type="button">↻ Refresh</button>
+          </div>
+        </div>
+
+        <div class="metric-grid" id="dashboard-metrics" aria-live="polite">
+          <article class="metric-card">
+            <span class="metric-title">Total analyses</span>
+            <div class="metric-value-row"><strong class="metric-value" data-metric="total">—</strong><small class="metric-change" data-change="total">—</small></div>
+            <small>Filtered saved records</small>
+            <small data-confidence="overall">Mean confidence —</small>
+            <span class="metric-progress"><i data-progress="overall"></i></span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-title"><i class="sentiment-dot positive"></i>Positive sentiment <small class="metric-share" data-share="positive">—</small></span>
+            <div class="metric-value-row"><strong class="metric-value" data-metric="positive">—</strong><small class="metric-change" data-change="positive">—</small></div>
+            <small data-confidence="positive">Mean confidence —</small>
+            <span class="metric-progress"><i class="positive-progress" data-progress="positive"></i></span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-title"><i class="sentiment-dot neutral"></i>Neutral sentiment <small class="metric-share" data-share="neutral">—</small></span>
+            <div class="metric-value-row"><strong class="metric-value" data-metric="neutral">—</strong><small class="metric-change" data-change="neutral">—</small></div>
+            <small data-confidence="neutral">Mean confidence —</small>
+            <span class="metric-progress"><i class="neutral-progress" data-progress="neutral"></i></span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-title"><i class="sentiment-dot negative"></i>Negative sentiment <small class="metric-share" data-share="negative">—</small></span>
+            <div class="metric-value-row"><strong class="metric-value" data-metric="negative">—</strong><small class="metric-change" data-change="negative">—</small></div>
+            <small data-confidence="negative">Mean confidence —</small>
+            <span class="metric-progress"><i class="negative-progress" data-progress="negative"></i></span>
+          </article>
+        </div>
+        <div class="demo-notice" id="dashboard-demo-notice" hidden></div>
+
+        <div class="chart-grid">
+          <article class="surface chart-panel">
+            <div class="section-heading"><div><h2>Sentiment distribution</h2><p>Share of saved predictions by class</p></div><span class="subtle-chip">History data</span></div>
+            <div class="distribution-layout">
+              <div class="chart-wrap chart-wrap-doughnut"><canvas id="distribution-chart" aria-label="Sentiment distribution chart"></canvas></div>
+              <div class="distribution-summary">
+                <div class="distribution-summary-heading">Saved predictions</div>
+                <div class="distribution-summary-row"><span><i class="sentiment-dot positive"></i>Positive</span><strong data-distribution-count="positive">—</strong><small data-distribution-share="positive">—</small></div>
+                <div class="distribution-summary-row"><span><i class="sentiment-dot neutral"></i>Neutral</span><strong data-distribution-count="neutral">—</strong><small data-distribution-share="neutral">—</small></div>
+                <div class="distribution-summary-row"><span><i class="sentiment-dot negative"></i>Negative</span><strong data-distribution-count="negative">—</strong><small data-distribution-share="negative">—</small></div>
+                <div class="distribution-confidence">Mean confidence <strong id="dashboard-mean-confidence">—</strong></div>
+              </div>
+            </div>
+          </article>
+          <article class="surface chart-panel">
+            <div class="section-heading"><div><h2>Sentiment activity over time</h2><p>Weekly saved analysis volume by predicted class</p></div><span class="subtle-chip">History data</span></div>
+            <div class="chart-wrap activity-chart-wrap">
+              <canvas id="activity-chart" aria-label="Sentiment activity over the last four weeks"></canvas>
+              <div class="activity-tooltip" id="activity-tooltip" hidden></div>
+            </div>
+          </article>
+        </div>
+
+        <article class="surface evaluation-panel">
+          <div class="evaluation-header">
+            <div class="evaluation-title"><span class="evaluation-icon">◉</span><div><h2>Offline Model Evaluation Metrics</h2><p>Held-out test results · not live operational traffic</p></div></div>
+            <span class="evaluation-badge">Overall metrics from local model config</span>
+          </div>
+          <div class="evaluation-grid">
+            <section class="evaluation-overall" aria-labelledby="evaluation-overall-title">
+              <h3 id="evaluation-overall-title">Overall Generalization</h3>
+              <div class="evaluation-main-values">
+                <div><small>Accuracy</small><strong id="model-accuracy">—</strong></div>
+                <div><small>Macro F1-score</small><strong id="model-f1">—</strong></div>
+              </div>
+              <div class="evaluation-loss">
+                <span>Validation loss <small>(illustrative)</small></span><strong>0.428</strong>
+                <i><b></b></i>
+              </div>
+              <div class="evaluation-model-meta"><span>Dataset</span><strong id="model-dataset">—</strong></div>
+              <div class="evaluation-model-meta"><span>Base model</span><strong id="model-base">—</strong></div>
+            </section>
+            <section class="evaluation-classes" aria-labelledby="evaluation-classes-title">
+              <div class="evaluation-classes-heading">
+                <h3 id="evaluation-classes-title">Per-class Precision, Recall &amp; F1 Breakdown</h3>
+                <span>Illustrative sample · N = 10,000</span>
+              </div>
+              <div class="class-metric-row positive-class">
+                <strong><i></i>Positive</strong>
+                <span>Precision: 76.2%</span><span>Recall: 78.4%</span><b>F1: 0.773</b>
+                <i class="class-metric-bar"><b style="width: 77.3%"></b></i>
+              </div>
+              <div class="class-metric-row neutral-class">
+                <strong><i></i>Neutral</strong>
+                <span>Precision: 68.1%</span><span>Recall: 65.9%</span><b>F1: 0.670</b>
+                <i class="class-metric-bar"><b style="width: 67%"></b></i>
+              </div>
+              <div class="class-metric-row negative-class">
+                <strong><i></i>Negative</strong>
+                <span>Precision: 74.8%</span><span>Recall: 73.5%</span><b>F1: 0.741</b>
+                <i class="class-metric-bar"><b style="width: 74.1%"></b></i>
+              </div>
+              <p class="evaluation-disclaimer">Per-class figures and validation loss are illustrative examples, not measured results in the current model artifact.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="surface recent-panel">
+          <div class="section-heading"><div><h2>Recent inferences &amp; feedback streams</h2><p>Latest records matching the selected dashboard filters</p></div><button class="text-button" type="button" data-go-page="history">View all history →</button></div>
+          <div class="table-scroll">
+            <table class="data-table">
+              <thead><tr><th>Source</th><th>Input snippet</th><th>Predicted sentiment</th><th>Confidence</th><th>Timestamp</th></tr></thead>
+              <tbody id="recent-rows"><tr><td colspan="5" class="table-message">Loading saved analyses…</td></tr></tbody>
+            </table>
+          </div>
+          <div class="table-foot"><span><i class="live-dot"></i> Live data from local analysis history</span><span id="recent-count"></span></div>
+        </article>
+        <div class="page-status" id="dashboard-status" role="status"></div>
+      </section>
+
+      <section class="page" id="page-playground" data-page-panel="playground" hidden>
+        <div class="hero-banner">
+          <div><div class="eyebrow">INTERACTIVE INFERENCE SANDBOX</div><h1>Understand what people really feel.</h1><p>Run individual text inputs through your fine-tuned RoBERTa model to inspect sentiment predictions and confidence distributions.</p></div>
+          <span class="subtle-chip">Checkpoint · calibrated</span>
+        </div>
+        <div class="two-column playground-columns">
+          <article class="surface form-panel">
+            <div class="panel-topline"><div><h2>Inference Engine: RoBERTa-Sentiment-v2.4</h2><p>Maximum sequence length: 128 tokens · calibrated probabilities</p></div><span class="active-pill"><i></i>Active</span></div>
+            <label class="field-label" for="playground-text">TEXT INPUT</label>
+            <textarea id="playground-text" class="text-area playground-textarea" rows="8" maxlength="20000" placeholder="Enter text to analyze…"></textarea>
+            <div class="textarea-foot"><span id="playground-char-count">0 characters</span><span>English text</span></div>
+            <div class="sample-heading">QUICK SAMPLE PROMPTS</div>
+            <div class="sample-grid">
+              <button class="sample-card positive-sample" type="button" data-sample="positive"><strong>● Positive</strong><span>Remarkable service and quality…</span></button>
+              <button class="sample-card neutral-sample" type="button" data-sample="neutral"><strong>● Neutral</strong><span>The package arrived on time…</span></button>
+              <button class="sample-card negative-sample" type="button" data-sample="negative"><strong>● Negative</strong><span>Constantly crashes…</span></button>
+            </div>
+            <div class="button-row">
+              <button class="button button-secondary" id="playground-clear" type="button">↻ Reset</button>
+              <button class="button button-primary" id="playground-analyze" type="button">ϟ &nbsp; Analyze sentiment</button>
+            </div>
+            <div class="inline-error" id="playground-error" role="alert"></div>
+          </article>
+          <article class="surface result-panel" aria-live="polite">
+            <div class="section-heading"><div><h2>Sentiment Analysis Result</h2><p>Inference from your fine-tuned checkpoint</p></div><span class="subtle-chip">RoBERTa</span></div>
+            <div id="playground-result" class="result-placeholder"><span class="placeholder-icon">◉</span><strong>Ready for analysis</strong><span>Submit text to see its sentiment and class probabilities.</span></div>
+          </article>
+        </div>
+        <div class="performance-strip">
+          <div class="surface performance-item"><span class="performance-icon purple">◷</span><span><small>Model device</small><strong>Auto-selected</strong></span></div>
+          <div class="surface performance-item"><span class="performance-icon green">◎</span><span><small>Test accuracy</small><strong>73.05%</strong></span></div>
+          <div class="surface performance-item"><span class="performance-icon purple">▧</span><span><small>Macro F1-score</small><strong>0.728</strong></span></div>
+          <div class="surface performance-item"><span class="performance-icon amber">▦</span><span><small>Sentiment classes</small><strong>3 classes</strong></span></div>
+        </div>
+      </section>
+
+      <section class="page" id="page-review" data-page-panel="review" hidden>
+        <div class="page-intro">
+          <div><div class="eyebrow">ASPECT-BASED NLP · ROBERTA-CX-V2</div><h1>Product Review Intelligence</h1><p>Analyze product feedback to understand customer sentiment and satisfaction.</p></div>
+          <span class="subtle-chip">Fine-tuned RoBERTa</span>
+        </div>
+        <div class="two-column review-columns">
+          <article class="surface form-panel review-form">
+            <div class="panel-topline"><div><h2>▧ &nbsp; Analyze Customer Review</h2><p>Enter a product and the customer review text.</p></div><button class="text-button" id="review-load-sample" type="button">Load sample review</button></div>
+            <label class="field-label" for="review-product">PRODUCT / SERVICE NAME</label>
+            <input id="review-product" class="text-input" type="text" maxlength="300" value="UltraSound Pro ANC Headphones v3" placeholder="Example: Wireless Headphones">
+            <label class="field-label" for="review-customer">CUSTOMER NAME</label>
+            <input id="review-customer" class="text-input" type="text" maxlength="150" value="Maya Chen" placeholder="Example: Maya Chen">
+            <label class="field-label" for="review-text">CUSTOMER REVIEW CONTENT</label>
+            <textarea id="review-text" class="text-area" rows="8" maxlength="20000" placeholder="Paste a customer review here…">The noise cancellation is definitely top-tier and beats my older Bose pair easily on flights. Soundstage is crisp with punchy bass. However, the companion mobile app disconnects intermittently and the earcups get warm after two hours of continuous wear. Still worth the price for frequent travel.</textarea>
+            <label class="demo-toggle"><input id="review-is-demo" type="checkbox" checked><span>Mark this fictional sample as demo data</span></label>
+            <p class="demo-explanation">The sample customer and review are fictional; sentiment scores come from your local RoBERTa model.</p>
+            <div class="button-row">
+              <button class="button button-secondary" id="review-clear" type="button">Clear form</button>
+              <button class="button button-primary" id="review-analyze" type="button">Analyze review sentiment</button>
+            </div>
+            <div class="inline-error" id="review-error" role="alert"></div>
+          </article>
+          <article class="surface result-panel" aria-live="polite">
+            <div id="review-result" class="result-placeholder"><span class="placeholder-icon">▧</span><strong>Product Sentiment Diagnostics</strong><span>Submit a product review to view the model's classification.</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" id="page-social" data-page-panel="social" hidden>
+        <div class="page-intro">
+          <div><div class="eyebrow">PARALLEL INGESTION PIPELINE · NODE-06</div><h1>Social Media Batch Sentiment Monitor</h1><p>Analyze multiple comments simultaneously and inspect each prediction.</p></div>
+          <span class="subtle-chip">Maximum 30 comments</span>
+        </div>
+        <article class="surface social-input-panel">
+          <div class="panel-topline"><div><h2>▤ &nbsp; Batch Comment Stream Input</h2><p>One comment per line · maximum 30 comments per batch</p></div><span class="subtle-chip">Local inference</span></div>
+          <label class="field-label" for="social-comments">COMMENTS</label>
+          <textarea id="social-comments" class="text-area social-textarea" rows="7" placeholder="Paste comments here, one per line…"></textarea>
+          <div class="textarea-foot"><span id="social-char-count">0 characters</span><span id="social-line-count">0 comments</span></div>
+          <label class="demo-toggle"><input id="social-is-demo" type="checkbox" checked><span>Mark this fictional sample thread as demo data</span></label>
+          <p class="demo-explanation">Sample customers and comments are fictional; predictions come from your local RoBERTa model.</p>
+          <div class="button-row">
+            <button class="button button-secondary" id="social-sample" type="button">▣ Load sample thread</button>
+            <button class="button button-secondary" id="social-clear" type="button">Clear all</button>
+            <button class="button button-primary" id="social-analyze" type="button">ϟ &nbsp; Analyze all comments</button>
+          </div>
+          <div class="inline-error" id="social-error" role="alert"></div>
+        </article>
+        <div class="social-results-layout" id="social-results" hidden aria-live="polite">
+          <div class="social-summary-cards" id="social-summary"></div>
+          <article class="surface granular-panel">
+            <div class="section-heading"><div><h2>Granular Comment Results</h2><p>Per-sample classification and confidence</p></div><span class="subtle-chip" id="social-total-chip"></span></div>
+            <div class="comment-list" id="social-comment-list"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" id="page-history" data-page-panel="history" hidden>
+        <div class="page-intro">
+          <div><div class="eyebrow">ROBERTA AUDIT LOGGING · PIPELINE V2.4</div><h1>Inference &amp; Analysis History</h1><p>Search, filter, audit, and export saved sentiment predictions across all modules.</p></div>
+          <span class="integrity-badge">◈ &nbsp; Local JSON history</span>
+        </div>
+        <div class="history-metrics" id="history-metrics">
+          <article class="surface history-metric"><small>Total analyses</small><strong id="history-total">—</strong></article>
+          <article class="surface history-metric positive-metric"><small>Positive records</small><strong id="history-positive">—</strong></article>
+          <article class="surface history-metric neutral-metric"><small>Neutral records</small><strong id="history-neutral">—</strong></article>
+          <article class="surface history-metric negative-metric"><small>Negative records</small><strong id="history-negative">—</strong></article>
+        </div>
+        <article class="surface history-toolbar">
+          <label class="search-control"><span>⌕</span><input id="history-search" type="search" placeholder="Search keyword or product name…" aria-label="Search analysis history"></label>
+          <label class="sr-only" for="history-sentiment">Sentiment filter</label>
+          <select id="history-sentiment" class="select-control"><option value="All">All sentiments</option><option>Positive</option><option>Neutral</option><option>Negative</option></select>
+          <label class="sr-only" for="history-source">Source filter</label>
+          <select id="history-source" class="select-control"><option value="All">All sources</option><option>AI Playground</option><option>ReviewAI</option><option>SocialMind</option><option>Test</option></select>
+          <label class="sr-only" for="history-days">Date filter</label>
+          <select id="history-days" class="select-control"><option value="">All dates</option><option value="7">Last 7 days</option><option value="30">Last 30 days</option></select>
+          <button class="button button-secondary" id="history-export" type="button">⇩ Export CSV</button>
+          <button class="button button-danger" id="history-clear" type="button">▧ Clear history</button>
+        </article>
+        <div class="history-summary"><span id="history-showing">Loading records…</span><span class="demo-record-count" id="history-demo-count"></span><span class="pagination-controls"><button class="button button-secondary button-small" id="history-prev" type="button">‹ Prev</button><span id="history-page-number">1</span><button class="button button-secondary button-small" id="history-next" type="button">Next ›</button></span></div>
+        <article class="surface history-table-panel">
+          <div class="table-scroll">
+            <table class="data-table history-table">
+              <thead><tr><th>Source</th><th>Input content snippet</th><th>Predicted sentiment</th><th>Confidence score</th><th>Date &amp; time</th></tr></thead>
+              <tbody id="history-rows"><tr><td colspan="5" class="table-message">Loading saved analyses…</td></tr></tbody>
+            </table>
+          </div>
+        </article>
+        <div class="inline-error" id="history-error" role="alert"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

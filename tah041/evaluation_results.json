@@ -1,0 +1,10 @@
+{
+    "model": "Pre-trained Random Forest Regressor",
+    "dataset_rows": 20640,
+    "training_samples_in_split": 16512,
+    "testing_samples": 4128,
+    "MAE_USD": 31678.01,
+    "RMSE_USD": 47859.54,
+    "R2_score": 0.8243,
+    "evaluation_note": "Uses reconstructed stratified split; original model training indices are not independently verified."
+}

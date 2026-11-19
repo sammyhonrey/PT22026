@@ -1,0 +1,10 @@
+| experiment | split | n_images | class_accuracy | bin_accuracy |
+| --- | --- | --- | --- | --- |
+| E1_resnet50 | test | 2323 | 0.9724 | 0.9927 |
+| E1_resnet50 | real | 214 | 0.4953 | 0.7523 |
+| E2_vit_head_only | test | 2323 | 0.9742 | 0.9957 |
+| E2_vit_head_only | real | 214 | 0.5935 | 0.7804 |
+| E3_vit_full | test | 2323 | 0.9802 | 0.9948 |
+| E3_vit_full | real | 214 | 0.5701 | 0.7757 |
+| E4_vit_full_strong_aug | test | 2323 | 0.978 | 0.9948 |
+| E4_vit_full_strong_aug | real | 214 | 0.5748 | 0.7757 |

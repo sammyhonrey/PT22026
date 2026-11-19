@@ -1,0 +1,82 @@
+{
+  "dataset": "RAVDESS",
+  "doi": "10.5281/zenodo.1188976",
+  "licence": "CC BY-NC-SA 4.0",
+  "citation": "Livingstone, S. R., & Russo, F. A. (2018). The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS): A dynamic, multimodal set of facial and vocal expressions in North American English. PLOS ONE, 13(5), e0196391.",
+  "note": "Six short excerpts from held-out speakers (actors 21-24), normalised to mono 16 kHz and capped at 4 s, redistributed for demonstration only, with attribution, under the non-commercial share-alike terms of the licence. The archive itself is never committed.",
+  "built_by": "scripts/build_demo_clips.py",
+  "clips": [
+    {
+      "file": "ravdess_neutral_03-01-01-01-01-01-22.wav",
+      "kind": "ravdess",
+      "emotion": "neutral",
+      "original_member": "Actor_22/03-01-01-01-01-01-22.wav",
+      "speaker": "actor 22 (held-out: never used for training)",
+      "seconds": 3.64,
+      "sample_rate": 16000,
+      "preprocessing": "mono, 16 kHz, whole utterance, capped at 4 s; no silence trimming, no gain change",
+      "licence": "CC BY-NC-SA 4.0",
+      "doi": "10.5281/zenodo.1188976"
+    },
+    {
+      "file": "ravdess_happy_03-01-03-01-01-01-23.wav",
+      "kind": "ravdess",
+      "emotion": "happy",
+      "original_member": "Actor_23/03-01-03-01-01-01-23.wav",
+      "speaker": "actor 23 (held-out: never used for training)",
+      "seconds": 3.34,
+      "sample_rate": 16000,
+      "preprocessing": "mono, 16 kHz, whole utterance, capped at 4 s; no silence trimming, no gain change",
+      "licence": "CC BY-NC-SA 4.0",
+      "doi": "10.5281/zenodo.1188976"
+    },
+    {
+      "file": "ravdess_sad_03-01-04-01-01-01-24.wav",
+      "kind": "ravdess",
+      "emotion": "sad",
+      "original_member": "Actor_24/03-01-04-01-01-01-24.wav",
+      "speaker": "actor 24 (held-out: never used for training)",
+      "seconds": 4.0,
+      "sample_rate": 16000,
+      "preprocessing": "mono, 16 kHz, whole utterance, capped at 4 s; no silence trimming, no gain change",
+      "licence": "CC BY-NC-SA 4.0",
+      "doi": "10.5281/zenodo.1188976"
+    },
+    {
+      "file": "ravdess_angry_03-01-05-01-01-01-21.wav",
+      "kind": "ravdess",
+      "emotion": "angry",
+      "original_member": "Actor_21/03-01-05-01-01-01-21.wav",
+      "speaker": "actor 21 (held-out: never used for training)",
+      "seconds": 4.0,
+      "sample_rate": 16000,
+      "preprocessing": "mono, 16 kHz, whole utterance, capped at 4 s; no silence trimming, no gain change",
+      "licence": "CC BY-NC-SA 4.0",
+      "doi": "10.5281/zenodo.1188976"
+    },
+    {
+      "file": "ravdess_fearful_03-01-06-01-01-01-22.wav",
+      "kind": "ravdess",
+      "emotion": "fearful",
+      "original_member": "Actor_22/03-01-06-01-01-01-22.wav",
+      "speaker": "actor 22 (held-out: never used for training)",
+      "seconds": 3.57,
+      "sample_rate": 16000,
+      "preprocessing": "mono, 16 kHz, whole utterance, capped at 4 s; no silence trimming, no gain change",
+      "licence": "CC BY-NC-SA 4.0",
+      "doi": "10.5281/zenodo.1188976"
+    },
+    {
+      "file": "ravdess_disgust_03-01-07-01-01-01-23.wav",
+      "kind": "ravdess",
+      "emotion": "disgust",
+      "original_member": "Actor_23/03-01-07-01-01-01-23.wav",
+      "speaker": "actor 23 (held-out: never used for training)",
+      "seconds": 3.57,
+      "sample_rate": 16000,
+      "preprocessing": "mono, 16 kHz, whole utterance, capped at 4 s; no silence trimming, no gain change",
+      "licence": "CC BY-NC-SA 4.0",
+      "doi": "10.5281/zenodo.1188976"
+    }
+  ]
+}

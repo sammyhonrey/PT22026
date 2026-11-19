@@ -1,0 +1,16 @@
+# Streamlit theme for the Music Recommendation System.
+# Dark violet palette matching the Now Playing interface.
+[theme]
+base = "dark"
+primaryColor = "#963BFF"
+backgroundColor = "#090611"
+secondaryBackgroundColor = "#170D2B"
+textColor = "#F5F0FF"
+font = "sans serif"
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = "none"
+
+[browser]
+gatherUsageStats = false

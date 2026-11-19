@@ -1,0 +1,13 @@
+Category,Review,Expected meaning,Prediction,Result,Positive estimate,Negative estimate,Note
+Clear sentiment,This headset works perfectly. I love it.,Positive,Positive,✅ Correct,0.787,0.213,
+Clear sentiment,The charger broke after one day. Terrible quality.,Negative,Negative,✅ Correct,0.329,0.671,
+Clear sentiment,The sound quality is excellent.,Positive,Positive,✅ Correct,0.758,0.242,
+Clear sentiment,I am happy with this purchase.,Positive,Positive,✅ Correct,0.658,0.342,
+Clear sentiment,I am disappointed with this purchase.,Negative,Negative,✅ Correct,0.423,0.577,Uncertain (close scores)
+Negation,The sound quality is not good.,Negative,Positive,❌ Wrong,0.53,0.47,Uncertain (close scores)
+Negation,The battery does not last long.,Negative,Negative,✅ Correct,0.204,0.796,
+Negation,"This is not bad at all, I would buy it again.",Positive,Negative,❌ Wrong,0.296,0.704,
+Beyond two classes,The phone arrived this morning.,Neutral / factual,Negative,ℹ️ Info only,0.464,0.536,Uncertain (close scores)
+Beyond two classes,"The sound is great, but the battery is terrible.",Mixed,Positive,ℹ️ Info only,0.578,0.422,Uncertain (close scores)
+Out of scope,"This morning, I got a prize.",Outside product-review scope,Positive,ℹ️ Info only,0.523,0.477,Uncertain (close scores)
+Out of scope,!!!,No words,No known words,ℹ️ Info only,,,Model cannot read this text

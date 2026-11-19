@@ -1,0 +1,63 @@
+# ---------------------------------------------------------------------------
+# Stress index configuration.
+#
+# PROVENANCE: every weight below is EXPERT-SET by hand, not fitted. They encode
+# the direction and relative strength of each factor from the affective-computing
+# literature (vocal arousal, valence negativity bias, threat appraisal). No public
+# speech corpus provides Low/Medium/High stress labels, so this index is validated
+# for CONSTRUCT validity only (correlation with annotator intensity and with the
+# arousal ordering of emotion labels) -- never reported as a classification
+# accuracy. See report Sections 3.6 and 5.5.
+# ---------------------------------------------------------------------------
+bias: -0.15
+
+weights:
+  negative_valence: 1.15   # expert-set: dominant term, negativity bias
+  arousal: 0.95            # expert-set: sympathetic activation is audible
+  threat_emotion: 0.85     # expert-set: p(angry) + p(fear) from the fused vector
+  positive_emotion: -0.70  # expert-set: protective, hence negative sign
+  prosody_instability: 0.80 # expert-set: F0/energy instability composite
+  lexical_negative: 0.60   # expert-set: hand-built lexicon, see lexicon.yaml
+  asr_uncertainty: 0.45    # expert-set: low transcript confidence is itself a signal
+
+thresholds:
+  low: 0.477
+  high: 0.784
+
+# |score - threshold| < band  ->  band label carries "(borderline)"
+borderline_band: 0.05
+
+# Dimensional head. When enabled, valence/arousal come from
+# audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim (output order:
+# arousal, dominance, valence). When disabled, the proxies below are used and
+# their correlation with the model output is reported instead.
+# DISABLED by default. Verified during evaluation setup: loading
+# audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim through
+# AutoModelForAudioClassification leaves `classifier` and `projector` NEWLY
+# INITIALISED (Transformers emits the standard "weights were not initialized"
+# warning), because that checkpoint ships a task-specific regression head that
+# needs its own loading path (or trust_remote_code). Predicting arousal/valence
+# from a random head would silently corrupt the stress index, so the proxy path
+# is used instead until the head is wired correctly and re-validated.
+# Enable only with MMSA_DIMENSIONAL=1 after fixing the loader and re-running the
+# correlation check described in report Section 5.6.
+dimensional:
+  enabled: false
+  model_id: audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim
+
+proxy:
+  # valence ~ P(pleasant) - P(unpleasant)
+  valence: {happy: 1.0, neutral: 0.5, sad: -1.0, angry: -1.0, fear: -1.0, disgust: -0.8}
+  # arousal ~ activation, on a 0.5-centred scale
+  arousal: {happy: 0.6, angry: 0.9, fear: 0.9, disgust: 0.5, sad: -0.5, neutral: -0.3}
+
+prosody:
+  # Features entering the instability composite. Each is robust-scaled (median,
+  # IQR) against config/prosody_ref.json, built once from the RAVDESS training
+  # split by scripts/build_prosody_ref.py.
+  instability_features: [f0_iqr, rms_std, pause_ratio, zcr_std]
+  reference_file: config/prosody_ref.json
+
+lexicon:
+  file: config/lexicon.yaml
+  max_hits: 6

@@ -1,0 +1,5 @@
+experiment,test_acc,test_macro_f1,real_acc,real_macro_f1,gap_macro_f1
+E1_resnet50,0.9724,0.965,0.4953,0.4837,0.4813
+E2_vit_head_only,0.9742,0.9646,0.5935,0.586,0.3786
+E3_vit_full,0.9802,0.9734,0.5701,0.5577,0.4157
+E4_vit_full_strong_aug,0.978,0.9691,0.5748,0.5613,0.4078

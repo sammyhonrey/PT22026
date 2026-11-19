@@ -1,0 +1,29 @@
+# E1: ResNet-50, full fine-tuning (baseline).
+# Paths below are the Colab defaults; override them on the command line if needed.
+experiment: E1_resnet50
+seed: 42
+
+data:
+  split_csv: splits/split_v1.csv
+  data_root: /content/data/garbage_classification
+  image_size: 224
+  batch_size: 32
+  num_workers: 2
+
+model:
+  name: resnet50
+  pretrained: true
+  freeze_backbone: false
+
+train:
+  epochs: 8
+  lr: 1.0e-4
+  weight_decay: 0.01
+  warmup_ratio: 0.0
+  fp16: true
+  class_weights: false
+  label_smoothing: 0.0
+
+output:
+  checkpoint_dir: /content/drive/MyDrive/SmartSort_AI/checkpoints/E1_resnet50
+  results_dir: /content/drive/MyDrive/SmartSort_AI/outputs

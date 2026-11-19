@@ -1,0 +1,61 @@
+Rows: 549346 -> 507195 after removing duplicate URLs
+Class counts (0=safe, 1=phishing):
+y
+0    392897
+1    114298
+Name: count, dtype: int64
+Extracting features, this can take a few minutes...
+Training rows: 405756 original + 403801 domain-only copies
+
+Training logreg...
+=== logreg ===
+              precision    recall  f1-score   support
+
+        safe       0.85      0.99      0.91     78579
+    phishing       0.90      0.40      0.55     22860
+
+    accuracy                           0.85    101439
+   macro avg       0.87      0.69      0.73    101439
+weighted avg       0.86      0.85      0.83    101439
+
+Confusion matrix:
+ [[77583   996]
+ [13821  9039]]
+ROC-AUC: 0.8113
+Domain-only test (path removed): safe recall=1.00, phishing recall=0.11, phishing precision=0.92, phishing F1=0.20, ROC-AUC=0.6262
+
+Training random_forest...
+=== random_forest ===
+              precision    recall  f1-score   support
+
+        safe       0.91      0.98      0.94     78579
+    phishing       0.90      0.68      0.78     22860
+
+    accuracy                           0.91    101439
+   macro avg       0.91      0.83      0.86    101439
+weighted avg       0.91      0.91      0.91    101439
+
+Confusion matrix:
+ [[76879  1700]
+ [ 7249 15611]]
+ROC-AUC: 0.9515
+Domain-only test (path removed): safe recall=0.99, phishing recall=0.23, phishing precision=0.85, phishing F1=0.36, ROC-AUC=0.7102
+
+Training gradient_boosting...
+=== gradient_boosting ===
+              precision    recall  f1-score   support
+
+        safe       0.91      0.98      0.94     78579
+    phishing       0.89      0.65      0.75     22860
+
+    accuracy                           0.90    101439
+   macro avg       0.90      0.81      0.85    101439
+weighted avg       0.90      0.90      0.90    101439
+
+Confusion matrix:
+ [[76685  1894]
+ [ 7927 14933]]
+ROC-AUC: 0.94
+Domain-only test (path removed): safe recall=0.99, phishing recall=0.23, phishing precision=0.82, phishing F1=0.35, ROC-AUC=0.7060
+
+Best model by ROC-AUC: random_forest

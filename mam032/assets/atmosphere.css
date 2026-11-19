@@ -1,0 +1,113 @@
+/* EcoWatt opening and the hour ribbon.
+   The organising structure is the 24-hour day, because that is the unit of
+   work. The ribbon is the product's own image: no stock photography. */
+
+/* The opening lives in refine.css. */
+
+/* ---- The hour ribbon -------------------------------------------------- */
+/* One cell per hour. Night hours carry a lighter ground, the tallest hour is
+   capped, and hours above the high-demand threshold change colour. */
+.ew-ribbon {
+  position: relative; margin: 2rem 0 0; padding: 1.4rem 1.4rem 1rem;
+  border: 1px solid var(--ew-line); border-radius: var(--ew-radius);
+  background:
+    radial-gradient(60rem 20rem at 70% 120%, rgba(var(--ew-rgb), .12), transparent 70%),
+    linear-gradient(180deg, rgba(255, 255, 255, .05), rgba(255, 255, 255, .012));
+  box-shadow: var(--ew-glow);
+  overflow: hidden;
+}
+.ew-ribbon-grid {
+  position: relative; display: grid; grid-template-columns: repeat(24, minmax(0, 1fr));
+  gap: 3px; height: clamp(8rem, 17vw, 13.5rem); align-items: stretch;
+}
+.ew-ribbon-grid > span {
+  position: relative; display: flex; align-items: flex-end; min-width: 0;
+  border-radius: 3px 3px 0 0;
+  box-shadow: inset 0 -1px 0 var(--ew-line-soft);
+}
+.ew-ribbon-grid > span[data-night="1"] { background: linear-gradient(180deg, transparent, rgba(255, 255, 255, .05)); }
+.ew-ribbon-grid i {
+  position: relative; display: block; width: 100%; border-radius: 3px 3px 0 0; transform-origin: bottom;
+  background: linear-gradient(180deg, var(--ew-subtle), color-mix(in srgb, var(--ew-subtle) 35%, transparent));
+}
+.ew-ribbon-grid i[data-role="forecast"] {
+  background: linear-gradient(180deg, var(--ew-primary), color-mix(in srgb, var(--ew-primary) 22%, transparent));
+  box-shadow: 0 0 22px -4px rgba(var(--ew-rgb), .75);
+}
+.ew-ribbon-grid i[data-role="high"] {
+  background: linear-gradient(180deg, var(--ew-alert), color-mix(in srgb, var(--ew-alert) 22%, transparent));
+}
+.ew-ribbon-grid span[data-peak="1"] i::after {
+  content: ""; position: absolute; inset-inline: 0; top: 0; height: 3px;
+  background: var(--ew-text); border-radius: 3px;
+}
+.ew-ribbon-axis {
+  display: grid; grid-template-columns: repeat(24, minmax(0, 1fr)); gap: 3px;
+  margin-top: .55rem; font-family: var(--ew-mono); font-size: .6875rem;
+  color: var(--ew-subtle); letter-spacing: .05em;
+}
+.ew-ribbon-axis span { text-align: center; min-width: 0; }
+.ew-ribbon-axis span:not([data-show="1"]) { visibility: hidden; }
+.ew-ribbon-legend {
+  display: flex; flex-wrap: wrap; gap: .45rem 1.25rem; margin-top: .9rem;
+  padding-top: .85rem; border-top: 1px solid var(--ew-line-soft);
+  font-size: .75rem; color: var(--ew-muted);
+}
+.ew-ribbon-legend b { display: inline-flex; align-items: center; gap: .45rem; font-weight: 400; }
+.ew-ribbon-legend b::before { content: ""; width: .7rem; height: .7rem; border-radius: 2px; background: var(--ew-subtle); }
+.ew-ribbon-legend .ew-key-forecast::before { background: var(--ew-primary); box-shadow: 0 0 10px rgba(var(--ew-rgb), .8); }
+.ew-ribbon-legend .ew-key-high::before { background: var(--ew-alert); }
+.ew-ribbon-legend .ew-key-night::before { background: rgba(255, 255, 255, .14); }
+
+/* ---- Evidence list ---------------------------------------------------- */
+.ew-evidence { list-style: none; margin: 1.1rem 0 !important; padding: 0 !important; overflow: hidden; }
+.ew-evidence li {
+  display: grid; grid-template-columns: minmax(7.5rem, 1fr) minmax(5rem, 2.4fr) auto;
+  align-items: center; gap: 1.4rem; padding: 1.1rem 1.25rem; margin: 0 !important;
+  border-top: 1px solid var(--ew-line-soft);
+}
+.ew-evidence li:first-child { border-top: 0; background: linear-gradient(90deg, rgba(var(--ew-rgb), .09), transparent 60%); }
+.stApp .ew-evidence h3 { margin: 0; padding: 0; font-size: .9375rem; font-weight: 550; letter-spacing: -.01em; overflow-wrap: anywhere; }
+.ew-evidence li > div > span { display: block; font-family: var(--ew-mono); font-size: .625rem; color: var(--ew-subtle); margin-top: .25rem; }
+.ew-evidence-track { height: .45rem; background: rgba(255, 255, 255, .07); border-radius: 3px; overflow: hidden; }
+.ew-evidence-track i { display: block; height: 100%; border-radius: inherit; background: var(--ew-subtle); transform-origin: left; }
+.ew-evidence li:first-child .ew-evidence-track i { background: var(--ew-primary); box-shadow: 0 0 16px rgba(var(--ew-rgb), .7); }
+.ew-evidence-value { text-align: right; font-variant-numeric: tabular-nums; }
+.ew-evidence-value strong { font-size: 1.25rem; font-weight: 550; letter-spacing: -.028em; }
+.ew-evidence-value span { display: block; font-family: var(--ew-mono); font-size: .625rem; color: var(--ew-subtle); }
+
+/* ---- One orchestrated moment ----------------------------------------- */
+/* The ribbon fills hour by hour and a single light sweeps across it once.
+   Nothing else on the page animates by itself. */
+@keyframes ew-hour-rise { from { transform: scaleY(.03); opacity: .25; } to { transform: scaleY(1); opacity: 1; } }
+@keyframes ew-sweep { from { transform: translateX(-120%); } to { transform: translateX(220%); } }
+@keyframes ew-fade-in { from { opacity: 0; } to { opacity: 1; } }
+.ew-ribbon-grid i { animation: ew-hour-rise var(--ew-slow) var(--ew-ease) both; animation-delay: calc(var(--ew-hour, 0) * 22ms); }
+.ew-ribbon::after {
+  content: ""; position: absolute; inset-block: 0; left: 0; width: 28%; pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(var(--ew-rgb), .14), transparent);
+  animation: ew-sweep 1500ms var(--ew-ease) 180ms 1 both;
+}
+[data-testid="stPlotlyChart"] { animation: ew-fade-in var(--ew-base) linear both; }
+.ew-evidence-track i { animation: ew-hour-rise var(--ew-slow) var(--ew-ease) both; }
+
+/* ---- Phone ------------------------------------------------------------ */
+@media (max-width: 760px) {
+  /* The wordmark takes its own row so it never sits under the navigation. */
+  [class*="st-key-masthead"] [data-testid="stHorizontalBlock"] { flex-wrap: wrap; row-gap: .5rem; justify-content: flex-start; }
+  [class*="st-key-masthead"] [data-testid="stColumn"]:first-child { flex: 1 1 100% !important; width: 100% !important; }
+  .ew-ribbon { padding: 1rem .9rem .85rem; }
+  .ew-ribbon-grid { height: 8.5rem; gap: 2px; }
+  .ew-ribbon-axis { gap: 2px; font-size: .6875rem; }
+  .st-key-opening_action { max-width: none; }
+  .ew-evidence li { grid-template-columns: minmax(0, 1fr) auto; gap: .55rem 1rem; padding: 1rem; }
+  .ew-evidence-track { grid-column: 1 / -1; grid-row: 2; }
+  .ew-spec { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ew-spec > div:nth-child(odd) { border-left: 0; }
+  .ew-spec > div:nth-child(n+3) { border-top: 1px solid var(--ew-line-soft); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html, html *, html *::before, html *::after { animation: none !important; transition: none !important; }
+  .ew-ribbon::after { display: none; }
+}

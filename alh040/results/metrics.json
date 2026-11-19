@@ -1,0 +1,33 @@
+{
+  "dataset": "JFLEG test split (jhu-clsp/jfleg)",
+  "model": "C:\\Users\\Windows\\Desktop\\PT22026\\alh040\\models\\t5-grammar",
+  "num_sentences": 747,
+  "gleu_source": 0.7868880262314853,
+  "gleu_model": 0.9107351445043144,
+  "similarity_source": 0.912055864470066,
+  "similarity_model": 0.9703496073720238,
+  "exact_source": 0.26639892904953144,
+  "exact_model": 0.6131191432396251,
+  "changed_rate": 0.7697456492637216,
+  "improved_rate": 0.6211512717536813,
+  "worse_rate": 0.07362784471218206,
+  "seconds_per_sentence": 1.4118489025427474,
+  "device": "cpu",
+  "edit_categories": {
+    "Spelling": 274,
+    "Punctuation": 232,
+    "Word choice": 228,
+    "Articles (a / an / the)": 172,
+    "Capitalization": 158,
+    "Singular / plural": 135,
+    "Word form": 106,
+    "Extra word": 79,
+    "Prepositions": 77,
+    "Missing word": 75,
+    "Verb tense": 28,
+    "Subject-verb agreement": 24,
+    "Pronouns": 17,
+    "Word order": 13,
+    "Commonly confused words": 8
+  }
+}

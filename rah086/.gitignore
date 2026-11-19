@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model files and large data (do not upload)
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.h5
+*.onnx
+data/raw/
+models/
+.EasyOCR/
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db

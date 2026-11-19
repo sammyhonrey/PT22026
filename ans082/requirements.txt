@@ -1,0 +1,17 @@
+# Tested on Windows with Python 3.11 (CPU). Training was done on Google Colab: see requirements-colab.txt
+grad-cam==1.5.7
+gradio==6.31.0
+huggingface_hub==2.4.0
+ImageHash==4.3.2
+matplotlib==3.11.2
+numpy==2.4.6
+pandas==3.1.0
+pillow==12.3.0
+pytest==9.2.0
+PyYAML==6.0.3
+scikit-learn==1.9.1
+seaborn==0.13.2
+torch==2.15.0
+torchvision==0.29.2
+tqdm==4.70.1
+transformers==5.22.1

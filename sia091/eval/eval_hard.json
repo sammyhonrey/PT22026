@@ -1,0 +1,67 @@
+[
+  {
+    "question": "What is the course name?",
+    "answer": "Professional Training",
+    "evidence": "Professional Training - YN3012170034"
+  },
+  {
+    "question": "How many marks is the Demo Presentation worth?",
+    "answer": "10",
+    "evidence": "Demo Presentation 10"
+  },
+  {
+    "question": "How many marks does the Report carry?",
+    "answer": "30",
+    "evidence": "reference) 30"
+  },
+  {
+    "question": "How many marks is Code Quality and GitHub Repository worth?",
+    "answer": "20",
+    "evidence": "Code Quality and GitHub Repository 20"
+  },
+  {
+    "question": "How many marks is Knowledge Depth of Understanding Creativity worth?",
+    "answer": "10",
+    "evidence": "creativity 10"
+  },
+  {
+    "question": "How many marks is the functionality of the app worth?",
+    "answer": "30",
+    "evidence": "functionality of the app and 30"
+  },
+  {
+    "question": "What happens if the working application is not demonstrated?",
+    "answer": "affect the project assessment",
+    "evidence": "will affect the project assessment"
+  },
+  {
+    "question": "What should the README.md contain?",
+    "answer": "project information, installation instructions, setup procedures, and usage guidelines",
+    "evidence": "README.md containing project information, installation instructions, setup procedures"
+  },
+  {
+    "question": "What is the maximum score of the assignment?",
+    "answer": "100 marks",
+    "evidence": "Total Marks: 100 marks"
+  },
+  {
+    "question": "By when must the work be handed in?",
+    "answer": "12th Week",
+    "evidence": "Deadline: 12th Week"
+  },
+  {
+    "question": "What penalty applies to work handed in after the deadline?",
+    "answer": "mark deductions",
+    "evidence": "Late submissions will result in mark deductions"
+  },
+  {
+    "question": "What punishment is given for copying someone else's work?",
+    "answer": "zero grade",
+    "evidence": "will result in a zero grade"
+  },
+  {
+    "question": "How long should the presentation of the project last?",
+    "answer": "3–5 minutes",
+    "evidence": "Approximately 3–5 minutes"
+  }
+]

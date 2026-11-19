@@ -1,0 +1,11 @@
+{
+  "best_classifier": "LogisticRegression",
+  "best_ngram_range": "(1, 2)",
+  "best_setting": "C = 10.0",
+  "cv_macro_f1": 0.8125393467407328,
+  "cv_macro_f1_std": 0.03563971362314265,
+  "settings_within_one_std": 18,
+  "validation_accuracy": 0.8367346938775511,
+  "validation_macro_f1": 0.8365455893254262,
+  "seed": 42
+}

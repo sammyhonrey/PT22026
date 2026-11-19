@@ -1,0 +1,165 @@
+/* Shared native Streamlit controls. Colour values live in palettes.json. */
+:root {
+  --ew-sans: Inter, "Helvetica Neue", Arial, sans-serif;
+  --ew-mono: "Martian Mono", "SFMono-Regular", Consolas, monospace;
+  --ew-serif: Georgia, "Times New Roman", serif;
+  --ew-line: color-mix(in srgb, var(--ew-text) 19%, transparent);
+  --ew-line-soft: color-mix(in srgb, var(--ew-text) 10%, transparent);
+  --ew-sheen: color-mix(in srgb, var(--ew-primary) 4%, transparent);
+  --ew-ease: cubic-bezier(.18,.75,.23,1);
+  --ew-fast: 160ms; --ew-base: 300ms; --ew-slow: 650ms;
+  --ew-radius: 12px; --ew-radius-sm: 6px; --ew-glow: none;
+}
+html { font-size: 16px; scroll-behavior: smooth; }
+html, body, .stApp { font-family: var(--ew-sans); color: var(--ew-text); -webkit-font-smoothing: antialiased; }
+.stApp, [data-testid="stAppViewContainer"] { background: var(--ew-bg); }
+[data-testid="stHeader"] { background: transparent; height: 2.6rem; }
+.block-container, [data-testid="stMainBlockContainer"] { max-width: 1472px; padding: 1rem 56px 3rem; }
+.stApp h1, .stApp h2, .stApp h3, .stApp h4 { font-family: var(--ew-sans); color: var(--ew-text); font-weight: 400; letter-spacing: -.035em; }
+.stApp h2 { font-size: 1.8rem; line-height: 1.15; }
+.stApp h3 { font-size: 1.25rem; }
+.stApp em { font-family: var(--ew-serif); font-weight: 400; }
+[data-testid="stMarkdownContainer"] { color: var(--ew-text); }
+[data-testid="stMarkdownContainer"] p { font-size: .9375rem; line-height: 1.7; max-width: 72ch; overflow-wrap: anywhere; }
+[data-testid="stMarkdownContainer"] a { color: var(--ew-primary); text-underline-offset: 4px; }
+[data-testid="stCaptionContainer"], [data-testid="stCaptionContainer"] p { font-size: .8125rem; line-height: 1.6; color: var(--ew-muted); max-width: 92ch; }
+code, pre, .stApp code { font-family: var(--ew-mono); font-size: .75rem; }
+::selection { color: var(--ew-ink); background: var(--ew-primary); }
+.ew-eyebrow { font-family: var(--ew-sans); font-size: .6875rem !important; letter-spacing: .09em; text-transform: uppercase; font-weight: 500; }
+
+/* One navigation system on every screen. */
+.ew-mast, .ew-sidebar-brand { display: flex; align-items: center; gap: .5rem; }
+.ew-mark { display: inline-flex; color: var(--ew-primary); width: 1.55rem; height: 1.55rem; }
+.ew-mark svg { width: 100%; height: 100%; }
+.ew-wordmark { color: var(--ew-text); font-size: 1.45rem; font-weight: 500; letter-spacing: -.065em; white-space: nowrap; }
+.ew-wordmark span { font-size: .6875rem; font-weight: 500; letter-spacing: .02em; vertical-align: super; margin-left: .15rem; }
+.ew-mast-caption { color: var(--ew-muted); font-size: .75rem; white-space: nowrap; }
+[class*="st-key-masthead"] { padding: .4rem 0 1.2rem; margin: 0; }
+[class*="st-key-masthead"] [data-testid="stHorizontalBlock"] { gap: 1.25rem; align-items: center; flex-wrap: nowrap; }
+[class*="st-key-masthead"] [data-testid="stColumn"] { min-width: 0; }
+[class*="st-key-masthead"] [data-testid="stButton"] button,
+[class*="st-key-masthead"] [data-testid="stPopoverButton"] { background: transparent; border: 0; box-shadow: none; padding: .4rem .5rem; min-height: 44px; }
+[class*="st-key-masthead"] [data-testid="stButton"] button p,
+[class*="st-key-masthead"] [data-testid="stPopoverButton"] p { font-size: .75rem; font-weight: 400; white-space: nowrap; }
+[data-baseweb="popover"]:has(.st-key-navigation_menu) { border: 1px solid var(--ew-line); border-radius: 8px; background: var(--ew-panel); box-shadow: 0 20px 80px #162b2326; max-height: calc(100svh - 5rem); overflow: auto; }
+.st-key-navigation_menu { padding: 1.25rem; min-width: min(320px, calc(100vw - 70px)); }
+.st-key-navigation_menu [data-testid="stButton"] button { border: 0; border-radius: 0; border-bottom: 1px solid var(--ew-line); justify-content: flex-start; background: transparent; color: var(--ew-text); box-shadow: none; min-height: 62px; }
+.st-key-navigation_menu [data-testid="stButton"] button p { font-size: 2.1rem; font-weight: 350; letter-spacing: -.05em; }
+.st-key-navigation_menu [data-testid="stButton"] button[kind="primary"] { color: var(--ew-primary); background: var(--ew-sheen); }
+.st-key-navigation_menu [data-testid="stButton"] button[kind="primary"] p { color: var(--ew-primary); }
+
+/* A clear title and one concise explanation. */
+.ew-page-header { display: grid; grid-template-columns: 1.4fr 1fr; gap: 3rem; align-items: end; padding: 3.5rem 0 2.75rem; }
+.stApp .ew-page-header h1 { font-size: clamp(2.75rem, 4.8vw, 4.5rem); font-weight: 350; line-height: 1.03; letter-spacing: -.055em; padding: 1rem 0 0; margin: 0; }
+.ew-page-header p { color: var(--ew-muted); font-size: .9375rem; max-width: 42ch; margin: 0 0 .2rem; }
+.ew-section { margin: 4.5rem 0 1.3rem; border-top: 1px solid var(--ew-line); padding-top: 1.5rem; }
+.stApp .ew-section-title { font-size: clamp(1.8rem, 3vw, 2.75rem); font-weight: 350; line-height: 1.12; letter-spacing: -.045em; padding: 0; margin: 0 0 .8rem; }
+.ew-section-copy { color: var(--ew-muted); font-size: .9375rem; margin: 0; max-width: 62ch; }
+.ew-spec { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); border-block: 1px solid var(--ew-line); margin: .75rem 0; background: transparent; }
+.ew-spec > div { min-width: 0; padding: 1.1rem 1.1rem 1.1rem 0; }
+.ew-spec .ew-spec-key { font-size: .6875rem; color: var(--ew-muted); margin: 0 0 .35rem; }
+.ew-spec .ew-spec-value { font-size: .875rem; font-weight: 450; margin: 0; color: var(--ew-text); }
+
+/* Readouts follow a common type scale, with no decorative data changes. */
+[data-testid="stMetric"] { border: 0; border-top: 1px solid var(--ew-line); padding: 1.25rem 0 .6rem; background: transparent; border-radius: 0; min-width: 0; }
+[data-testid="stMetricLabel"] p { font-size: .75rem; font-weight: 400; color: var(--ew-muted); }
+[data-testid="stMetricValue"] { font-family: var(--ew-sans); font-weight: 350; color: var(--ew-text); font-size: clamp(1.8rem, 3vw, 2.7rem); line-height: 1.2; letter-spacing: -.055em; font-variant-numeric: tabular-nums; }
+[data-testid="stMetricValue"] > div { white-space: normal; overflow-wrap: anywhere; overflow: visible; text-overflow: clip; }
+.st-key-headline_metric [data-testid="stMetricValue"] { font-size: clamp(2.75rem, 5vw, 4.25rem); }
+.ew-notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: 1.75rem; margin: 1rem 0; }
+.ew-note { min-width: 0; border-top: 1px solid var(--ew-line-soft); padding-top: 1rem; }
+.ew-note strong { display: block; font-size: .75rem; font-weight: 500; margin-bottom: .4rem; }
+.ew-note span { font-size: .875rem; color: var(--ew-muted); line-height: 1.7; }
+.ew-empty { padding: 2.5rem; border: 1px dashed var(--ew-line); background: var(--ew-panel); border-radius: var(--ew-radius); }
+.stApp .ew-empty h3 { font-weight: 400; font-size: 1.5rem; padding: 0; }
+.ew-empty p { color: var(--ew-muted); font-size: .9375rem; }
+.ew-empty-next { font-size: .75rem !important; margin-top: 1rem; }
+
+/* Native input and download behaviour is retained. */
+[data-testid="stWidgetLabel"] p { color: var(--ew-text); font-size: .8125rem; font-weight: 450; }
+[data-baseweb="select"] > div, [data-baseweb="input"] > div, [data-baseweb="textarea"] { background: var(--ew-control); color: var(--ew-text); border-color: var(--ew-line); border-radius: var(--ew-radius-sm); }
+[data-baseweb="select"]:focus-within > div, [data-baseweb="input"]:focus-within > div { border-color: var(--ew-primary); box-shadow: 0 0 0 2px rgba(var(--ew-rgb), .12); }
+[data-baseweb="popover"] [role="listbox"], [data-baseweb="popover"] [role="option"] { background: var(--ew-raised); color: var(--ew-text); }
+[data-baseweb="popover"] [role="option"][aria-selected="true"] { background: var(--ew-hover); }
+[data-testid="stRadio"] label[data-baseweb="radio"] { margin: 0; padding: .5rem .7rem; border: 1px solid transparent; border-radius: 5px; min-height: 44px; }
+[data-testid="stRadio"] label[data-baseweb="radio"]:has(input:checked) { border-color: var(--ew-line); background: var(--ew-sheen); }
+[data-testid="stRadio"] label[data-baseweb="radio"] p { color: var(--ew-text); font-size: .8125rem; }
+[data-testid="stButton"] button, [data-testid="stDownloadButton"] button { min-height: 46px; padding: .65rem 1.15rem; border: 1px solid var(--ew-line); border-radius: 99px; background: transparent; color: var(--ew-text); box-shadow: none; font-family: var(--ew-sans); transition: background var(--ew-base) var(--ew-ease), transform var(--ew-base) var(--ew-ease), border-color var(--ew-base) ease; }
+[data-testid="stButton"] button p, [data-testid="stDownloadButton"] button p { font-size: .8125rem; font-weight: 450; }
+[data-testid="stButton"] button:hover, [data-testid="stDownloadButton"] button:hover { background: var(--ew-hover); color: var(--ew-text); border-color: var(--ew-primary); transform: translateY(-2px); }
+[data-testid="stButton"] button[kind="primary"] { background: var(--ew-primary); color: var(--ew-ink); border-color: var(--ew-primary); }
+[data-testid="stButton"] button[kind="primary"] p { color: var(--ew-ink); }
+[data-testid="stButton"] button[kind="primary"]:hover { background: color-mix(in srgb, var(--ew-primary) 87%, var(--ew-text)); }
+[data-testid="stButton"] button:active, [data-testid="stDownloadButton"] button:active { transform: translateY(0); }
+[data-testid="stButton"] button:disabled, [data-testid="stDownloadButton"] button:disabled { opacity: .5; transform: none; }
+button:focus-visible, summary:focus-visible, a:focus-visible, [role="tab"]:focus-visible { outline: 2px solid var(--ew-secondary) !important; outline-offset: 4px; }
+[data-testid="stTabs"] [role="tablist"] { gap: 1.25rem; border-bottom: 1px solid var(--ew-line); overflow-x: auto; background: transparent; }
+[data-testid="stTabs"] [role="tab"] { min-height: 46px; padding: .6rem 0; font-size: .8125rem; color: var(--ew-muted); flex-shrink: 0; white-space: nowrap; }
+[data-testid="stTabs"] [role="tab"][aria-selected="true"] { color: var(--ew-text); }
+[data-testid="stTabs"] [data-baseweb="tab-highlight"] { background: var(--ew-primary); }
+[data-testid="stTabs"] [role="tabpanel"] { padding-top: 1.25rem; }
+/* On a phone the tab gap is smaller, so all three Model Lab tabs fit on one row. */
+@media (max-width: 760px) { [data-testid="stTabs"] [role="tablist"] { gap: .5rem; } }
+[data-testid="stExpander"] { border: 1px solid var(--ew-line); border-radius: var(--ew-radius-sm); background: transparent; overflow: hidden; }
+[data-testid="stExpander"] summary { min-height: 48px; color: var(--ew-text); }
+[data-testid="stExpander"] summary p { font-size: .8125rem; }
+[data-testid="stFileUploaderDropzone"] { padding: 1.25rem; border: 1px dashed var(--ew-line); border-radius: var(--ew-radius); background: var(--ew-panel); }
+[data-testid="stDataFrame"] { border: 1px solid var(--ew-line); border-radius: var(--ew-radius-sm); overflow: hidden; }
+[data-testid="stPlotlyChart"] { background: var(--ew-panel); border: 1px solid var(--ew-line-soft); border-radius: var(--ew-radius); overflow: hidden; }
+[data-testid="stAlert"] { border: 1px solid var(--ew-line); border-radius: var(--ew-radius-sm); background: var(--ew-sheen); box-shadow: none; }
+[data-testid="stAlert"] p { color: var(--ew-text); }
+[data-testid="stCode"] { border: 1px solid var(--ew-line); border-radius: var(--ew-radius-sm); }
+.st-key-workspace { padding: 1.5rem; background: var(--ew-panel); border: 1px solid var(--ew-line); border-radius: var(--ew-radius); }
+.st-key-workspace .ew-section { margin-top: 0; border-top: 0; padding-top: 0; }
+.st-key-workspace .ew-section-title { font-size: 1.65rem; }
+
+/* Exact chart values are available without hover. */
+.ew-chart-data { min-width: 0; margin: .4rem 0 1.2rem; border-bottom: 1px solid var(--ew-line); }
+.ew-chart-data > summary { min-height: 44px; padding: .8rem .5rem; cursor: pointer; color: var(--ew-primary); font-size: .75rem; }
+.ew-chart-data > p { color: var(--ew-muted); padding: 0 .5rem; font-size: .8125rem; }
+.ew-chart-table-scroll { max-width: 100%; max-height: 24rem; overflow: auto; padding: .75rem .5rem; }
+.ew-chart-table-scroll:focus-visible { outline: 2px solid var(--ew-secondary); outline-offset: -3px; }
+.ew-chart-data table { border-collapse: collapse; font-size: .75rem; width: 100%; font-variant-numeric: tabular-nums; }
+.ew-chart-data caption { text-align: left; color: var(--ew-text); font-weight: 500; padding-bottom: .5rem; }
+.ew-chart-data td, .ew-chart-data th { text-align: left; padding: .55rem; border-bottom: 1px solid var(--ew-line-soft); white-space: nowrap; }
+
+[data-testid="stSidebar"], [data-testid="stSidebarContent"] { background: var(--ew-sidebar); }
+[data-testid="stSidebar"] { border-right: 1px solid var(--ew-line); }
+[data-testid="stSidebarUserContent"] { padding-top: 1rem; }
+.ew-sidebar-brand { border-bottom: 1px solid var(--ew-line); padding-bottom: 1.25rem; margin-bottom: .75rem; }
+.ew-sidebar-step { margin: 1.5rem 0 .5rem; font-size: .6875rem; text-transform: uppercase; letter-spacing: .08em; color: var(--ew-muted); }
+.ew-sidebar-footer { margin-top: 1.5rem; border-top: 1px solid var(--ew-line); padding-top: 1rem; font-size: .75rem; line-height: 1.65; color: var(--ew-muted); }
+[data-testid="stSidebarCollapsedControl"] button { min-height: 40px; min-width: 44px; gap: .3rem; padding: .3rem .6rem; background: var(--ew-bg); border-radius: 6px; }
+[data-testid="stSidebarCollapsedControl"] button::after { content: "Settings"; font-family: var(--ew-sans); font-size: .6875rem; color: var(--ew-text); }
+/* On a phone (768px or less, Streamlit's own limit) the sidebar covers the whole page. Streamlit closes it by
+   itself only for its built-in page links, not for our page list, so the list would stay open over the new page.
+   The Menu button offers the same five pages, so the sidebar keeps only the settings on a phone. */
+@media (max-width: 768px) { .st-key-workspace_page { display: none; } }
+/* The Settings button stays fixed at the top left. Page content now scrolls in an area that starts below it,
+   so the button never covers text. The negative margin keeps the first screen at nearly its old position. */
+[data-testid="stMain"] { margin-top: 4rem; height: calc(100% - 4rem) !important; }
+[data-testid="stMainBlockContainer"] { margin-top: -2rem; }
+.ew-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem 2rem; border-top: 1px solid var(--ew-line); padding-top: 1.25rem; margin-top: 4rem; color: var(--ew-muted); font-size: .6875rem; line-height: 1.6; }
+.ew-footer strong { color: var(--ew-text); font-weight: 500; }
+
+@media (max-width: 760px) {
+  .block-container, [data-testid="stMainBlockContainer"] { padding: 1rem 22px 2rem; }
+  .ew-page-header { grid-template-columns: 1fr; gap: 1.25rem; padding: 2rem 0 1.75rem; }
+  .stApp .ew-page-header h1 { font-size: clamp(2.6rem, 10vw, 3.7rem); }
+  .ew-page-header p { max-width: 45ch; }
+  [class*="st-key-masthead"] [data-testid="stHorizontalBlock"] { gap: .5rem; flex-wrap: nowrap; }
+  [class*="st-key-masthead"] [data-testid="stColumn"] { flex: 0 0 auto !important; width: auto !important; min-width: 0 !important; }
+  [class*="st-key-masthead"] [data-testid="stColumn"]:first-child { flex: 1 1 auto !important; }
+  [class*="st-key-masthead"] [data-testid="stColumn"]:nth-child(2),
+  [class*="st-key-masthead"] [data-testid="stColumn"]:nth-child(3) { display: none; }
+  .ew-wordmark { font-size: 1.3rem; }
+  .ew-section { margin-top: 3rem; }
+  .ew-spec { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ew-spec > div:nth-child(n+3) { border-top: 1px solid var(--ew-line-soft); }
+  .st-key-workspace { padding: 1.1rem; }
+  .ew-empty { padding: 1.5rem; }
+  .ew-footer { flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html, html *, html *::before, html *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

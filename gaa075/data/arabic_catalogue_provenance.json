@@ -1,0 +1,350 @@
+{
+  "source": "MusicBrainz",
+  "source_url": "https://musicbrainz.org/",
+  "licence": "CC0 1.0 Universal (public domain dedication)",
+  "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "attribution": "Metadata from MusicBrainz (CC0). Region and genre are editorial labels chosen by this project.",
+  "retrieved_at": "2026-11-18T10:38:18+00:00",
+  "user_agent": "MusicRecommendationSystem/1.0 (university project; educational use)",
+  "seed_artists": 36,
+  "resolved_artists": 36,
+  "failed_artists": [],
+  "rows_before_dedup": 8278,
+  "tracks": 6910,
+  "dedup_removed": 1368,
+  "language_available": 0,
+  "regions": [
+    "Algeria",
+    "Egypt",
+    "Iraq",
+    "Kuwait",
+    "Lebanon",
+    "Morocco",
+    "Saudi Arabia",
+    "Syria",
+    "Tunisia",
+    "United Arab Emirates",
+    "Yemen"
+  ],
+  "curated_genres": [
+    "Arabic classical",
+    "Arabic pop",
+    "Iraqi",
+    "Khaleeji",
+    "Levantine",
+    "Moroccan pop",
+    "Rai",
+    "Tunisian pop",
+    "Yemeni"
+  ],
+  "columns": [
+    "track_id",
+    "title",
+    "artist",
+    "artist_latin",
+    "album",
+    "release_date",
+    "language",
+    "country",
+    "region",
+    "genre",
+    "region_source",
+    "genre_source",
+    "mb_artist_id",
+    "mb_recording_id",
+    "mb_release_id",
+    "source",
+    "source_url",
+    "retrieved_at"
+  ],
+  "artist_details": [
+    {
+      "seed_name": "Amr Diab",
+      "mb_name": "عمرو دياب",
+      "mb_id": "ba26c1ff-e5e2-42c2-b1d7-b6f82ebc37ac",
+      "area": "Egypt",
+      "releases": 60,
+      "tracks": 500
+    },
+    {
+      "seed_name": "Mohamed Mounir",
+      "mb_name": "محمد منير",
+      "mb_id": "5235052b-7fa0-498b-accf-26b9e7767da7",
+      "area": "Egypt",
+      "releases": 48,
+      "tracks": 492
+    },
+    {
+      "seed_name": "Tamer Hosny",
+      "mb_name": "تامر حسني",
+      "mb_id": "e5e59f75-9ff7-4ddc-9245-f9c0082c0ade",
+      "area": "Egypt",
+      "releases": 34,
+      "tracks": 343
+    },
+    {
+      "seed_name": "Sherine",
+      "mb_name": "Sherine",
+      "mb_id": "0f1a5afe-2675-48e3-b1bb-907152cc1db8",
+      "area": "Egypt",
+      "releases": 29,
+      "tracks": 13
+    },
+    {
+      "seed_name": "Angham",
+      "mb_name": "أنغام",
+      "mb_id": "c270a427-b263-499b-88ae-c2f295b60de1",
+      "area": "Egypt",
+      "releases": 42,
+      "tracks": 365
+    },
+    {
+      "seed_name": "Mohamed Hamaki",
+      "mb_name": "محمد حماقي",
+      "mb_id": "c8faf6df-c2a5-4499-8661-c2cddef7d771",
+      "area": "Egypt",
+      "releases": 20,
+      "tracks": 273
+    },
+    {
+      "seed_name": "Umm Kulthum",
+      "mb_name": "أم كلثوم",
+      "mb_id": "0a354a70-b879-4697-ad9b-60bfe2bd1d63",
+      "area": "Egypt",
+      "releases": 100,
+      "tracks": 280
+    },
+    {
+      "seed_name": "Abdel Halim Hafez",
+      "mb_name": "عبد الحليم حافظ",
+      "mb_id": "9c22e6c5-56a0-4559-b017-5b4e305141a2",
+      "area": "Egypt",
+      "releases": 59,
+      "tracks": 315
+    },
+    {
+      "seed_name": "Mohammed Abdel Wahab",
+      "mb_name": "محمد عبد الوهاب",
+      "mb_id": "77229bca-1a90-4015-bb80-29745aa0232f",
+      "area": "Egypt",
+      "releases": 40,
+      "tracks": 311
+    },
+    {
+      "seed_name": "Mohammed Abdu",
+      "mb_name": "محمد عبده",
+      "mb_id": "f0867abd-c959-495b-9774-f1966076027b",
+      "area": "Saudi Arabia",
+      "releases": 53,
+      "tracks": 180
+    },
+    {
+      "seed_name": "Talal Maddah",
+      "mb_name": "طلال مداح",
+      "mb_id": "ccc6a969-b0d9-48d0-8bfd-6360bbcef02d",
+      "area": "Saudi Arabia",
+      "releases": 10,
+      "tracks": 35
+    },
+    {
+      "seed_name": "Abdul Majeed Abdullah",
+      "mb_name": "عبدالمجيد عبدالله",
+      "mb_id": "df48c616-9f71-4e0d-85af-daf848beda2d",
+      "area": "Saudi Arabia",
+      "releases": 37,
+      "tracks": 236
+    },
+    {
+      "seed_name": "Rashed Al Majed",
+      "mb_name": "راشد الماجد",
+      "mb_id": "4aaaa92b-e094-4317-b42a-eea1dd34f602",
+      "area": "Saudi Arabia",
+      "releases": 29,
+      "tracks": 144
+    },
+    {
+      "seed_name": "Majid Al Muhandis",
+      "mb_name": "ماجد المهندس",
+      "mb_id": "0d72039b-5734-407d-9b19-23511c09a306",
+      "area": "Iraq",
+      "releases": 23,
+      "tracks": 125
+    },
+    {
+      "seed_name": "Hussain Al Jassmi",
+      "mb_name": "حسين الجسمي",
+      "mb_id": "33ff0f96-fe04-49c4-a2fc-cdbb710d0121",
+      "area": "United Arab Emirates",
+      "releases": 100,
+      "tracks": 311
+    },
+    {
+      "seed_name": "Ahlam",
+      "mb_name": "أحلام",
+      "mb_id": "a4845134-088a-4d0c-aa39-c34cac530f9e",
+      "area": "United Arab Emirates",
+      "releases": 0,
+      "tracks": 0
+    },
+    {
+      "seed_name": "Balqees",
+      "mb_name": "بلقيس",
+      "mb_id": "5838f72f-6d16-43be-a5ed-67a83b60cc30",
+      "area": "United Arab Emirates",
+      "releases": 17,
+      "tracks": 80
+    },
+    {
+      "seed_name": "Kadim Al Sahir",
+      "mb_name": "كاظم الساهر",
+      "mb_id": "0b91b4e7-5c97-4446-8665-27fe6026cd2f",
+      "area": "Iraq",
+      "releases": 46,
+      "tracks": 500
+    },
+    {
+      "seed_name": "Rida Al Abdullah",
+      "mb_name": "محمد العبدالله",
+      "mb_id": "b9de28fd-6750-46b3-aef7-71638ee74652",
+      "area": "Saudi Arabia",
+      "releases": 1,
+      "tracks": 1
+    },
+    {
+      "seed_name": "Ali Al Essa",
+      "mb_name": "Essa",
+      "mb_id": "9e109dc3-df52-46fe-b141-39adfc69d88e",
+      "area": "United Kingdom",
+      "releases": 9,
+      "tracks": 44
+    },
+    {
+      "seed_name": "Fairuz",
+      "mb_name": "فيروز",
+      "mb_id": "338bbb53-5b96-447a-9444-8906844a0790",
+      "area": "Lebanon",
+      "releases": 42,
+      "tracks": 463
+    },
+    {
+      "seed_name": "Wael Kfoury",
+      "mb_name": "وائل كفوري",
+      "mb_id": "e29614b4-0143-45bd-9feb-6f8129245d71",
+      "area": "Lebanon",
+      "releases": 32,
+      "tracks": 222
+    },
+    {
+      "seed_name": "Elissa",
+      "mb_name": "إليسا",
+      "mb_id": "8bd1e3c9-780a-4bbe-b59b-39e4aa2eca5a",
+      "area": "Lebanon",
+      "releases": 39,
+      "tracks": 487
+    },
+    {
+      "seed_name": "Ragheb Alama",
+      "mb_name": "راغب علامة",
+      "mb_id": "375e25cc-67cf-4233-b7a7-f2129bdad9c5",
+      "area": "Lebanon",
+      "releases": 32,
+      "tracks": 275
+    },
+    {
+      "seed_name": "Nancy Ajram",
+      "mb_name": "نانسي عجرم",
+      "mb_id": "c5fb9677-b013-4cd7-b89b-bb6e73ad851b",
+      "area": "Lebanon",
+      "releases": 56,
+      "tracks": 490
+    },
+    {
+      "seed_name": "Majida El Roumi",
+      "mb_name": "ماجدة الرومي",
+      "mb_id": "486bade7-2ca7-4518-b2a1-4f44d2287163",
+      "area": "Lebanon",
+      "releases": 25,
+      "tracks": 138
+    },
+    {
+      "seed_name": "Georges Wassouf",
+      "mb_name": "جورج وسوف",
+      "mb_id": "67541793-5159-4f0d-a3a0-6b96163933f3",
+      "area": "Syria",
+      "releases": 28,
+      "tracks": 33
+    },
+    {
+      "seed_name": "Assala Nasri",
+      "mb_name": "أصالة",
+      "mb_id": "94bf8ccf-61ea-4aa7-a273-b22184aa718a",
+      "area": "Syria",
+      "releases": 64,
+      "tracks": 381
+    },
+    {
+      "seed_name": "Sabah Fakhri",
+      "mb_name": "صباح فخري",
+      "mb_id": "c563f74a-ebde-4c22-a8a1-b82108738046",
+      "area": "Syria",
+      "releases": 14,
+      "tracks": 116
+    },
+    {
+      "seed_name": "Saad Lamjarred",
+      "mb_name": "سعد لمجرد",
+      "mb_id": "51c1564d-167c-48bc-8ca7-6c1bb7bf1106",
+      "area": "Morocco",
+      "releases": 24,
+      "tracks": 35
+    },
+    {
+      "seed_name": "Cheb Khaled",
+      "mb_name": "Khaled",
+      "mb_id": "b4a479aa-4384-4acf-88b0-dee9188faeb5",
+      "area": "Algeria",
+      "releases": 76,
+      "tracks": 471
+    },
+    {
+      "seed_name": "Cheb Mami",
+      "mb_name": "Cheb Mami",
+      "mb_id": "634ef2ec-ffe2-4846-ba68-156f852bf5cb",
+      "area": "Algeria",
+      "releases": 35,
+      "tracks": 306
+    },
+    {
+      "seed_name": "Warda",
+      "mb_name": "وردة",
+      "mb_id": "3f9d077d-f2e8-4cff-9ab6-d53ad7ace217",
+      "area": "Egypt",
+      "releases": 26,
+      "tracks": 105
+    },
+    {
+      "seed_name": "Latifa",
+      "mb_name": "لطيفة",
+      "mb_id": "5bd3a41b-17b0-42e7-8218-e5794d99d41a",
+      "area": "Tunisia",
+      "releases": 11,
+      "tracks": 114
+    },
+    {
+      "seed_name": "Saber Rebaï",
+      "mb_name": "صابر الرباعي",
+      "mb_id": "9ad48f85-bd75-4291-a5b7-99f1ecbab7d5",
+      "area": "Tunisia",
+      "releases": 17,
+      "tracks": 75
+    },
+    {
+      "seed_name": "Abu Bakr Salem",
+      "mb_name": "سيف أبو بكر",
+      "mb_id": "a6a53cbc-0e98-47d6-8dc6-575efc733dcf",
+      "area": "Sudan",
+      "releases": 5,
+      "tracks": 19
+    }
+  ]
+}

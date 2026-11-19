@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EcoWatt layout observer</title><style>html,body{margin:0;padding:0;overflow:hidden;height:0}</style></head><body aria-hidden="true"><script>
+/* Streamlit Components v1 protocol. Only this frame's width is returned. */
+(() => {
+  'use strict';
+  let timer, sent = -1, ready = false;
+  const send = (type, payload) => parent.postMessage({isStreamlitMessage:true,type,...payload}, '*');
+  function publish() {
+    if (!ready) return;
+    const width = Math.round(document.documentElement.clientWidth);
+    if (!Number.isFinite(width) || width < 1 || width > 16000 || width === sent) return;
+    sent = width;
+    send('streamlit:setComponentValue', {value:width, dataType:'json'});
+  }
+  function schedule() { clearTimeout(timer); timer = setTimeout(publish, 140); }
+  addEventListener('message', event => {
+    if (event.source !== parent || event.data?.type !== 'streamlit:render') return;
+    if (!ready) {
+      ready = true;
+      send('streamlit:setFrameHeight', {height:0});
+    }
+    schedule();
+  });
+  addEventListener('resize', schedule);
+  const observer = typeof ResizeObserver === 'function' ? new ResizeObserver(schedule) : null;
+  observer?.observe(document.documentElement);
+  addEventListener('pagehide', () => { ready = false; clearTimeout(timer); observer?.disconnect(); });
+  send('streamlit:componentReady', {apiVersion:1});
+})();
+</script></body></html>

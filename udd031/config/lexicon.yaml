@@ -1,0 +1,101 @@
+# ---------------------------------------------------------------------------
+# A deliberately small, auditable affective lexicon.
+#
+# This is NOT a sentiment model and must not be described as one. It exists so the
+# stress index has an explicit lexical channel that a reader can inspect line by
+# line, in contrast with the DistilBERT branch which is opaque. Terms are
+# lower-cased; matching is on whitespace tokens after punctuation stripping.
+#
+# Extending this file is a legitimate future-work item; the weight of each hit is
+# controlled by `lexical_negative` in stress.yaml, not here.
+# ---------------------------------------------------------------------------
+version: 1
+
+negative:
+  - anxious
+  - anxiety
+  - worried
+  - worrying
+  - stressed
+  - stress
+  - overwhelmed
+  - overwhelming
+  - exhausted
+  - burnout
+  - burnt
+  - tired
+  - pressure
+  - pressured
+  - deadline
+  - deadlines
+  - struggle
+  - struggling
+  - difficult
+  - hard
+  - afraid
+  - scared
+  - panic
+  - panicking
+  - nervous
+  - dread
+  - hopeless
+  - helpless
+  - alone
+  - lonely
+  - angry
+  - furious
+  - frustrated
+  - annoying
+  - hate
+  - terrible
+  - awful
+  - horrible
+  - worst
+  - cried
+  - crying
+  - sad
+  - upset
+  - hurt
+  - pain
+  - sick
+  - cannot
+  - cant
+  - cannot
+  - unable
+  - failing
+  - failed
+  - mistake
+  - mistakes
+  - problem
+  - problems
+  - trouble
+  - sleepless
+  - insomnia
+
+positive:
+  - calm
+  - fine
+  - good
+  - great
+  - happy
+  - relaxed
+  - okay
+  - ok
+  - well
+  - better
+  - hopeful
+  - grateful
+  - pleased
+  - comfortable
+  - confident
+  - rested
+  - peaceful
+  - love
+  - enjoy
+  - excited
+
+# An intensifier immediately before a negative term increases that hit's weight.
+intensifiers: [very, really, so, extremely, incredibly, totally, completely, always, constantly]
+
+# A negator immediately before a negative term inverts it ("not stressed").
+negators: [not, no, never, dont, don't, doesnt, doesn't, isnt, isn't, wasnt, wasnt, hardly, barely]

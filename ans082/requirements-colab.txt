@@ -1,0 +1,10 @@
+# Packages for training on Google Colab. PyTorch and torchvision are NOT listed:
+# Colab already has them (the runs were trained with torch 2.14.1+cu130, see results/*_summary.json).
+transformers>=4.40
+scikit-learn>=1.3
+pandas>=2.0
+matplotlib>=3.7
+pillow>=10.0
+pyyaml>=6.0
+tqdm>=4.66
+imagehash>=4.3

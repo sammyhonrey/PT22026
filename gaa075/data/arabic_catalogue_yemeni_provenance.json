@@ -1,0 +1,82 @@
+{
+  "source": "MusicBrainz",
+  "licence": "CC0 1.0 Universal (public domain dedication)",
+  "retrieved_at": "2026-11-18T11:38:43+00:00",
+  "seed_artists": 11,
+  "resolved_artists": 9,
+  "rows_before_dedup": 301,
+  "tracks": 286,
+  "regions": [
+    "Yemen"
+  ],
+  "traditions": [
+    "Yemeni Sanaani",
+    "Yemeni modern",
+    "Yemeni traditional"
+  ],
+  "artist_details": [
+    {
+      "seed": "Abu Bakr Salem",
+      "mb_name": "ابو بكر سالم بلفقيه",
+      "mb_id": "b0b889b4-e694-41ec-9092-e510edd51bc9",
+      "releases": 40,
+      "tracks": 166
+    },
+    {
+      "seed": "Ayoub Tarish",
+      "mb_name": "أيوب طارش عبسي",
+      "mb_id": "583dbd6f-651b-4f90-9535-b09ea46335c7",
+      "releases": 0,
+      "tracks": 0
+    },
+    {
+      "seed": "Mohammed Morshed Naji",
+      "mb_name": "محمد مرشد ناجي",
+      "mb_id": "a4bfc9b8-087b-4756-9c25-2cbc1d0cfc5a",
+      "releases": 3,
+      "tracks": 31
+    },
+    {
+      "seed": "Fouad Al-Kibsi",
+      "mb_name": "فؤاد عبدالواحد",
+      "mb_id": "b74db3e5-dcb8-4832-8e51-aa6c36502bd2",
+      "releases": 6,
+      "tracks": 20
+    },
+    {
+      "seed": "Ahmed Fathi",
+      "mb_name": "أحمد فتحي",
+      "mb_id": "103c42ab-b065-4501-a080-c7714fd7f4e4",
+      "releases": 0,
+      "tracks": 0
+    },
+    {
+      "seed": "Ali bin Ali Al-Ansi",
+      "mb_name": "علي بن محمد",
+      "mb_id": "05d55604-1d31-4482-abc6-bbca6301f2d0",
+      "releases": 10,
+      "tracks": 70
+    },
+    {
+      "seed": "Ahmed Al-Sunaidar",
+      "mb_name": "أحمد السنيدار",
+      "mb_id": "f3ddff55-1161-4b24-913b-dc80b8efa60f",
+      "releases": 0,
+      "tracks": 0
+    },
+    {
+      "seed": "Mohammed Al-Harithi",
+      "mb_name": "Muhammad Hamud Al‐Harithi",
+      "mb_id": "4bd7a78f-b2de-4ba8-ae73-d532f852fc7e",
+      "releases": 1,
+      "tracks": 7
+    },
+    {
+      "seed": "Faisal Al-Radhi",
+      "mb_name": "فيصل علوي",
+      "mb_id": "94f5b2bb-a50d-43f1-bdf6-8db205550812",
+      "releases": 1,
+      "tracks": 7
+    }
+  ]
+}

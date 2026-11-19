@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#141414" />
+    <script>
+      (() => {
+        let savedTheme = null;
+        try {
+          const preference = window.localStorage.getItem("moviemind-theme");
+          if (preference === "light" || preference === "dark") savedTheme = preference;
+        } catch (error) {
+          console.warn("MovieMind could not read the saved theme preference.", error);
+        }
+        const prefersLight = window.matchMedia?.("(prefers-color-scheme: light)").matches ?? false;
+        const theme = savedTheme ?? (prefersLight ? "light" : "dark");
+        document.documentElement.dataset.theme = theme;
+        document.querySelector('meta[name="theme-color"]').setAttribute(
+          "content",
+          theme === "light" ? "#F5F5F5" : "#141414",
+        );
+      })();
+    </script>
+    <meta
+      name="description"
+      content="MovieMind helps you discover movies and find your next favorite."
+    />
+    <title>MovieMind — Your Cinematic Companion</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

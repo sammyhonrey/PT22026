@@ -1,0 +1,12 @@
+{
+  "precision": 0.9887,
+  "recall": 0.9901,
+  "f1": 0.9894,
+  "accuracy": 0.9919,
+  "words_evaluated": 74691,
+  "model": "distilbert-base-multilingual-cased",
+  "epochs": 2,
+  "train_documents": 5065,
+  "test_documents": 556,
+  "training_minutes": 77.1
+}

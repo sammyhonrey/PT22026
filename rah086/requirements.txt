@@ -1,0 +1,11 @@
+# Tested with Python 3.13 on Windows.
+# Versions used during development:
+#   gradio 6.32.0, easyocr 1.7.2, transformers 5.23.0, torch 2.15.0,
+#   pillow 13.0.0, numpy 2.5.5, opencv-python-headless 5.0.0.93
+gradio>=6.0
+easyocr>=1.7
+transformers>=5.0
+torch>=2.5
+pillow>=10.0
+numpy>=2.0
+opencv-python-headless>=4.9

@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "source": "data/ravdess_manifest.csv",
+    "n_clips": 40,
+    "n_skipped": 0,
+    "built_at": "2026-11-05T03:03:32Z",
+    "elapsed_s": 11.4,
+    "method": "median and interquartile range per feature; used by mmsa.stress.robust_z",
+    "note": "Reference statistics only. They are not a model and make no claim about stress; they set the scale of the prosody-instability term."
+  },
+  "f0_median": {
+    "median": 136.659766,
+    "iqr": 62.686482
+  },
+  "f0_iqr": {
+    "median": 29.413016,
+    "iqr": 18.970579
+  },
+  "f0_range_st": {
+    "median": 7.882467,
+    "iqr": 3.687427
+  },
+  "voiced_ratio": {
+    "median": 0.862759,
+    "iqr": 0.136896
+  },
+  "rms_mean": {
+    "median": -25.045526,
+    "iqr": 3.032056
+  },
+  "rms_std": {
+    "median": 10.279316,
+    "iqr": 1.50922
+  },
+  "rms_range_db": {
+    "median": 27.970041,
+    "iqr": 3.899193
+  },
+  "zcr_mean": {
+    "median": 0.129809,
+    "iqr": 0.041863
+  },
+  "zcr_std": {
+    "median": 0.139132,
+    "iqr": 0.049612
+  },
+  "spectral_centroid_mean": {
+    "median": 1588.479392,
+    "iqr": 375.904982
+  },
+  "spectral_flatness_mean": {
+    "median": 0.034923,
+    "iqr": 0.018156
+  },
+  "pause_ratio": {
+    "median": 0.026792,
+    "iqr": 0.011092
+  },
+  "syllable_rate": {
+    "median": 3.962321,
+    "iqr": 0.788202
+  }
+}

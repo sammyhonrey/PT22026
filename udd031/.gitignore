@@ -1,0 +1,100 @@
+# --- Python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+
+# --- Model weights and caches (never commit) ------------------------------
+# Exception: models/acoustic_probe.npz (~50 KB) is a locally fitted linear head,
+# not a Hub checkpoint. Versioned on purpose so a clone reproduces the measured
+# numbers without re-running training; see report Appendix A.
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.h5
+*.ckpt
+*.msgpack
+.huggingface/
+.cache/
+models/*
+!models/acoustic_probe.npz
+checkpoints/
+
+# --- Datasets (downloaded by scripts, never committed) --------------------
+data/ravdess/
+data/*.zip
+data/*.npz
+
+# Generated probe signals (regenerate with `make samples`)
+demo_samples/probes/
+
+# Agent tooling state, not project content
+.freebuff/
+.pytest_cache/
+data/*.tar.gz
+*.zip
+*.tar
+*.tar.gz
+
+# --- Audio: only demo_samples/ ships, and only as tiny clips --------------
+*.wav
+*.flac
+*.mp3
+*.ogg
+*.m4a
+!demo_samples/*.wav
+
+# --- Experiment output ----------------------------------------------------
+results/logs/
+results/tmp/
+*.log
+report/build_log.txt
+
+# --- Notebooks ------------------------------------------------------------
+.ipynb_checkpoints/
+notebooks/*.nbconvert.ipynb
+
+# --- Secrets --------------------------------------------------------------
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+
+# --- OS / editors ---------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# --- Build artefacts that are regenerated --------------------------------
+report/assets/tmp/
+
+# --- Working notes, kept out of the submission -------------------------
+docs/
+AGENTS.md
+
+# --- Report sources: local working copies, the PDF and DOCX are shipped ---
+report/_parts/
+report/report.html
+report/report.css
+report/figures/
+report/project_guide.html
+report/*.docx
+
+# --- Submission archive built by git archive ----------------------------
+mej031_submission_*.zip

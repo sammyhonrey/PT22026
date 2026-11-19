@@ -1,0 +1,4 @@
+# Kept for local use (`pip install -r requirements.txt` from this folder).
+# The real list lives next to the entrypoint, where Streamlit Community Cloud
+# looks first -- see app/requirements.txt for why the versions are pinned.
+-r app/requirements.txt
